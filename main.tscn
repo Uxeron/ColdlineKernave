@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bmru5owdxxwj"]
+
+[ext_resource type="Texture2D" uid="uid://djdtyw8fii20" path="res://asphalt-texture.jpg" id="1_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://cu0yv0imrytrv" path="res://character.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dnx8j4kyydclr" path="res://goon.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://d3ev2byikx1vi" path="res://bonfire.tscn" id="4_lquwl"]
+[ext_resource type="PackedScene" uid="uid://brcq3mshmi2n7" path="res://spawner.tscn" id="5_lquwl"]
+
+[node name="Main" type="Node2D" unique_id=1893357246]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1570122558]
+color = Color(0.043749988, 0.043749988, 0.043749988, 1)
+
+[node name="AsphaltTexture" type="Sprite2D" parent="." unique_id=1366338149]
+position = Vector2(436, 102.00003)
+scale = Vector2(3.3161108, 3.3161108)
+texture = ExtResource("1_1bvp3")
+
+[node name="Character" parent="." unique_id=1399668264 instance=ExtResource("1_ig7tw")]
+
+[node name="Camera2D" type="Camera2D" parent="Character" unique_id=321079850]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Goon" parent="." unique_id=745021980 node_paths=PackedStringArray("target") instance=ExtResource("2_0xm2m")]
+position = Vector2(-445, -213)
+target = NodePath("../Bonfire")
+
+[node name="Bonfire" parent="." unique_id=1247864231 instance=ExtResource("4_lquwl")]
+position = Vector2(774, 157)
+
+[node name="Spawner" parent="." unique_id=322599394 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
+position = Vector2(-154, 1290)
+spawned_object = ExtResource("2_0xm2m")
+target = NodePath("../Bonfire")
+
+[node name="Spawner2" parent="." unique_id=1241766223 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
+position = Vector2(-720, 380)
+spawned_object = ExtResource("2_0xm2m")
+target = NodePath("../Bonfire")
+
+[node name="Spawner3" parent="." unique_id=741200713 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
+position = Vector2(1393, 1356)
+spawned_object = ExtResource("2_0xm2m")
+target = NodePath("../Bonfire")
+
+[node name="Spawner4" parent="." unique_id=1428230779 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
+position = Vector2(1529, -898)
+spawned_object = ExtResource("2_0xm2m")
+target = NodePath("../Bonfire")
+
+[node name="Spawner5" parent="." unique_id=1602268232 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
+position = Vector2(-220, -863)
+spawned_object = ExtResource("2_0xm2m")
+target = NodePath("../Bonfire")
