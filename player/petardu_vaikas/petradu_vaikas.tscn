@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://c13i1n7oe26f5"]
+
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_ni5s1"]
+
+[node name="PetraduVaikas" type="Node2D" unique_id=1560510173]
+
+[node name="Body" type="Polygon2D" parent="." unique_id=35023127]
+color = Color(6.521717e-06, 0.078309186, 0.29117528, 1)
+polygon = PackedVector2Array(-2.4628506, -7.3356857, 1.8352871, -6.8772173, 4.041666, -3.8685207, 4.098974, 3.008501, 2.2364464, 5.9885445, -2.1189995, 6.103161, -4.0101814, 2.979847, -4.210762, -4.212372)
+
+[node name="UpperBody" type="Polygon2D" parent="Body" unique_id=2029807223]
+color = Color(1.5738755e-05, 0.15420341, 0.48489338, 1)
+polygon = PackedVector2Array(-1.984726, -5.2476187, 1.7516022, -4.749441, 2.7835398, -2.0984278, 2.3565311, 3.1146393, 0.9331684, 4.733715, -1.8779745, 4.395666, -2.7675762, 2.6342545, -3.0700407, -3.3616624)
+
+[node name="Kuprine" type="Polygon2D" parent="Body/UpperBody" unique_id=1264266054]
+color = Color(0.2603416, 0.33752784, 0, 1)
+polygon = PackedVector2Array(-2.53125, 3.2890625, 0.0390625, 3.4375, 1.1640625, 3.1328125, 0.9921875, 2.7578125, 0.0390625, 3.03125, -2.46875, 2.484375, -2.6896954, -2.3895893, -0.125, -2.6796875, 1.03125, -2.4296875, 1.171875, -2.8984375, -0.2109375, -3.296875, -2.6867437, -2.8997521, -2.715334, -3.5805511, -4.4945374, -5.0572906, -6.5406218, -4.9327464, -7.3056793, -2.9044542, -7.198927, 4.176777, -5.4730997, 5.2087164, -2.982214, 4.781707)
+
+[node name="Head" type="Polygon2D" parent="Body/UpperBody" unique_id=457918526]
+color = Color(0.8784314, 0.72156864, 0.7058824, 1)
+polygon = PackedVector2Array(1.3754482, -1.9097481, 1.5261478, 2.0084152, -0.088479996, 2.7834358, -1.6600513, 1.2333937, -1.7676945, -1.3069544, -0.6266899, -2.2757301)
+
+[node name="Kepure" type="Polygon2D" parent="Body/UpperBody/Head" unique_id=300728476]
+color = Color(0.49957967, 0.4438511, 1, 1)
+polygon = PackedVector2Array(-1.1474247, -1.381145, 0.52338886, -1.5546174, 0.78816223, -0.9885497, 0.8612032, 1.1661606, -0.19789124, 1.6500573, -1.2113361, 0.70965433, -1.3939381, -0.57769394)
+
+[node name="Bumbulas" type="Sprite2D" parent="Body/UpperBody/Head/Kepure" unique_id=721776502]
+position = Vector2(-0.26180267, -0.039016247)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_ni5s1")
+
+[node name="LeftArm" type="Line2D" parent="Body/UpperBody" unique_id=446099074]
+points = PackedVector2Array(-0.06034565, -4.606366, 3.1551685, -7.452799, 6.0442753, -4.1847925)
+width = 2.0
+default_color = Color(2.6568174e-05, 0.18330845, 0.5638358, 1)
+
+[node name="Pixel4" type="Sprite2D" parent="Body/UpperBody/LeftArm" unique_id=1828068298]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(2.9854965, -6.18542)
+scale = Vector2(2, 1)
+texture = ExtResource("3_ni5s1")
+
+[node name="Pixel5" type="Sprite2D" parent="Body/UpperBody/LeftArm" unique_id=1103394593]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(3.790657, -5.4513025)
+rotation = -0.93657076
+scale = Vector2(2, 1)
+texture = ExtResource("3_ni5s1")
+
+[node name="Pixel6" type="Sprite2D" parent="Body/UpperBody/LeftArm" unique_id=1247032773]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(4.927355, -4.4803734)
+rotation = -1.4455757
+scale = Vector2(2, 1)
+texture = ExtResource("3_ni5s1")
+
+[node name="Pixel7" type="Sprite2D" parent="Body/UpperBody/LeftArm" unique_id=1780119444]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(3.4354382, -6.8484936)
+rotation = -1.8705416
+scale = Vector2(2, 1)
+texture = ExtResource("3_ni5s1")
+
+[node name="Pixel8" type="Sprite2D" parent="Body/UpperBody/LeftArm" unique_id=2016777549]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(4.3826866, -5.9249268)
+rotation = -1.8705416
+scale = Vector2(2, 1)
+texture = ExtResource("3_ni5s1")
+
+[node name="RightArm" type="Line2D" parent="Body/UpperBody" unique_id=1254823611]
+points = PackedVector2Array(-0.078136444, 4.254068, -1.8383217, 8.435558, -0.13084602, 12.035099)
+width = 2.0
+default_color = Color(2.6568174e-05, 0.18330845, 0.5638358, 1)
+
+[node name="Uztrauktukas" type="Sprite2D" parent="Body" unique_id=535564977]
+position = Vector2(2.7503672, 0.0017662048)
+scale = Vector2(2.5600047, 0.3750004)
+texture = ExtResource("3_ni5s1")
+
+[node name="Petarda" type="Sprite2D" parent="." unique_id=1883871887]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.49897003, 12.262239)
+scale = Vector2(2, 1)
+texture = ExtResource("3_ni5s1")
