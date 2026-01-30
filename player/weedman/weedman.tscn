@@ -1,12 +1,129 @@
 [gd_scene format=3 uid="uid://bm3l4itcvxfxw"]
 
-[ext_resource type="PackedScene" uid="uid://ccheok1s60fm1" path="res://player/giltine/giltine.tscn" id="1_tj53b"]
-[ext_resource type="PackedScene" uid="uid://ckh7ujvo8rg8a" path="res://snowman/snowman.tscn" id="2_gwabv"]
+[sub_resource type="Gradient" id="Gradient_t2l23"]
+colors = PackedColorArray(0.25, 0.25, 0.25, 0.3882353, 0.55, 0.55, 0.55, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_6i6pr"]
+gradient = SubResource("Gradient_t2l23")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_d5uku"]
+particle_flag_disable_z = true
+angle_min = 1.0728835e-05
+angle_max = 360.00003
+gravity = Vector3(0, 0, 0)
+color_ramp = SubResource("GradientTexture1D_6i6pr")
 
 [node name="Weedman" type="Node2D" unique_id=716593676]
 
-[node name="Giltine" parent="." unique_id=134817609 instance=ExtResource("1_tj53b")]
-position = Vector2(-41, -72)
+[node name="Body" type="Polygon2D" parent="." unique_id=1276272878]
+color = Color(0.85740227, 0.051972292, 9.62615e-08, 1)
+polygon = PackedVector2Array(-3, -13, 2, -13, 6, -9, 7, -1, 6, 9, 2, 12, -2, 11, -6, 6, -6, -7, -5, -10)
 
-[node name="Snowman" parent="." unique_id=352435218 instance=ExtResource("2_gwabv")]
-position = Vector2(-48, 26)
+[node name="MidBody" type="Polygon2D" parent="Body" unique_id=51576233]
+color = Color(1, 0.8666667, 0, 1)
+polygon = PackedVector2Array(-4.474395, -6.953331, -2.4399424, -9.876065, 1.3137655, -10.133953, 3.9213037, -8.672586, 4.924203, 2.3879576, 3.6061068, 6.8293676, 0.85529804, 8.204772, -3.0416822, 5.8264685, -4.7036295, 1.4423666)
+
+[node name="UpperBody" type="Polygon2D" parent="Body/MidBody" unique_id=1129428780]
+color = Color(0.1036009, 0.6932262, 0, 1)
+polygon = PackedVector2Array(-0.49145222, -6.2369747, 2.431281, -4.2884846, 3.3195639, -2.1394148, 3.3195639, 2.6171923, 1.5716543, 5.1960745, -1.9241648, 4.766261, -3.242261, -0.13361645, -2.3826342, -5.692543)
+
+[node name="Head" type="Polygon2D" parent="Body/MidBody/UpperBody" unique_id=379481931]
+color = Color(0.69353324, 0.45519608, 0.43510598, 1)
+polygon = PackedVector2Array(-0.98741627, -3.5677042, 0.85648537, -3.5191805, 2.4092426, -1.7561529, 2.3283691, 2.028699, 1.1799736, 3.1609197, -0.32426262, 3.0476975, -2, 2, -2, -2)
+
+[node name="Dredai" type="Node2D" parent="Body/MidBody/UpperBody/Head" unique_id=210041522]
+
+[node name="Dredas" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=2122160346]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.303854, -2.0979462, 0.6354828, -2.9534614, -0.54085064, -3.0871356, -1.1958542, -2.7930522, -1.7038164, -1.8974352, -2.158308, -1.763761)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas2" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=1695668447]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.2468271, -1.5453861, 0.75712013, -2.267496, 0.0682106, -2.6659017, -0.58749866, -2.5330997, -1.0440049, -1.9520917, -1.8657162, -1.3876839, -2.197721, -1.2963824)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas3" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=1152456269]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.1804261, -0.980978, 0.7986207, -1.404284, 0.36701488, -1.9188912, -0.14759254, -1.8690906, -0.74520063, -1.6615877, -1.3096085, -1.2631822, -2.1811206, -0.8564763)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas4" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=881980716]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.2966275, -0.63237333, 0.806921, -0.58257246, 0.4915166, -0.9311776, -0.08949137, -1.2299817, -0.6787996, -1.0805795, -1.2930083, -0.7983756, -2.3803234, -0.557672)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas5" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=745416028]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.1389256, -0.15096664, 0.34211445, -0.3003688, -0.3633952, -0.5078716, -1.2349076, -0.39166975, -2.4384243, -0.20076752)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas6" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=998108087]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.1970263, 0.23083878, 0.3753147, 0.20593834, -0.44639635, 0.0067358017, -1.127006, 0.2391386, -2.4384243, 0.13953733)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas7" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=1471007396]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.3464284, 0.5379429, 0.7488198, 0.7205453, -0.03969097, 0.5960436, -1.4673109, 0.75374603, -2.2226212, 0.58774376)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas8" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=199201107]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.4128294, 1.0110497, 0.7986207, 1.1272511, -0.33019495, 1.2849531, -1.284708, 1.1355515, -2.2226212, 0.94464874)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas9" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=1898096325]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.4211292, 1.5256567, 0.70731926, 1.7414598, -0.27209425, 1.7829604, -1.3594093, 1.5671573, -2.5131252, 1.2932534)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas10" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=226878689]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.4792304, 2.0319638, 0.82352114, 2.330768, -0.26379395, 2.330768, -1.1768069, 2.0817642, -2.2226212, 1.8410611)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Dredas11" type="Line2D" parent="Body/MidBody/UpperBody/Head/Dredai" unique_id=1468410628]
+position = Vector2(0.057310104, 0)
+points = PackedVector2Array(1.5871315, 2.4303694, 1.1223254, 2.7291732, 0.33381414, 2.7540736, -0.9859042, 2.6793728, -2.0151184, 2.3639684)
+width = 0.3
+default_color = Color(0, 0, 0, 1)
+
+[node name="Jointukas" type="Polygon2D" parent="Body/MidBody/UpperBody/Head" unique_id=2107531460]
+position = Vector2(-1.1953125, -0.1015625)
+scale = Vector2(1.5, 1.5)
+color = Color(0.78039217, 0.72156864, 0.6117647, 1)
+polygon = PackedVector2Array(2.3359375, 0.5234375, 3.8359375, 1.125, 3.859375, 1.3515625, 3.671875, 1.5234375, 2.3125, 0.640625)
+
+[node name="Polygon2D" type="Polygon2D" parent="Body/MidBody/UpperBody/Head/Jointukas" unique_id=1362835414]
+color = Color(0.34901962, 0.17254902, 0.011764706, 1)
+polygon = PackedVector2Array(3.71875, 1.140625, 3.8203125, 1.203125, 3.8046875, 1.34375, 3.671875, 1.453125, 3.4921875, 1.296875, 3.6171875, 1.1796875)
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Body/MidBody/UpperBody/Head/Jointukas/Polygon2D" unique_id=395670921]
+position = Vector2(3.7297091, 1.3942083)
+process_material = SubResource("ParticleProcessMaterial_d5uku")
+
+[node name="LeftArm" type="Line2D" parent="Body/MidBody/UpperBody" unique_id=1037671069]
+points = PackedVector2Array(-0.14015293, -6.142929, 4.5013647, -6.5928717, 4.7144957, 1.0561581)
+width = 2.0
+default_color = Color(0.69411767, 0.45490196, 0.43529412, 1)
+
+[node name="RightArm" type="Line2D" parent="Body/MidBody/UpperBody" unique_id=988037919]
+points = PackedVector2Array(0.019323349, 6.0019865, 5.7215195, 11.159754, 15.005501, 8.924722)
+width = 2.0
+default_color = Color(0.69411767, 0.45490196, 0.43529412, 1)
+
+[node name="Patranka" type="Polygon2D" parent="Body/MidBody/UpperBody/RightArm" unique_id=1102731902]
+position = Vector2(-0.4097557, 0)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(15.753377, 11.243198, 13.837352, 11.329311, 14.892243, 6.8298826, 22.96576, 6.737175, 23.133568, 8.373331, 18.560726, 8.247473, 18.015343, 9.3382435, 16.379185, 8.960669)
