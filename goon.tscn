@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dnx8j4kyydclr"]
+
+[ext_resource type="Script" uid="uid://eejhoo8tty6i" path="res://goon.gd" id="1_8h2wj"]
+[ext_resource type="Texture2D" uid="uid://cy45rmtmnffh0" path="res://icon.svg" id="1_wodna"]
+[ext_resource type="Script" uid="uid://cdv67ec5l0q7u" path="res://effects/self_destructing_particles.gd" id="3_2qxbx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8h2wj"]
+radius = 54.147945
+
+[sub_resource type="Curve" id="Curve_2qxbx"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -3.0351696, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_vgjit"]
+curve = SubResource("Curve_2qxbx")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_u60g2"]
+particle_flag_disable_z = true
+angle_min = -720.0
+angle_max = 720.0
+spread = 180.0
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.19999999
+scale_max = 0.19999999
+color = Color(1, 0.81875, 0.81875, 1)
+alpha_curve = SubResource("CurveTexture_vgjit")
+
+[node name="Goon" type="CharacterBody2D" unique_id=745021980]
+script = ExtResource("1_8h2wj")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=628360693]
+self_modulate = Color(1, 0.56802595, 0.5919126, 1)
+rotation = -1.5707964
+texture = ExtResource("1_wodna")
+
+[node name="Line2D" type="Line2D" parent="Sprite2D" unique_id=1241213959]
+points = PackedVector2Array(-46, 8, -104, 42, -57, 95)
+default_color = Color(0, 0, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Sprite2D" unique_id=152811716]
+points = PackedVector2Array(46, 6, 98, 38, 60, 92)
+default_color = Color(0, 0, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2104647168]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_8h2wj")
+
+[node name="SelfDestructingParticles" type="Node2D" parent="." unique_id=1529907328]
+script = ExtResource("3_2qxbx")
+metadata/_custom_type_script = "uid://cdv67ec5l0q7u"
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="SelfDestructingParticles" unique_id=96006711]
+emitting = false
+amount = 40
+texture = ExtResource("1_wodna")
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_u60g2")
