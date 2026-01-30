@@ -2,6 +2,266 @@
 
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="1_wbm4v"]
 
+[sub_resource type="Animation" id="Animation_wbm4v"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Base/Middle:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Base/Middle/Head:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Base/Middle/LeftArm:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3.0000002, -9)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Base/Middle/LeftArm:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-1.0105326]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Base/Middle/RightArm:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(3, 7.999998)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Base/Middle/RightArm:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.2204757]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Base/Middle:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Base/Middle/Head:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_yw7q5"]
+resource_name = "jump"
+length = 0.8
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Base/Middle:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-3, 0), Vector2(3, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Base/Middle/Head:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-2, 0), Vector2(3, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Base/Middle/LeftArm:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(3.0000002, -9), Vector2(-5, -8), Vector2(8, -6)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Base/Middle/LeftArm:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-1.0105326, -2.2063565, -0.26228827]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Base/Middle/RightArm:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(3, 7.999998), Vector2(-5, 7), Vector2(8, 6)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Base/Middle/RightArm:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.2204757, 2.0036824, 0.25998086]
+}
+
+[sub_resource type="Animation" id="Animation_c6pjq"]
+resource_name = "walk"
+loop_mode = 1
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Base/Middle:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.3894908, 0.0, 0.31114534, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Base/Middle/Head:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.33347833, 0.0, -0.22009179, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Base/Middle/LeftArm:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(3.0000002, -9), Vector2(3.0000002, -9), Vector2(3.0000002, -9), Vector2(3.0000002, -9), Vector2(3.0000002, -9)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Base/Middle/LeftArm:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [-1.0105326, -1.6208405, -1.0105326, -0.65801704, -1.0105326]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Base/Middle/RightArm:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(3, 7.999998), Vector2(3, 7.999998), Vector2(3, 7.999998), Vector2(3, 7.999998), Vector2(3, 7.999998)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Base/Middle/RightArm:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.26666668, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.2204757, 1.004581, 1.2204757, 1.8410372, 1.2204757]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c6pjq"]
+_data = {
+&"RESET": SubResource("Animation_wbm4v"),
+&"jump": SubResource("Animation_yw7q5"),
+&"walk": SubResource("Animation_c6pjq")
+}
+
 [node name="Snowman" type="Node2D" unique_id=352435218]
 
 [node name="Base" type="Polygon2D" parent="." unique_id=260938894]
@@ -29,52 +289,55 @@ texture = ExtResource("1_wbm4v")
 self_modulate = Color(1, 0.51666665, 0, 1)
 polygon = PackedVector2Array(5, -1, 11, 0, 5, 1)
 
-[node name="LeftArm2" type="Node2D" parent="Base/Middle" unique_id=605278675]
+[node name="LeftArm" type="Node2D" parent="Base/Middle" unique_id=605278675]
 position = Vector2(3.0000002, -9)
 rotation = -1.0105326
 
-[node name="Arm" type="Sprite2D" parent="Base/Middle/LeftArm2" unique_id=1768699441]
+[node name="Arm" type="Sprite2D" parent="Base/Middle/LeftArm" unique_id=1768699441]
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(7.5026984, -0.076690674)
 rotation = 0.0056366576
 scale = Vector2(15, 1)
 texture = ExtResource("1_wbm4v")
 
-[node name="Pixel3" type="Sprite2D" parent="Base/Middle/LeftArm2" unique_id=996814220]
+[node name="Pixel3" type="Sprite2D" parent="Base/Middle/LeftArm" unique_id=996814220]
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(11.502699, -1.0766907)
 rotation = -0.63356483
 scale = Vector2(5, 1.1)
 texture = ExtResource("1_wbm4v")
 
-[node name="Pixel4" type="Sprite2D" parent="Base/Middle/LeftArm2" unique_id=30423180]
+[node name="Pixel4" type="Sprite2D" parent="Base/Middle/LeftArm" unique_id=30423180]
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(11.502697, 1.9233093)
 rotation = 0.73756975
 scale = Vector2(5.602, 0.9)
 texture = ExtResource("1_wbm4v")
 
-[node name="LeftArm" type="Node2D" parent="Base/Middle" unique_id=1618734511]
+[node name="RightArm" type="Node2D" parent="Base/Middle" unique_id=1618734511]
 position = Vector2(3, 7.999998)
 rotation = 1.2204757
 
-[node name="Arm" type="Sprite2D" parent="Base/Middle/LeftArm" unique_id=558601778]
+[node name="Arm" type="Sprite2D" parent="Base/Middle/RightArm" unique_id=558601778]
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(7.5026984, -0.076690674)
 rotation = 0.0056366576
 scale = Vector2(15, 1)
 texture = ExtResource("1_wbm4v")
 
-[node name="Pixel3" type="Sprite2D" parent="Base/Middle/LeftArm" unique_id=1876298615]
+[node name="Pixel3" type="Sprite2D" parent="Base/Middle/RightArm" unique_id=1876298615]
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(11.502699, -1.0766907)
 rotation = -0.63356483
 scale = Vector2(5, 1.1)
 texture = ExtResource("1_wbm4v")
 
-[node name="Pixel4" type="Sprite2D" parent="Base/Middle/LeftArm" unique_id=685695344]
+[node name="Pixel4" type="Sprite2D" parent="Base/Middle/RightArm" unique_id=685695344]
 self_modulate = Color(0, 0, 0, 1)
 position = Vector2(11.502697, 1.9233093)
 rotation = 0.73756975
 scale = Vector2(5.602, 0.9)
 texture = ExtResource("1_wbm4v")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1591522159]
+libraries/ = SubResource("AnimationLibrary_c6pjq")
