@@ -1,8 +1,120 @@
 [gd_scene format=3 uid="uid://kwfl4q7srnp4"]
 
+[ext_resource type="Script" uid="uid://bmw0517kdgwun" path="res://player/kanapinis/kanapinis.gd" id="1_a5ckr"]
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_d048c"]
 
+[sub_resource type="Animation" id="Animation_d048c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Maisas:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(8.667912, 8.979958)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Maisas:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.9618895]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body/LeftArm:points")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-0.1515503, -6.6695023, 8.57752, -2.6065016, 9.298304, 8.749443)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Body/RightArm:points")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0.3560791, 4.49831, 3.183817, 8.820488, 8.962031, 9.365156)]
+}
+
+[sub_resource type="Animation" id="Animation_a5ckr"]
+resource_name = "hit"
+length = 0.8
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Maisas:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.3, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(8.667912, 8.979958), Vector2(15.417164, 0.1228466), Vector2(8.360794, -13.746536), Vector2(8.667912, 8.979958)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Maisas:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.3, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.9618895, 0.0, -1.1154687, 1.9618895]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body/LeftArm:points")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.3, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-0.1515503, -6.6695023, 8.57752, -2.6065016, 9.298304, 8.749443), PackedVector2Array(-0.1515503, -6.6695023, 10.791515, -5.1664267, 16.559618, -0.2808752), PackedVector2Array(-0.1515503, -6.6695023, 2.57938, -14.026079, 7.923317, -14.353735), PackedVector2Array(-0.1515503, -6.6695023, 8.57752, -2.6065016, 9.298304, 8.749443)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Body/RightArm:points")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.3, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0.3560791, 4.49831, 3.183817, 8.820488, 8.962031, 9.365156), PackedVector2Array(0.3560791, 4.49831, 10.350241, 4.4785967, 15.960745, 0.9799118), PackedVector2Array(0.3560791, 4.49831, 9.676941, -1.5245981, 9.030869, -14.399883), PackedVector2Array(0.3560791, 4.49831, 3.183817, 8.820488, 8.962031, 9.365156)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_d048c"]
+_data = {
+&"RESET": SubResource("Animation_d048c"),
+&"hit": SubResource("Animation_a5ckr")
+}
+
 [node name="Kanapinis" type="Node2D" unique_id=149332413]
+script = ExtResource("1_a5ckr")
 
 [node name="Body" type="Polygon2D" parent="." unique_id=626512741]
 color = Color(0.65882355, 0.5803922, 0.5372549, 1)
@@ -55,17 +167,21 @@ rotation = 0.64161575
 scale = Vector2(1.5, 1)
 texture = ExtResource("3_d048c")
 
-[node name="Line2D" type="Line2D" parent="Body" unique_id=504101417]
-points = PackedVector2Array(-0.1515503, -6.6695023, 3.3003197, -7.583231, 9.036514, -0.121105194)
+[node name="LeftArm" type="Line2D" parent="Body" unique_id=504101417]
+points = PackedVector2Array(-0.1515503, -6.6695023, 8.57752, -2.6065016, 9.298304, 8.749443)
 width = 2.0
 default_color = Color(0.8784314, 0.72156864, 0.7058824, 1)
 
-[node name="Line2D2" type="Line2D" parent="Body" unique_id=387989963]
-points = PackedVector2Array(0.3560791, 4.49831, 5.5846443, 5.056698, 9.645664, 2.8739014)
+[node name="RightArm" type="Line2D" parent="Body" unique_id=387989963]
+points = PackedVector2Array(0.3560791, 4.49831, 3.183817, 8.820488, 8.962031, 9.365156)
 width = 2.0
 default_color = Color(0.8784314, 0.72156864, 0.7058824, 1)
 
 [node name="Maisas" type="Polygon2D" parent="." unique_id=968530450]
-position = Vector2(11.441643, 1.0401497)
+position = Vector2(8.667912, 8.979958)
+rotation = 1.9618895
 color = Color(0.7176471, 0.6392157, 0.5411765, 1)
 polygon = PackedVector2Array(-0.1410141, -1.5166883, -2.1159296, -3.6339412, -2.9165716, -0.37799788, -2.2404737, 1.2410779, -3.2368288, 2.2908082, -1.4932089, 3.981051, 0.019114494, 1.0809493, 2.1725826, 2.8277607, 8.1361065, 5.1507607, 14.515688, 2.2036705, 15.694525, -1.9569273, 12.886122, -6.6376, 4.599598, -6.42957)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=967497552]
+libraries/ = SubResource("AnimationLibrary_d048c")
