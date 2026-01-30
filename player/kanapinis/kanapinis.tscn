@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://kwfl4q7srnp4"]
+
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_d048c"]
+
+[node name="Kanapinis" type="Node2D" unique_id=149332413]
+
+[node name="Body" type="Polygon2D" parent="." unique_id=626512741]
+color = Color(0.65882355, 0.5803922, 0.5372549, 1)
+polygon = PackedVector2Array(-2, -13, 3, -13, 6, -9, 6, 4, 5, 9, -1, 10, -5, 7, -5, -8)
+
+[node name="Head" type="Polygon2D" parent="Body" unique_id=2094654577]
+color = Color(0.8784314, 0.72156864, 0.7058824, 1)
+polygon = PackedVector2Array(-0.7249613, -3.5981345, 1.9120655, -2.46798, 1.9849787, 1.6516156, 0.7454548, 3.1098795, -0.71280956, 3.0369663, -2, 1, -2.3047476, -1.7388477)
+
+[node name="Mask" type="Polygon2D" parent="Body/Head" unique_id=1928309415]
+color = Color(0.49696034, 0.3806211, 0.24037895, 1)
+polygon = PackedVector2Array(1.5, -1.703125, 1.1200433, -2.6318684, 0.125, -2.9921875, -0.96875, -3.0546875, -1.0078125, -3.5234375, -0.3671875, -3.6796875, 1.1839542, -3.0518541, 2.1060972, -2.7688203, 2.362616, -2.1401072, 2.4895635, -0.3767252, 3.1104121, -0.3128147, 3.7221308, -0.59584856, 3.6308298, 0.08891106, 2.526084, 0.29890394, 2.513248, 1.0379422, 1.8332262, 1.9953575, 0.8203125, 3.140625, -0.3046875, 3.234375, -0.2578125, 2.921875, 0.7265625, 2.6875, 1.328125, 1.703125, 1.671875, 0.7890625)
+
+[node name="Virve" type="Line2D" parent="Body/Head/Mask" unique_id=766285882]
+points = PackedVector2Array(-0.20757008, 3.0581112, -0.64581585, 2.9211593, -1.3853564, 1.55164, -1.8509932, 0.82122993, -2.079246, -0.81306314, -2.0975065, -1.4704323, -1.7688217, -2.0547605, -1.4675274, -2.8582115, -0.99276114, -3.2873278, -0.8558092, -3.3603687)
+width = 0.2
+default_color = Color(0.39395562, 0.24117362, 1.92523e-07, 1)
+
+[node name="Pixel" type="Sprite2D" parent="Body/Head" unique_id=1559026411]
+self_modulate = Color(0.8784314, 0.72156864, 0.7058824, 1)
+position = Vector2(1.984375, -1.3046875)
+rotation = -0.12893264
+scale = Vector2(0.26666668, 0.627451)
+texture = ExtResource("3_d048c")
+
+[node name="Pixel2" type="Sprite2D" parent="Body/Head" unique_id=493362063]
+self_modulate = Color(0.8784314, 0.72156864, 0.7058824, 1)
+position = Vector2(1.984375, 0.9765625)
+rotation = 0.41534972
+scale = Vector2(0.26666668, 0.627451)
+texture = ExtResource("3_d048c")
+
+[node name="VirvesDirzas" type="Line2D" parent="Body" unique_id=921454297]
+points = PackedVector2Array(0, -12, 3, -10, 5, -5, 5, 1, 4, 8, 0, 9, -3, 7, -4, 3, -4, -7, -3, -10)
+closed = true
+width = 1.0
+default_color = Color(0.4862745, 0.36078432, 0.2627451, 1)
+
+[node name="Pixel" type="Sprite2D" parent="Body/VirvesDirzas" unique_id=934674909]
+self_modulate = Color(0.4862745, 0.36078432, 0.2627451, 1)
+position = Vector2(5.7119093, -1.009223)
+rotation = -0.41963258
+scale = Vector2(1.5, 1)
+texture = ExtResource("3_d048c")
+
+[node name="Pixel2" type="Sprite2D" parent="Body/VirvesDirzas" unique_id=1649437333]
+self_modulate = Color(0.4862745, 0.36078432, 0.2627451, 1)
+position = Vector2(5.4984055, -0.27974987)
+rotation = 0.64161575
+scale = Vector2(1.5, 1)
+texture = ExtResource("3_d048c")
+
+[node name="Line2D" type="Line2D" parent="Body" unique_id=504101417]
+points = PackedVector2Array(-0.1515503, -6.6695023, 3.3003197, -7.583231, 9.036514, -0.121105194)
+width = 2.0
+default_color = Color(0.8784314, 0.72156864, 0.7058824, 1)
+
+[node name="Line2D2" type="Line2D" parent="Body" unique_id=387989963]
+points = PackedVector2Array(0.3560791, 4.49831, 5.5846443, 5.056698, 9.645664, 2.8739014)
+width = 2.0
+default_color = Color(0.8784314, 0.72156864, 0.7058824, 1)
+
+[node name="Maisas" type="Polygon2D" parent="." unique_id=968530450]
+position = Vector2(11.441643, 1.0401497)
+color = Color(0.7176471, 0.6392157, 0.5411765, 1)
+polygon = PackedVector2Array(-0.1410141, -1.5166883, -2.1159296, -3.6339412, -2.9165716, -0.37799788, -2.2404737, 1.2410779, -3.2368288, 2.2908082, -1.4932089, 3.981051, 0.019114494, 1.0809493, 2.1725826, 2.8277607, 8.1361065, 5.1507607, 14.515688, 2.2036705, 15.694525, -1.9569273, 12.886122, -6.6376, 4.599598, -6.42957)
