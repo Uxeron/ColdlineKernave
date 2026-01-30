@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://ckh7ujvo8rg8a"]
+
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="1_wbm4v"]
+
+[node name="Snowman" type="Node2D" unique_id=352435218]
+
+[node name="Base" type="Polygon2D" parent="." unique_id=260938894]
+self_modulate = Color(0.8646751, 0.86467516, 0.8646751, 1)
+polygon = PackedVector2Array(0, -17, 12, -11, 18, 0, 13, 11, 0, 17, -13, 11, -18, 0, -12, -12)
+
+[node name="Middle" type="Polygon2D" parent="Base" unique_id=1769271075]
+self_modulate = Color(0.93845105, 0.9384491, 0.93844956, 1)
+polygon = PackedVector2Array(10, -7, 10, 6, 0, 11, -10, 5, -10, -6, 0, -12)
+
+[node name="Head" type="Polygon2D" parent="Base/Middle" unique_id=1527431441]
+polygon = PackedVector2Array(5, -4, 5, 3, -1, 6, -6, 0, -1, -6)
+
+[node name="LeftEye" type="Sprite2D" parent="Base/Middle/Head" unique_id=1563646260]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(5, -2)
+texture = ExtResource("1_wbm4v")
+
+[node name="RightEye" type="Sprite2D" parent="Base/Middle/Head" unique_id=1381463711]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(5, 2)
+texture = ExtResource("1_wbm4v")
+
+[node name="Carrot" type="Polygon2D" parent="Base/Middle/Head" unique_id=522126507]
+self_modulate = Color(1, 0.51666665, 0, 1)
+polygon = PackedVector2Array(5, -1, 11, 0, 5, 1)
+
+[node name="LeftArm2" type="Node2D" parent="Base/Middle" unique_id=605278675]
+position = Vector2(3.0000002, -9)
+rotation = -1.0105326
+
+[node name="Arm" type="Sprite2D" parent="Base/Middle/LeftArm2" unique_id=1768699441]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(7.5026984, -0.076690674)
+rotation = 0.0056366576
+scale = Vector2(15, 1)
+texture = ExtResource("1_wbm4v")
+
+[node name="Pixel3" type="Sprite2D" parent="Base/Middle/LeftArm2" unique_id=996814220]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(11.502699, -1.0766907)
+rotation = -0.63356483
+scale = Vector2(5, 1.1)
+texture = ExtResource("1_wbm4v")
+
+[node name="Pixel4" type="Sprite2D" parent="Base/Middle/LeftArm2" unique_id=30423180]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(11.502697, 1.9233093)
+rotation = 0.73756975
+scale = Vector2(5.602, 0.9)
+texture = ExtResource("1_wbm4v")
+
+[node name="LeftArm" type="Node2D" parent="Base/Middle" unique_id=1618734511]
+position = Vector2(3, 7.999998)
+rotation = 1.2204757
+
+[node name="Arm" type="Sprite2D" parent="Base/Middle/LeftArm" unique_id=558601778]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(7.5026984, -0.076690674)
+rotation = 0.0056366576
+scale = Vector2(15, 1)
+texture = ExtResource("1_wbm4v")
+
+[node name="Pixel3" type="Sprite2D" parent="Base/Middle/LeftArm" unique_id=1876298615]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(11.502699, -1.0766907)
+rotation = -0.63356483
+scale = Vector2(5, 1.1)
+texture = ExtResource("1_wbm4v")
+
+[node name="Pixel4" type="Sprite2D" parent="Base/Middle/LeftArm" unique_id=685695344]
+self_modulate = Color(0, 0, 0, 1)
+position = Vector2(11.502697, 1.9233093)
+rotation = 0.73756975
+scale = Vector2(5.602, 0.9)
+texture = ExtResource("1_wbm4v")
