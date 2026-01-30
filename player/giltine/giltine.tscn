@@ -2,6 +2,139 @@
 
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="2_00r4b"]
 
+[sub_resource type="Animation" id="Animation_00r4b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body/BodyUpper:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Body/BodyUpper/LeftArm:points")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0, -6, 10, -5, 14, 4)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body/BodyUpper/RightArm:points")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0, 8, 3, 18, 10, 22)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dalgis:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(13.000001, 7.0000005)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Dalgis:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.900333]
+}
+
+[sub_resource type="Animation" id="Animation_ycwhx"]
+resource_name = "ripinimas"
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body/BodyUpper:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.32751366, 0.0, -0.6402926, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Body/BodyUpper/LeftArm:points")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0, -6, 10, -5, 14, 4), PackedVector2Array(0, -6, 9.85165, -2.314818, 11.026932, 9.3890705), PackedVector2Array(0, -6, 8.502082, -4.510088, 13.9452915, 3.0591364), PackedVector2Array(0, -6, 8.1097, -5.691702, 12.974272, 2.0103016), PackedVector2Array(0, -6, 10, -5, 14, 4)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Body/BodyUpper/RightArm:points")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0, 8, 3, 18, 8.461609, 21.619791), PackedVector2Array(0, 8, -1.4895453, 18.409292, 3.1511927, 27.018988), PackedVector2Array(0, 8, 12.611568, 13.874994, 30.679192, 8.724493), PackedVector2Array(0, 8, 11.72667, 11.6639185, 21.641651, -1.644805), PackedVector2Array(0, 8, 3, 18, 8.461609, 21.619791)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dalgis:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(13.000001, 7.0000005), Vector2(6.7678995, 13.133183), Vector2(14.1849985, 3.1816983), Vector2(11.568373, -3.548448), Vector2(13.000001, 7.0000005)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Dalgis:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.900333, 2.411966, 0.2858392, -1.1985557, 1.900333]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_00r4b"]
+_data = {
+&"RESET": SubResource("Animation_00r4b"),
+&"ripinimas": SubResource("Animation_ycwhx")
+}
+
 [node name="Giltine" type="Node2D" unique_id=134817609]
 
 [node name="Body" type="Polygon2D" parent="." unique_id=685407768]
@@ -12,17 +145,17 @@ polygon = PackedVector2Array(6, -6, 7, 8, 3, 14, -4, 13, -8, 8, -10, 1, -9, -6, 
 color = Color(0.09239707, 0.09239706, 0.09239706, 1)
 polygon = PackedVector2Array(0, -6, 5, -3, 5, 3, 3, 10, -1, 11, -4, 8, -6, 4, -6, -1, -3, -5)
 
-[node name="Head" type="Polygon2D" parent="Body" unique_id=630416807]
+[node name="Head" type="Polygon2D" parent="Body/BodyUpper" unique_id=630416807]
 self_modulate = Color(0.16206557, 0.1620656, 0.16206557, 1)
 polygon = PackedVector2Array(3, -2, 3, 4, 0, 6, -1, 4, -3, 3, -6, 4, -5, 1, -2, 0, 0, -3)
 
-[node name="LeftArm" type="Line2D" parent="Body" unique_id=114050142]
+[node name="LeftArm" type="Line2D" parent="Body/BodyUpper" unique_id=114050142]
 position = Vector2(0, 1)
 points = PackedVector2Array(0, -6, 10, -5, 14, 4)
 width = 3.0
 default_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
 
-[node name="RightArm" type="Line2D" parent="Body" unique_id=251561957]
+[node name="RightArm" type="Line2D" parent="Body/BodyUpper" unique_id=251561957]
 points = PackedVector2Array(0, 8, 3, 18, 10, 22)
 width = 3.0
 default_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
@@ -40,3 +173,6 @@ texture = ExtResource("2_00r4b")
 [node name="Polygon2D" type="Polygon2D" parent="Dalgis" unique_id=400116652]
 position = Vector2(4, -35)
 polygon = PackedVector2Array(24, 35, 28, 26, 28, 18, 24, 14, 19, 11, 23, 15, 25, 18, 26, 21, 25, 28, 21, 35)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1736211445]
+libraries/ = SubResource("AnimationLibrary_00r4b")
