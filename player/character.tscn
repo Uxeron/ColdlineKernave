@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://cu0yv0imrytrv"]
+
+[ext_resource type="Script" uid="uid://bce3exbji025e" path="res://player/character.gd" id="1_pjt0s"]
+[ext_resource type="Script" uid="uid://cdv67ec5l0q7u" path="res://effects/self_destructing_particles.gd" id="2_xx22o"]
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_74pxd"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xx22o"]
+
+[sub_resource type="Curve" id="Curve_xhlcg"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -2.092212, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_sd8wt"]
+curve = SubResource("Curve_xhlcg")
+
+[sub_resource type="Curve" id="Curve_edx4p"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.123595595), -1.5201582, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_jmpku"]
+curve = SubResource("Curve_edx4p")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_afh3s"]
+particle_flag_disable_z = true
+emission_shape = 2
+emission_sphere_radius = 7.92
+angle_min = -720.0
+angle_max = 720.0
+direction = Vector3(-1, 0, 0)
+initial_velocity_min = 30.0
+initial_velocity_max = 50.0
+gravity = Vector3(0, 0, 0)
+scale_min = 5.0
+scale_max = 5.0
+scale_curve = SubResource("CurveTexture_jmpku")
+alpha_curve = SubResource("CurveTexture_sd8wt")
+
+[node name="Character" type="CharacterBody2D" unique_id=1399668264]
+motion_mode = 1
+platform_on_leave = 2
+script = ExtResource("1_pjt0s")
+
+[node name="HitParticles" type="Node2D" parent="." unique_id=1226442000]
+script = ExtResource("2_xx22o")
+metadata/_custom_type_script = "uid://cdv67ec5l0q7u"
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="HitParticles" unique_id=649200164]
+material = SubResource("CanvasItemMaterial_xx22o")
+emitting = false
+amount = 20
+texture = ExtResource("3_74pxd")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_afh3s")

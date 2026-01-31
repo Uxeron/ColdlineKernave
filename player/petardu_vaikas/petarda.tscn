@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://74hxitbrtyph"]
+
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="1_bws0s"]
+[ext_resource type="Script" uid="uid://ddqo4fro7mqsf" path="res://player/petardu_vaikas/petarda.gd" id="1_rkqud"]
+[ext_resource type="Script" uid="uid://cdv67ec5l0q7u" path="res://effects/self_destructing_particles.gd" id="3_nodo3"]
+
+[sub_resource type="Curve" id="Curve_4ubge"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -1.9142736, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_rkqud"]
+curve = SubResource("Curve_4ubge")
+
+[sub_resource type="Gradient" id="Gradient_nodo3"]
+interpolation_color_space = 1
+offsets = PackedFloat32Array(0, 0.06321839, 0.18390805, 0.37356323, 0.62643677)
+colors = PackedColorArray(0.9921875, 0.984375, 1, 1, 1, 0.96535224, 0.43663263, 1, 1, 0.62284446, 0.32917053, 1, 0.15, 0.10835, 0.0765, 0.05882353, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_iruev"]
+gradient = SubResource("Gradient_nodo3")
+
+[sub_resource type="Curve" id="Curve_w2tnu"]
+_limits = [0.0, 2.0, 0.0, 1.0]
+_data = [Vector2(0, 0.292135), 0.0, 0.0, 0, 0, Vector2(0.46499997, 2), 2.311396, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_q7hrq"]
+curve = SubResource("Curve_w2tnu")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fwjbg"]
+particle_flag_disable_z = true
+angle_min = -720.0
+angle_max = 720.0
+spread = 180.0
+initial_velocity_min = 40.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 0, 0)
+scale_min = 3.0
+scale_max = 3.0
+scale_curve = SubResource("CurveTexture_q7hrq")
+color_ramp = SubResource("GradientTexture1D_iruev")
+alpha_curve = SubResource("CurveTexture_rkqud")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iruev"]
+radius = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w2tnu"]
+radius = 28.0
+
+[node name="Petarda" type="CharacterBody2D" unique_id=300401004]
+script = ExtResource("1_rkqud")
+
+[node name="Petarda" type="Sprite2D" parent="." unique_id=1101400029]
+self_modulate = Color(1, 0, 0, 1)
+z_index = -1
+scale = Vector2(2, 1)
+texture = ExtResource("1_bws0s")
+
+[node name="SelfDestructingParticles" type="Node2D" parent="." unique_id=2006305463]
+script = ExtResource("3_nodo3")
+metadata/_custom_type_script = "uid://cdv67ec5l0q7u"
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="SelfDestructingParticles" unique_id=1033591505]
+emitting = false
+amount = 100
+texture = ExtResource("1_bws0s")
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_fwjbg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=830793521]
+shape = SubResource("CircleShape2D_iruev")
+
+[node name="Explosion" type="Area2D" parent="." unique_id=873074213]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Explosion" unique_id=1378807491]
+shape = SubResource("CircleShape2D_w2tnu")

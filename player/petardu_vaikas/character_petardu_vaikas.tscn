@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cpbge8w7i3iqm"]
+
+[ext_resource type="PackedScene" uid="uid://cu0yv0imrytrv" path="res://player/character.tscn" id="1_1xdi6"]
+[ext_resource type="PackedScene" uid="uid://c13i1n7oe26f5" path="res://player/petardu_vaikas/petradu_vaikas.tscn" id="2_g5f8k"]
+[ext_resource type="Script" uid="uid://c5vcj8ld3judy" path="res://player/petardu_vaikas/character_petardu_vaikas.gd" id="2_s4qxm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1xdi6"]
+radius = 8.0
+
+[node name="Character" unique_id=1399668264 instance=ExtResource("1_1xdi6")]
+script = ExtResource("2_s4qxm")
+
+[node name="PetraduVaikas" parent="." index="0" unique_id=1560510173 instance=ExtResource("2_g5f8k")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1" unique_id=2142217805]
+shape = SubResource("CircleShape2D_1xdi6")

@@ -1,54 +1,68 @@
 [gd_scene format=3 uid="uid://bmru5owdxxwj"]
 
 [ext_resource type="Texture2D" uid="uid://djdtyw8fii20" path="res://asphalt-texture.jpg" id="1_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://cu0yv0imrytrv" path="res://character.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://dnx8j4kyydclr" path="res://goon.tscn" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://d3ev2byikx1vi" path="res://bonfire.tscn" id="4_lquwl"]
+[ext_resource type="PackedScene" uid="uid://dnx8j4kyydclr" path="res://snowman/goon.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cpbge8w7i3iqm" path="res://player/petardu_vaikas/character_petardu_vaikas.tscn" id="2_lquwl"]
+[ext_resource type="PackedScene" uid="uid://buwphuovv6why" path="res://morė/morė.tscn" id="5_7mycd"]
 [ext_resource type="PackedScene" uid="uid://brcq3mshmi2n7" path="res://spawner.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://b141xwd4qqxai" path="res://player/kanapinis/character_kanapinis.tscn" id="6_272bh"]
+[ext_resource type="PackedScene" uid="uid://dkj0xni11dddl" path="res://player/giltine/character_giltine.tscn" id="7_5vw27"]
 
 [node name="Main" type="Node2D" unique_id=1893357246]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1570122558]
-color = Color(0.043749988, 0.043749988, 0.043749988, 1)
+color = Color(0.16796875, 0.16796875, 0.16796875, 1)
 
 [node name="AsphaltTexture" type="Sprite2D" parent="." unique_id=1366338149]
-position = Vector2(436, 102.00003)
-scale = Vector2(3.3161108, 3.3161108)
+z_index = -10
+position = Vector2(628, 158)
+scale = Vector2(1.5755557, 1.5755557)
 texture = ExtResource("1_1bvp3")
 
-[node name="Character" parent="." unique_id=1399668264 instance=ExtResource("1_ig7tw")]
+[node name="CharacterKanapinis" parent="." unique_id=1088514160 instance=ExtResource("6_272bh")]
+position = Vector2(467, 222)
 
-[node name="Camera2D" type="Camera2D" parent="Character" unique_id=321079850]
-zoom = Vector2(0.5, 0.5)
+[node name="Camera2D" type="Camera2D" parent="CharacterKanapinis" unique_id=321079850]
+zoom = Vector2(2, 2)
+
+[node name="CharacterVaikas" parent="." unique_id=1399668264 instance=ExtResource("2_lquwl")]
+process_mode = 4
+visible = false
+position = Vector2(467, 222)
+
+[node name="CharacterGiltine" parent="." unique_id=786533635 instance=ExtResource("7_5vw27")]
+process_mode = 4
+visible = false
+position = Vector2(467, 222)
 
 [node name="Goon" parent="." unique_id=745021980 node_paths=PackedStringArray("target") instance=ExtResource("2_0xm2m")]
-position = Vector2(-445, -213)
-target = NodePath("../Bonfire")
-
-[node name="Bonfire" parent="." unique_id=1247864231 instance=ExtResource("4_lquwl")]
-position = Vector2(774, 157)
+position = Vector2(149, -20)
+target = NodePath("../Morė")
 
 [node name="Spawner" parent="." unique_id=322599394 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
-position = Vector2(-154, 1290)
+position = Vector2(185, 734)
 spawned_object = ExtResource("2_0xm2m")
-target = NodePath("../Bonfire")
+target = NodePath("../Morė")
 
 [node name="Spawner2" parent="." unique_id=1241766223 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
-position = Vector2(-720, 380)
+position = Vector2(-154, 319)
 spawned_object = ExtResource("2_0xm2m")
-target = NodePath("../Bonfire")
+target = NodePath("../Morė")
 
 [node name="Spawner3" parent="." unique_id=741200713 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
-position = Vector2(1393, 1356)
+position = Vector2(1120, 780)
 spawned_object = ExtResource("2_0xm2m")
-target = NodePath("../Bonfire")
+target = NodePath("../Morė")
 
 [node name="Spawner4" parent="." unique_id=1428230779 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
-position = Vector2(1529, -898)
+position = Vector2(1190, -438)
 spawned_object = ExtResource("2_0xm2m")
-target = NodePath("../Bonfire")
+target = NodePath("../Morė")
 
 [node name="Spawner5" parent="." unique_id=1602268232 node_paths=PackedStringArray("target") instance=ExtResource("5_lquwl")]
-position = Vector2(-220, -863)
+position = Vector2(78, -408)
 spawned_object = ExtResource("2_0xm2m")
-target = NodePath("../Bonfire")
+target = NodePath("../Morė")
+
+[node name="Morė" parent="." unique_id=123869013 instance=ExtResource("5_7mycd")]
+position = Vector2(629, 150)

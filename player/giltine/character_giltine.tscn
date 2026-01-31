@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dkj0xni11dddl"]
+
+[ext_resource type="PackedScene" uid="uid://cu0yv0imrytrv" path="res://player/character.tscn" id="1_xhpbc"]
+[ext_resource type="PackedScene" uid="uid://ccheok1s60fm1" path="res://player/giltine/giltine.tscn" id="2_so8eu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xhpbc"]
+radius = 11.0
+
+[node name="Character" unique_id=1399668264 instance=ExtResource("1_xhpbc")]
+damage = 80.0
+knockback = 200.0
+
+[node name="Giltine" parent="." index="0" unique_id=134817609 instance=ExtResource("2_so8eu")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1" unique_id=358680439]
+position = Vector2(-1, 2)
+shape = SubResource("CircleShape2D_xhpbc")

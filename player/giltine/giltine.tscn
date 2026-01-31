@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://ccheok1s60fm1"]
 
+[ext_resource type="Script" uid="uid://bmw0517kdgwun" path="res://player/model.gd" id="1_00r4b"]
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="2_00r4b"]
 
 [sub_resource type="Animation" id="Animation_00r4b"]
@@ -64,9 +65,21 @@ tracks/4/keys = {
 "update": 0,
 "values": [1.900333]
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:can_damage")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_ycwhx"]
-resource_name = "ripinimas"
+resource_name = "hit"
 step = 0.0333333
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -128,14 +141,27 @@ tracks/4/keys = {
 "update": 0,
 "values": [1.900333, 2.411966, 0.2858392, -1.1985557, 1.900333]
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".:can_damage")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_00r4b"]
 _data = {
 &"RESET": SubResource("Animation_00r4b"),
-&"ripinimas": SubResource("Animation_ycwhx")
+&"hit": SubResource("Animation_ycwhx")
 }
 
 [node name="Giltine" type="Node2D" unique_id=134817609]
+script = ExtResource("1_00r4b")
 
 [node name="Body" type="Polygon2D" parent="." unique_id=685407768]
 self_modulate = Color(0.051970966, 0.051970966, 0.051970936, 1)
@@ -173,6 +199,12 @@ texture = ExtResource("2_00r4b")
 [node name="Polygon2D" type="Polygon2D" parent="Dalgis" unique_id=400116652]
 position = Vector2(4, -35)
 polygon = PackedVector2Array(24, 35, 28, 26, 28, 18, 24, 14, 19, 11, 23, 15, 25, 18, 26, 21, 25, 28, 21, 35)
+
+[node name="WeaponCollider" type="Area2D" parent="Dalgis/Polygon2D" unique_id=913466110]
+unique_name_in_owner = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dalgis/Polygon2D/WeaponCollider" unique_id=196698482]
+polygon = PackedVector2Array(24, 35, 28, 26, 28, 18, 24, 14, 9.049721, 5.172081, 14.50176, 14.932987, 17.38958, 20.286537, 18.683998, 24.071306, 18.08603, 28.503284, 14.026902, 35.175873)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1736211445]
 libraries/ = SubResource("AnimationLibrary_00r4b")
