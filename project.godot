@@ -11,13 +11,19 @@ config_version=5
 [application]
 
 config/name="Coldline Kernave"
-run/main_scene="uid://bmru5owdxxwj"
+run/main_scene="uid://dxakrdje6pasr"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*uid://dlkuyorjirevn"
+MapLoader="*uid://mso7ae8yd1nl"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [input]
 

@@ -1,0 +1,72 @@
+[gd_resource type="Theme" format=3 uid="uid://c1t2pbd424mb1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_470mv"]
+bg_color = Color(0.2784314, 0.2784314, 0.2784314, 1)
+border_width_left = 64
+border_width_top = 32
+border_width_right = 64
+border_width_bottom = 32
+border_color = Color(0.2784314, 0.2784314, 0.2784314, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a2l2q"]
+bg_color = Color(0.19921875, 0.19921875, 0.19921875, 1)
+border_width_left = 64
+border_width_top = 32
+border_width_right = 64
+border_width_bottom = 32
+border_color = Color(0.2, 0.2, 0.2, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gsqoc"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+border_width_left = 64
+border_width_top = 32
+border_width_right = 64
+border_width_bottom = 32
+border_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0omi4"]
+bg_color = Color(0.25, 0.25, 0.25, 1)
+border_width_left = 64
+border_width_top = 32
+border_width_right = 64
+border_width_bottom = 32
+border_color = Color(0.2509804, 0.2509804, 0.2509804, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_58jnp"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[resource]
+Button/font_sizes/font_size = 40
+Button/styles/disabled = SubResource("StyleBoxFlat_470mv")
+Button/styles/hover = SubResource("StyleBoxFlat_a2l2q")
+Button/styles/normal = SubResource("StyleBoxFlat_gsqoc")
+Button/styles/pressed = SubResource("StyleBoxFlat_0omi4")
+HBoxContainer/constants/separation = 8
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_58jnp")
+RichTextLabel/font_sizes/normal_font_size = 120
+VBoxContainer/constants/separation = 24

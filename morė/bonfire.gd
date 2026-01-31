@@ -11,12 +11,19 @@ extends StaticBody2D
 var adjusting_light: bool = false
 
 func take_damage():
+	if health <= 0.0:
+		MapLoader.load_scene("res://main_menu.tscn")
+		return
+	
 	var scaling = health / max_health
 	$Ugnis.scale = Vector2(scaling, scaling)
 	$Ugnis.amount_ratio = scaling
 	$Dūmai.scale = Vector2(scaling, scaling)
 	$Dūmai.amount_ratio = scaling
 	light_scale = start_light_scale * scaling
+	
+	
+
 
 func _process(_delta: float) -> void:
 	if not adjusting_light:

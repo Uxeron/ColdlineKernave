@@ -12,13 +12,13 @@ func spawn() -> void:
 	$Timer.start(randi_range(min_time, max_time))
 	await $Timer.timeout
 	
+	if Global.enemy_count <= 0:
+		return
+	
 	var entity : Node2D = spawned_object.instantiate()
 	entity.target = target
 	entity.global_position = global_position
-	get_tree().root.add_child(entity)
-	
+	MapLoader.current_scene.add_child(entity)
 	Global.enemy_count -= 1
-	if Global.enemy_count == 0:
-		return
 	
 	spawn()
