@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b141xwd4qqxai"]
+
+[ext_resource type="PackedScene" uid="uid://cu0yv0imrytrv" path="res://player/character.tscn" id="1_0xned"]
+[ext_resource type="PackedScene" uid="uid://kwfl4q7srnp4" path="res://player/kanapinis/kanapinis.tscn" id="2_m7or8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0xned"]
+radius = 11.0
+
+[node name="Character" unique_id=1399668264 instance=ExtResource("1_0xned")]
+damage = 40.0
+
+[node name="Kanapinis" parent="." index="0" unique_id=149332413 instance=ExtResource("2_m7or8")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1" unique_id=2013923702]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_0xned")

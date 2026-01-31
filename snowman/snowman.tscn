@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ckh7ujvo8rg8a"]
 
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="1_wbm4v"]
+[ext_resource type="Script" uid="uid://bpmk536kyq3r0" path="res://snowman/snowman.gd" id="1_yw7q5"]
 
 [sub_resource type="Animation" id="Animation_wbm4v"]
 length = 0.001
@@ -263,6 +264,7 @@ _data = {
 }
 
 [node name="Snowman" type="Node2D" unique_id=352435218]
+script = ExtResource("1_yw7q5")
 
 [node name="Base" type="Polygon2D" parent="." unique_id=260938894]
 self_modulate = Color(0.8646751, 0.86467516, 0.8646751, 1)

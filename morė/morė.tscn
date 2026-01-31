@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://buwphuovv6why"]
 
+[ext_resource type="Script" uid="uid://ditwa4v4ivx6s" path="res://morė/bonfire.gd" id="1_3abmc"]
+[ext_resource type="Texture2D" uid="uid://dy8dyy6x7aupd" path="res://effects/2d_lights_and_shadows_neutral_point_light.webp" id="3_jtpd6"]
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="5_1ylo4"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5o5it"]
@@ -52,9 +54,14 @@ scale_min = 5.0
 scale_max = 10.0
 color_ramp = SubResource("GradientTexture1D_jaqhu")
 
-[node name="Morė" type="Node2D" unique_id=123869013]
+[sub_resource type="CircleShape2D" id="CircleShape2D_jaqhu"]
+radius = 26.076809
+
+[node name="Morė" type="StaticBody2D" unique_id=544933875]
+script = ExtResource("1_3abmc")
 
 [node name="Laužas" type="Node2D" parent="." unique_id=1094109159]
+z_index = -1
 scale = Vector2(1.25, 1.25)
 
 [node name="Node2D" type="Node2D" parent="Laužas" unique_id=1229257632]
@@ -390,3 +397,12 @@ material = SubResource("CanvasItemMaterial_3abmc")
 amount = 50
 lifetime = 10.0
 process_material = SubResource("ParticleProcessMaterial_1ylo4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113644852]
+shape = SubResource("CircleShape2D_jaqhu")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1332101788]
+color = Color(1, 0.5571933, 0.217345, 1)
+shadow_enabled = true
+texture = ExtResource("3_jtpd6")
+texture_scale = 5.0

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://kwfl4q7srnp4"]
 
-[ext_resource type="Script" uid="uid://bmw0517kdgwun" path="res://player/kanapinis/kanapinis.gd" id="1_a5ckr"]
+[ext_resource type="Script" uid="uid://bmw0517kdgwun" path="res://player/model.gd" id="1_a5ckr"]
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_d048c"]
 
 [sub_resource type="Animation" id="Animation_d048c"]
@@ -52,6 +52,18 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [PackedVector2Array(0.3560791, 4.49831, 3.183817, 8.820488, 8.962031, 9.365156)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:can_damage")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_a5ckr"]
@@ -105,6 +117,18 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
 "values": [PackedVector2Array(0.3560791, 4.49831, 3.183817, 8.820488, 8.962031, 9.365156), PackedVector2Array(0.3560791, 4.49831, 10.350241, 4.4785967, 15.960745, 0.9799118), PackedVector2Array(0.3560791, 4.49831, 9.676941, -1.5245981, 9.030869, -14.399883), PackedVector2Array(0.3560791, 4.49831, 3.183817, 8.820488, 8.962031, 9.365156)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:can_damage")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_d048c"]
@@ -182,6 +206,12 @@ position = Vector2(8.667912, 8.979958)
 rotation = 1.9618895
 color = Color(0.7176471, 0.6392157, 0.5411765, 1)
 polygon = PackedVector2Array(-0.1410141, -1.5166883, -2.1159296, -3.6339412, -2.9165716, -0.37799788, -2.2404737, 1.2410779, -3.2368288, 2.2908082, -1.4932089, 3.981051, 0.019114494, 1.0809493, 2.1725826, 2.8277607, 8.1361065, 5.1507607, 14.515688, 2.2036705, 15.694525, -1.9569273, 12.886122, -6.6376, 4.599598, -6.42957)
+
+[node name="WeaponCollider" type="Area2D" parent="Maisas" unique_id=1443466624]
+unique_name_in_owner = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Maisas/WeaponCollider" unique_id=1785657004]
+polygon = PackedVector2Array(-0.1410141, -1.5166883, 0.019114494, 1.0809493, 2.1725826, 2.8277607, 8.1361065, 5.1507607, 14.515688, 2.2036705, 15.694525, -1.9569273, 12.886122, -6.6376, 4.599598, -6.42957)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=967497552]
 libraries/ = SubResource("AnimationLibrary_d048c")

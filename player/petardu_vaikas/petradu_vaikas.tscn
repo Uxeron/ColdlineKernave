@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://c13i1n7oe26f5"]
 
+[ext_resource type="Script" uid="uid://bmw0517kdgwun" path="res://player/model.gd" id="1_2pdor"]
+[ext_resource type="Script" uid="uid://bgd6xewu5g7cx" path="res://player/petardu_vaikas/petarda_thrower.gd" id="3_40s3w"]
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_ni5s1"]
 
 [sub_resource type="Animation" id="Animation_s4wxi"]
@@ -28,9 +30,33 @@ tracks/1/keys = {
 "update": 0,
 "values": [PackedVector2Array(-0.078136444, 4.254068, -1.8383217, 8.435558, -0.13084602, 12.035099)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Petarda:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.49897003, 12.262239)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Petarda:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_2pdor"]
-resource_name = "throw"
+resource_name = "hit"
 step = 0.0333333
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -56,14 +82,55 @@ tracks/1/keys = {
 "update": 0,
 "values": [PackedVector2Array(-0.078136444, 4.254068, -1.8383217, 8.435558, -0.13084602, 12.035099), PackedVector2Array(-0.078136444, 4.254068, -3.3496723, 8.615031, -5.093172, 13.6210985), PackedVector2Array(-0.078136444, 4.254068, 4.141136, 7.9318876, 10.053843, 10.982155), PackedVector2Array(-0.078136444, 4.254068, -1.8383217, 8.435558, -0.13084602, 12.035099), PackedVector2Array(-0.078136444, 4.254068, 4.27203, 1.7628517, 4.817417, -4.152479), PackedVector2Array(-0.078136444, 4.254068, -1.8383217, 8.435558, -0.13084602, 12.035099)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Petarda:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.16, 0.21, 0.25, 0.3, 0.73, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.49897003, 12.262239), Vector2(-8, 12), Vector2(0, 13), Vector2(7, 11), Vector2(14, 5), Vector2(5, -4), Vector2(0, 12)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Petarda:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.73),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/4/type = "method"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Petarda")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.3),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"throw"
+}]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_40s3w"]
 _data = {
 &"RESET": SubResource("Animation_s4wxi"),
-&"throw": SubResource("Animation_2pdor")
+&"hit": SubResource("Animation_2pdor")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_s4wxi"]
+
 [node name="PetraduVaikas" type="Node2D" unique_id=1560510173]
+script = ExtResource("1_2pdor")
 
 [node name="Body" type="Polygon2D" parent="." unique_id=35023127]
 color = Color(6.521717e-06, 0.078309186, 0.29117528, 1)
@@ -144,6 +211,13 @@ self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.49897003, 12.262239)
 scale = Vector2(2, 1)
 texture = ExtResource("3_ni5s1")
+script = ExtResource("3_40s3w")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1609930608]
 libraries/ = SubResource("AnimationLibrary_40s3w")
+
+[node name="WeaponCollider" type="Area2D" parent="." unique_id=1322797369]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WeaponCollider" unique_id=339852093]
+shape = SubResource("CircleShape2D_s4wxi")
