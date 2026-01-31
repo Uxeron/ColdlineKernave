@@ -1,0 +1,392 @@
+[gd_scene format=3 uid="uid://buwphuovv6why"]
+
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="5_1ylo4"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5o5it"]
+blend_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_3abmc"]
+offsets = PackedFloat32Array(0, 0.5726351, 1)
+colors = PackedColorArray(1, 0.31666666, 0, 0.93333334, 1, 0.8333334, 0, 0.5882353, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jtpd6"]
+gradient = SubResource("Gradient_3abmc")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jaqhu"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(20, 20, 1)
+emission_shape = 1
+emission_sphere_radius = 1.0
+angle_min = 1.0728835e-05
+angle_max = 360.00003
+angular_velocity_min = -30.000015
+angular_velocity_max = 29.999983
+gravity = Vector3(0, 0, 0)
+scale_min = 4.0
+scale_max = 8.0
+color_ramp = SubResource("GradientTexture1D_jtpd6")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3abmc"]
+
+[sub_resource type="Gradient" id="Gradient_jtpd6"]
+colors = PackedColorArray(0.22, 0.22, 0.22, 0.5882353, 0.22, 0.22, 0.22, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jaqhu"]
+gradient = SubResource("Gradient_jtpd6")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_1ylo4"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(20, 20, 1)
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 1.0
+emission_ring_radius = 1.0
+emission_ring_inner_radius = 0.1
+emission_ring_cone_angle = 90.0
+angle_min = 1.0728835e-05
+angle_max = 360.00003
+angular_velocity_min = -10.000016
+angular_velocity_max = 9.999984
+gravity = Vector3(0, 0, 0)
+scale_min = 5.0
+scale_max = 10.0
+color_ramp = SubResource("GradientTexture1D_jaqhu")
+
+[node name="Morė" type="Node2D" unique_id=123869013]
+
+[node name="Laužas" type="Node2D" parent="." unique_id=1094109159]
+scale = Vector2(1.25, 1.25)
+
+[node name="Node2D" type="Node2D" parent="Laužas" unique_id=1229257632]
+
+[node name="Polygon2D11" type="Polygon2D" parent="Laužas/Node2D" unique_id=2087155544]
+color = Color(0.51304513, 0.2709772, 0, 1)
+polygon = PackedVector2Array(-16.811436, 5.314129, -3.9064713, -10.49614, -2.0822105, -9.1448345, -13.973698, 7.1383896)
+
+[node name="Polygon2D12" type="Polygon2D" parent="Laužas/Node2D" unique_id=1368295593]
+color = Color(0.5891585, 0.31377256, 4.813075e-07, 1)
+polygon = PackedVector2Array(-6.3388214, 11.057175, 12.241627, 14.367874, 13.187534, 10.651783, -5.0550804, 7.2735214)
+
+[node name="Polygon2D13" type="Polygon2D" parent="Laužas/Node2D" unique_id=521957691]
+color = Color(0.3173595, 0.15817115, 9.62615e-08, 1)
+polygon = PackedVector2Array(5.8229256, -14.75275, 14.201015, -3.1990929, 11.430843, -1.9153519, 3.1878777, -11.982576)
+
+[node name="Polygon2D14" type="Polygon2D" parent="Laužas/Node2D" unique_id=1267697901]
+color = Color(0.8612523, 0.46954298, 7.70092e-07, 1)
+polygon = PackedVector2Array(16.092846, -8.063791, 17.444149, 12.27335, 14.471279, 12.408482, 11.701099, -8.671879)
+
+[node name="Polygon2D15" type="Polygon2D" parent="Laužas/Node2D" unique_id=1814295632]
+color = Color(0.2814108, 0.13759089, 7.219613e-08, 1)
+polygon = PackedVector2Array(-9.717083, -5.563877, -8.433346, 13.016567, -4.8523865, 13.151699, -6.6090813, -7.388138)
+
+[node name="Polygon2D16" type="Polygon2D" parent="Laužas/Node2D" unique_id=1942874779]
+color = Color(0.6467128, 0.34672204, 0, 1)
+polygon = PackedVector2Array(-3.8389091, -14.550055, 4.6067505, 4.773609, 8.525532, 2.543953, -1.406559, -15.90136)
+
+[node name="Polygon2D17" type="Polygon2D" parent="Laužas/Node2D" unique_id=1980155050]
+color = Color(0.63, 0.3045, 0, 1)
+polygon = PackedVector2Array(-16.270916, 8.4896965, 2.579792, 17.40831, 4.8770103, 14.908394, -13.298042, 5.8546524)
+
+[node name="Polygon2D" type="Polygon2D" parent="Laužas" unique_id=1685817533]
+color = Color(0.34271464, 0.1732316, 2.4065375e-08, 1)
+polygon = PackedVector2Array(-19.167397, 15.8312645, -16.469513, 18.888866, 0.030975342, 1.7563171, -2.266243, -0.81116104)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Laužas" unique_id=1214472426]
+color = Color(0.34841663, 0.12841684, 9.62615e-08, 1)
+polygon = PackedVector2Array(1.4264297, 22.57597, 4.8437424, 23.295406, 0.639061, 0.47257996, -1.9959831, 0.7428398)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Laužas" unique_id=625750559]
+color = Color(0.23484072, 0.11132742, 0, 1)
+polygon = PackedVector2Array(-0.5520172, -22.208853, 3.135086, -21.669277, 0.57149506, 0.06718826, -2.7392006, -1.9597702)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Laužas" unique_id=1997516621]
+color = Color(0.42468575, 0.21814358, 1.92523e-07, 1)
+polygon = PackedVector2Array(-15.840008, -10.967682, -13.861565, -14.654785, 0.44194794, -2.064188, -1.5174446, 0.5032921)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Laužas" unique_id=397596450]
+color = Color(0.3980749, 0.20722216, 2.4065375e-07, 1)
+polygon = PackedVector2Array(21.480675, -3.4136162, 23.009476, 0.2734871, 2.8067322, 1.1113796, 1.658123, -2.064188)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Laužas" unique_id=212001450]
+color = Color(0.42468575, 0.21814358, 1.92523e-07, 1)
+polygon = PackedVector2Array(12.48774, -18.701607, 14.9158325, -15.913799, 4.8437424, -2.8740387, 1.0667114, -4.312908)
+
+[node name="Polygon2D7" type="Polygon2D" parent="Laužas" unique_id=684330357]
+color = Color(0.3349895, 0.16879848, 0, 1)
+polygon = PackedVector2Array(12.75753, 19.068722, 16.444633, 17.270138, 1.4554291, -0.44262123, -0.9769211, 0.9762497)
+
+[node name="Polygon2D8" type="Polygon2D" parent="Laužas" unique_id=871157430]
+color = Color(0.30473495, 0.1680046, 0, 1)
+polygon = PackedVector2Array(-9.625275, 16.516256, -6.8550987, 17.529737, 0.7122078, 2.124857, -1.8552704, 0.77355385)
+
+[node name="Polygon2D9" type="Polygon2D" parent="Laužas" unique_id=1011490445]
+color = Color(0.38, 0.16466667, 0, 1)
+polygon = PackedVector2Array(-20.336475, 0.54327774, 1.3878632, 2.5978146, 1.658123, -0.17235947, -18.358032, -3.3236847)
+
+[node name="Polygon2D10" type="Polygon2D" parent="Laužas" unique_id=1645210700]
+color = Color(0.42468575, 0.21814358, 1.92523e-07, 1)
+polygon = PackedVector2Array(25.617432, 8.007412, 24.987923, 11.06501, 0.10412216, 3.273466, 1.9283829, 0.9086838)
+
+[node name="Ugnis" type="GPUParticles2D" parent="." unique_id=60967889]
+material = SubResource("CanvasItemMaterial_5o5it")
+amount = 100
+process_material = SubResource("ParticleProcessMaterial_jaqhu")
+
+[node name="Rąstas" type="Polygon2D" parent="." unique_id=220623311]
+color = Color(0.23821047, 0.108512305, 6.016344e-08, 1)
+polygon = PackedVector2Array(-0.10306549, -5.182152, 5.146473, -3.2294245, 5.719557, 0.81082535, 4.1149197, 5.481469, -0.5557251, 5.8826284, -3.363842, 2.7593145, -4.62463, -2.111909)
+
+[node name="Polygon2D" type="Polygon2D" parent="Rąstas" unique_id=397051968]
+color = Color(0.48302364, 0.25477117, 9.62615e-08, 1)
+polygon = PackedVector2Array(-1.0749006, -3.3323996, 0.9711838, -3.8483686, 3.764533, -2.5139658, 4.77868, 0.27938414, 3.4798613, 4.318177, 0.35919094, 4.677329, -1.9111271, 3.0905266, -3.252593, 0.21152687, -3.4768262, -1.9090366)
+
+[node name="Line2D" type="Line2D" parent="Rąstas/Polygon2D" unique_id=395351778]
+points = PackedVector2Array(0.051070213, -2.734928, 2.4704628, -2.0168433, 3.2548323, -0.028301716, 2.9565506, 2.269569, 1.7965679, 3.2086024, -0.87691593, 2.2916641, -2.2026105, -0.91209793)
+closed = true
+width = 0.5
+default_color = Color(0.23529412, 0.105882354, 0, 1)
+
+[node name="Line2D2" type="Line2D" parent="Rąstas/Polygon2D" unique_id=1178951022]
+points = PackedVector2Array(0.97905636, -1.4202809, 1.6308565, 0.11531544, 1.5203819, 1.7724338, -0.33559036, 1.0874915, -0.79958344, -0.85686064)
+closed = true
+width = 0.5
+default_color = Color(0.23529412, 0.105882354, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="Rąstas/Polygon2D" unique_id=1843079233]
+points = PackedVector2Array(0.537158, -0.4370575, 0.60344315, 0.32521677, -0.19197369, -0.07249117)
+closed = true
+width = 0.5
+default_color = Color(0.23529412, 0.105882354, 0, 1)
+
+[node name="Kūnas" type="Polygon2D" parent="." unique_id=878172251]
+color = Color(0.83198065, 0.6506444, 3.85046e-07, 1)
+polygon = PackedVector2Array(1.2658024, -5.0813713, 5.158863, -3.5118246, 6.2477245, 1.2734375, 4.9582825, 4.912527, 2.4080544, 5.9727345, 2.8092136, 8.952778, 7.561696, 9.838861, 11.255963, 9.38892, 13.789853, 7.518104, 13.884578, 5.623608, 14.831826, 3.8475175, 14.737102, 1.5504403, 13.880078, 0.1580224, 14.54765, -1.480753, 14.580938, -3.6207857, 13.600405, -4.914523, 12.379736, -7.351495, 10.498165, -9.200822, 6.4723606, -9.5086775, 2.264782, -8.411703)
+
+[node name="KairėRanka" type="Line2D" parent="Kūnas" unique_id=1537155628]
+points = PackedVector2Array(3.6377678, -5.963941, -2.5404816, -6.3693237, -6.929452, -0.5668459)
+width = 3.0
+default_color = Color(0.83137256, 0.64705884, 0, 1)
+
+[node name="Line2D" type="Line2D" parent="Kūnas/KairėRanka" unique_id=250868315]
+points = PackedVector2Array(5.312935, -8.355709, 2.919098, -8.032218, 0.23411751, -6.835299, -2.6773071, -7.2720127, -4.650606, -5.1693172, -4.9255743, -3.0180979, -6.3812866, -2.92105, -6.785651, -1.0124502)
+width = 0.5
+default_color = Color(0.641958, 0.4657917, 3.85046e-07, 1)
+
+[node name="Line2D2" type="Line2D" parent="Kūnas/KairėRanka" unique_id=1604612286]
+points = PackedVector2Array(4.568905, -6.5603313, 3.1617165, -7.0940924, 1.4472103, -5.832475, -1.5289125, -6.3177123, -3.7124805, -6.835299, -3.5992584, -4.3282394, -4.9093995, -3.9400492, -6.0416203, -1.3359413)
+width = 0.5
+default_color = Color(0.9821246, 0.7662368, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="Kūnas/KairėRanka" unique_id=785700479]
+points = PackedVector2Array(3.6469536, -5.007571, 0.02384758, -7.1911397, -1.7877054, -5.735428, -3.8095284, -4.0047474, -4.666781, -1.9182262)
+width = 0.5
+default_color = Color(0.6922601, 0.4089389, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="Kūnas/KairėRanka" unique_id=758077218]
+points = PackedVector2Array(4.795349, -6.220665, 1.9000988, -5.2825394, -0.54226303, -5.42811, -2.2567682, -6.172141, -3.1140213, -4.1179695, -5.782827, -3.7459545, -6.0416203, -0.8345299)
+width = 0.5
+default_color = Color(0.71, 0.46149996, 0, 1)
+
+[node name="Line2D5" type="Line2D" parent="Kūnas/KairėRanka" unique_id=1899448354]
+points = PackedVector2Array(4.7370567, -7.681207, 2.3108702, -6.2549033, 1.5756617, -7.328307, -0.8064127, -6.3725367, -1.8945208, -4.990345, -3.2914166, -5.3873577, -4.6736083, -2.917058, -6.908641, -1.3290081)
+width = 0.5
+default_color = Color(1, 0.73333335, 0, 1)
+
+[node name="DešinėRanka" type="Line2D" parent="Kūnas" unique_id=1217973868]
+points = PackedVector2Array(4.8445797, 7.7767086, -2.5058098, 7.3259773, -7.1202717, -0.20529318)
+width = 3.0
+default_color = Color(0.83137256, 0.64705884, 0, 1)
+
+[node name="Line2D" type="Line2D" parent="Kūnas/DešinėRanka" unique_id=1527868338]
+points = PackedVector2Array(5.2215614, 5.325779, 2.8552208, 6.446677, 0.4532957, 6.7669344, -2.5001822, 5.325779, -5.2223644, 3.7067041, -4.6174355, 1.8385401, -6.450015, 0.2550478)
+width = 0.5
+default_color = Color(0.59025335, 0.4559378, 3.85046e-07, 1)
+
+[node name="Line2D2" type="Line2D" parent="Kūnas/DešinėRanka" unique_id=2044321148]
+points = PackedVector2Array(7.196478, 9.008731, 2.8730125, 6.7491426, 1.9300346, 8.047961, -1.1835718, 8.154714, -2.6781025, 6.517846, -3.3542004, 4.0803366, -4.2793865, 5.663829, -5.524829, 2.2121725, -7.4285774, 1.1268578)
+width = 0.5
+default_color = Color(0.6431373, 0.46666667, 0, 1)
+
+[node name="Line2D3" type="Line2D" parent="Kūnas/DešinėRanka" unique_id=533893302]
+points = PackedVector2Array(6.8940144, 9.097692, 3.513527, 8.635098, -0.61422634, 7.1583586, -2.1977177, 7.923417, -3.4965363, 6.322133, -3.9591293, 2.8348942, -7.6242895, 0.575305)
+width = 0.5
+default_color = Color(0.74, 0.41933334, 0, 1)
+
+[node name="Line2D4" type="Line2D" parent="Kūnas/DešinėRanka" unique_id=4588109]
+points = PackedVector2Array(5.6841545, 6.589013, 3.0797062, 8.235119, -0.49400234, 5.802412, -3.2496338, 7.3955116, -4.1107683, 3.8002748, -5.9696302, 2.8882704, -6.3610544, 0.20167255)
+width = 0.5
+default_color = Color(0.98039216, 0.7647059, 0, 1)
+
+[node name="Line2D5" type="Line2D" parent="Kūnas/DešinėRanka" unique_id=1871271240]
+points = PackedVector2Array(5.6451874, 7.44339, 4.095146, 8.282995, 1.813139, 6.9697647, -0.081357956, 8.239939, -1.5237579, 6.1301594, -5.3773365, 4.838457, -7.0134926, 2.0612965)
+width = 0.5
+default_color = Color(0.6431373, 0.46666667, 0, 1)
+
+[node name="Skarmalas" type="Polygon2D" parent="Kūnas" unique_id=323242360]
+color = Color(0.46814054, 0.81978077, 0.547548, 1)
+polygon = PackedVector2Array(14.3846655, -0.83998966, 12.040227, -3.3975601, 7.824971, -3.1607475, 6.143605, -1.7398758, 6.593549, 3.7778454, 9.387931, 5.269761, 11.850776, 5.3644857, 15.071422, 2.546423, 14.858291, 4.65405, 14.005767, 5.7907476, 14.195216, 7.803651, 13.247968, 8.372001, 10.500947, 10.12441, 6.8777227, 10.290177, 5.061116, 7.788427, 4.320153, 4.7487745, 5.5752573, 2.6411476, 5.598939, -0.5084524, 5.3621264, -2.6871233, 3.6807604, -4.0369525, 4.187689, -7.7715216, 5.4331694, -9.554674, 8.488046, -9.6020355, 11.211385, -9.223137, 13.319011, -6.1208987, 14.858291, -3.5870094)
+
+[node name="Line2D" type="Line2D" parent="Kūnas/Skarmalas" unique_id=1173796552]
+points = PackedVector2Array(13.210152, -3.6184826, 10.084232, -8.165275, 5.774253, -8.331043)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D2" type="Line2D" parent="Kūnas/Skarmalas" unique_id=1035239268]
+points = PackedVector2Array(10.794668, -3.4763956, 8.734404, -6.6970396, 4.661236, -7.028577)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D3" type="Line2D" parent="Kūnas/Skarmalas" unique_id=1529087867]
+points = PackedVector2Array(8.071329, -3.7842512, 6.129471, -5.5840235, 4.377062, -4.8972683)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D4" type="Line2D" parent="Kūnas/Skarmalas" unique_id=478289396]
+points = PackedVector2Array(13.494326, 5.4750996, 8.85281, 6.2328987, 5.703209, 4.243677)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D5" type="Line2D" parent="Kūnas/Skarmalas" unique_id=217238409]
+points = PackedVector2Array(13.226254, 6.867794, 8.899461, 7.3262615, 5.203061, 6.1227837)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D6" type="Line2D" parent="Kūnas/Skarmalas" unique_id=583877187]
+points = PackedVector2Array(11.85498, 9.031808, 8.367384, 8.967223, 5.611752, 7.761634)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D7" type="Line2D" parent="Kūnas/Skarmalas" unique_id=1899371688]
+points = PackedVector2Array(12.644004, 5.606736, 11.55542, 7.623676, 9.153494, 9.865473)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D8" type="Line2D" parent="Kūnas/Skarmalas" unique_id=1497317115]
+points = PackedVector2Array(10.132057, 5.4530473, 9.402582, 7.605884, 7.4098735, 9.545216)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D9" type="Line2D" parent="Kūnas/Skarmalas" unique_id=1598624695]
+points = PackedVector2Array(7.587795, 4.883702, 6.5914397, 7.2322507, 6.4668956, 9.100414)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D10" type="Line2D" parent="Kūnas/Skarmalas" unique_id=1662836203]
+points = PackedVector2Array(6.680276, -8.826976, 5.5608015, -6.114401, 5.689971, -3.5309973)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D11" type="Line2D" parent="Kūnas/Skarmalas" unique_id=1754873324]
+points = PackedVector2Array(11.459575, -7.3630466, 10.038703, -5.6407776, 9.0914545, -3.8969793)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D12" type="Line2D" parent="Kūnas/Skarmalas" unique_id=1787301531]
+points = PackedVector2Array(9.487866, -8.873442, 7.5485334, -5.973339, 7.174901, -3.642583)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Line2D13" type="Line2D" parent="Kūnas/Skarmalas" unique_id=678159124]
+points = PackedVector2Array(12.811743, -5.6142645, 11.210459, -3.7541876)
+width = 0.25
+default_color = Color(0.30960155, 0.5971732, 0.37686574, 1)
+
+[node name="Virvė" type="Line2D" parent="Kūnas" unique_id=1469940205]
+points = PackedVector2Array(-5.7004395, -2.0138474, -4.9033394, 0.08378792, -6.707306, 2.0555649, -8.214974, -0.26555204, -7.291005, -1.8824973)
+closed = true
+width = 1.0
+default_color = Color(0.4862745, 0.36078432, 0.2627451, 1)
+
+[node name="Line2D" type="Line2D" parent="Kūnas/Virvė" unique_id=1218653340]
+points = PackedVector2Array(-9.078684, 1.0902724, -7.923723, 0.09600115, -8.7070875, -1.4305563)
+width = 1.0
+default_color = Color(0.4862745, 0.36078432, 0.2627451, 1)
+
+[node name="Galva" type="Polygon2D" parent="Kūnas" unique_id=698894650]
+color = Color(1, 0.78039217, 0, 1)
+polygon = PackedVector2Array(6.8787966, -0.86546993, 8.751751, -2.9565759, 12.368517, -2.6336503, 13.466463, 1.6720238, 11.249041, 4.9012785, 6.1683464, 2.8345556)
+
+[node name="Skara" type="Polygon2D" parent="Kūnas/Galva" unique_id=367014969]
+color = Color(1, 0.19999999, 0.19999999, 1)
+polygon = PackedVector2Array(10.79696, -2.8891363, 8.105913, -2.9106646, 5.6086226, -0.09044838, 6.29753, 3.117278, 10.6677885, 4.925662, 11.055301, 1.4165373)
+
+[node name="Pixel" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=752660949]
+position = Vector2(8.870007, 2.8518486)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel2" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=303390378]
+position = Vector2(7.947654, 1.7690887)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel3" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=777298895]
+position = Vector2(9.565111, 1.50174)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel4" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=1024140714]
+position = Vector2(7.2525473, -0.9578657)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel5" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=2070149449]
+position = Vector2(8.509085, 0.48581553)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel6" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=1814668672]
+position = Vector2(6.4505014, 1.4349027)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel7" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=697035703]
+position = Vector2(7.1589756, 0.31203985)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel8" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=439692932]
+position = Vector2(8.42888, -2.0807285)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel9" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=982062811]
+position = Vector2(9.859194, -2.3213422)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel10" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=1214592781]
+position = Vector2(10.286951, -0.87766075)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel11" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=105782834]
+position = Vector2(8.990312, -0.94449806)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel13" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=535749912]
+position = Vector2(10.246849, 0.39224386)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel14" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=881505032]
+position = Vector2(10.44736, 2.5443988)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel15" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=298611626]
+position = Vector2(9.685417, 4.028182)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Pixel16" type="Sprite2D" parent="Kūnas/Galva/Skara" unique_id=643672014]
+position = Vector2(7.265914, 2.9053178)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_1ylo4")
+
+[node name="Dūmai" type="GPUParticles2D" parent="." unique_id=1884187235]
+material = SubResource("CanvasItemMaterial_3abmc")
+amount = 50
+lifetime = 10.0
+process_material = SubResource("ParticleProcessMaterial_1ylo4")
