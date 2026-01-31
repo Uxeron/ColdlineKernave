@@ -27,7 +27,6 @@ func _physics_process(_delta: float) -> void:
 		return
 		
 	if Input.is_action_pressed("attack"):
-		print("Is pressed")
 		can_swing = false
 		model.hit()
 		model.done.connect(func(): can_swing = true; hit_objects = [], ConnectFlags.CONNECT_ONE_SHOT)
@@ -36,7 +35,6 @@ func attack() -> void:
 	var bodies = weapon_collider.get_overlapping_bodies()
 	for body in bodies:
 		if body is Goon and not hit_objects.has(body):
-			print("damaging ", body.name)
 			body.health -= damage
 			var direction = Vector2.RIGHT.rotated(global_rotation)
 			body.knockback = direction * knockback
