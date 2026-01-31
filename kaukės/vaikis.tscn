@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cbfigy328332q"]
+
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_varx7"]
+
+[node name="Vaikis" type="Node2D" unique_id=848388788]
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1070297736]
+color = Color(0.8784314, 0.72156864, 0.7058824, 1)
+polygon = PackedVector2Array(-0.60208607, 4.2762785, -1.4696312, 3.6292953, -2.675373, 1.5560083, -2.793006, -0.1937871, -2.02839, -1.9435825, -0.11684799, -2.4435244, 2.441677, -2.0465117, 3.206293, -0.5172787, 2.8975048, 1.7324581, 1.4859047, 3.6145916, -0.04332733, 4.2615747)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D" unique_id=577795023]
+polygon = PackedVector2Array(-1.640625, -0.203125, -1.1015625, -0.6796875, -0.375, -0.5234375, -0.1171875, -0.1484375, -0.6328125, 0.1171875, -1.3671875, 0.0703125)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Polygon2D" unique_id=444278006]
+polygon = PackedVector2Array(0.5703125, -0.28125, 1.046875, -0.546875, 1.78125, -0.578125, 2.4296875, -0.2890625, 1.8828125, 0.0546875, 1.140625, 0.09375)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Polygon2D" unique_id=52781974]
+color = Color(1.0877549e-05, 0.104002886, 0.35883668, 1)
+polygon = PackedVector2Array(2.1875, 2.71875, 1.9609375, 3.25, 1.375, 3.8671875, 0.28125, 4.1640625, -0.25, 4.3828125, -0.9609375, 4.25, -1.4453125, 3.8046875, -1.71875, 3.453125, -1.84375, 2.8203125, -1.09375, 2.6640625, 0.171875, 2.28125, 1.359375, 2.6171875)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Polygon2D" unique_id=1883336829]
+color = Color(0, 0.15294118, 0.4862745, 1)
+polygon = PackedVector2Array(-2.7689404, 1.0593224, -1.4231596, 1.380703, -0.107507706, 0.64755344, 0.7662449, 0.7479849, 1.5797396, 1.3204441, 2.4334068, 1.451005, 2.9857788, 1.1798401, 3.0460377, 1.8426867, 2.1120262, 3.0277777, 0.7662449, 3.25877, -0.25815487, 2.7164402, -1.3629007, 3.2085543, -1.8951869, 3.2386837, -2.4475598, 2.1540241, -2.79907, 1.4309187)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Polygon2D" unique_id=1243305930]
+color = Color(0.49803922, 0.44313726, 1, 1)
+polygon = PackedVector2Array(-2.546875, -1.0234375, -1.2421875, -1.2890625, 1.2890625, -1.1953125, 2.6796875, -0.921875, 3.125, -1, 2.7734375, -1.9453125, 1.9375, -2.3984375, -0.078125, -2.6953125, -1.828125, -2.2578125, -2.4921875, -1.515625)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Polygon2D" unique_id=517368385]
+polygon = PackedVector2Array(0.03125, -2.296875, -0.53125, -2.4296875, -0.75, -2.7265625, -0.53125, -3.3828125, 0.3984375, -3.4375, 1.0234375, -2.8046875, 0.609375, -2.3203125)
+
+[node name="Polygon2D7" type="Polygon2D" parent="Polygon2D" unique_id=1129195055]
+
+[node name="Pixel" type="Sprite2D" parent="Polygon2D" unique_id=800554608]
+self_modulate = Color(0.0008232374, 0.2539584, 0, 1)
+position = Vector2(-0.90625, -0.2421875)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_varx7")
+
+[node name="Pixel2" type="Sprite2D" parent="Polygon2D" unique_id=136920562]
+self_modulate = Color(0.0008232374, 0.2539584, 0, 1)
+position = Vector2(1.5234375, -0.234375)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_varx7")

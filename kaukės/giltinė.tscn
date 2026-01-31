@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d3iw4bmywphc6"]
+
+[node name="Giltinė" type="Node2D" unique_id=256331029]
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=712443395]
+self_modulate = Color(0.09239707, 0.09239706, 0.09239706, 1)
+polygon = PackedVector2Array(-5.4384947, 6.827343, -3.5009413, 4.136297, -2.7905054, 0.3688326, -1.9508982, -2.8388944, 0.20193863, -4.001426, 1.8165665, -3.764614, 3.0221539, -1.5687203, 3.6464767, 2.0049887, 4.399971, 4.4376945, 6.4236374, 6.289134, 5.9930687, 7.021099, 3.6034203, 7.4086094, 1.2998848, 6.848872, -1.1056318, 7.172606, -4.3890715, 7.269654)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D" unique_id=924457645]
+polygon = PackedVector2Array(-0.4147892, 2.73709, -0.38538074, 0.53146553, -1.8705015, 0.54616976, -2.0469513, -0.4978261, -1.5323057, -2.027059, 1.70261, -2.0564675, 2.6436768, -0.73309255, 2.467227, 0.88436556, 1.2908936, 0.6785073, 1.540865, 2.91354)
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D/Polygon2D" unique_id=1771589204]
+color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+polygon = PackedVector2Array(-0.49196386, -0.440588, -1.512878, -0.44888806, -1.3385754, -1.5445032, -0.11015844, -1.4283016)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Polygon2D/Polygon2D" unique_id=864068485]
+color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+polygon = PackedVector2Array(0.827755, -1.4366019, 0.98545647, -0.42398763, 2.2304745, -0.4073875, 1.715867, -1.4781024)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Polygon2D/Polygon2D" unique_id=306702970]
+color = Color(0.09411765, 0.09411765, 0.09411765, 1)
+polygon = PackedVector2Array(0.1056447, -0.86389375, -0.20145988, 0.12381983, 0.8194542, 0.09891963, 0.44594955, -0.96349525)
