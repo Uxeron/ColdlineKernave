@@ -1,0 +1,1825 @@
+[gd_scene format=3 uid="uid://doq5y0hrvkwtl"]
+
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="1_upp30"]
+[ext_resource type="PackedScene" uid="uid://buwphuovv6why" path="res://morė/morė.tscn" id="1_vtvpv"]
+[ext_resource type="PackedScene" uid="uid://kwfl4q7srnp4" path="res://player/kanapinis/kanapinis.tscn" id="3_8k6ib"]
+[ext_resource type="PackedScene" uid="uid://cfjrgixhq3m7i" path="res://kiemas/eglė.tscn" id="4_8k6ib"]
+
+[node name="Kiemas" type="Node2D" unique_id=99648339]
+
+[node name="Pixel" type="Sprite2D" parent="." unique_id=1242335255]
+self_modulate = Color(0.9490196, 0.9490196, 0.9490196, 1)
+position = Vector2(-278, 147)
+scale = Vector2(20255.158, -14211.426)
+texture = ExtResource("1_upp30")
+
+[node name="Parkingas" type="Sprite2D" parent="." unique_id=991382783]
+self_modulate = Color(0.24115619, 0.24115601, 0.24115604, 1)
+position = Vector2(-1185.9999, -1252)
+rotation = 3.1415927
+scale = Vector2(2071.0107, -2284.1487)
+texture = ExtResource("1_upp30")
+
+[node name="Eilė" type="Node2D" parent="Parkingas" unique_id=1655300161]
+position = Vector2(0.045871258, 0.1812492)
+scale = Vector2(0.7962015, 0.41903213)
+
+[node name="Vieta" type="Line2D" parent="Parkingas/Eilė" unique_id=642844616]
+position = Vector2(0.00060641766, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta2" type="Line2D" parent="Parkingas/Eilė" unique_id=1154079594]
+position = Vector2(-0.06428367, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta3" type="Line2D" parent="Parkingas/Eilė" unique_id=1919829217]
+position = Vector2(-0.12917376, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta4" type="Line2D" parent="Parkingas/Eilė" unique_id=1599434426]
+position = Vector2(-0.19406384, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta5" type="Line2D" parent="Parkingas/Eilė" unique_id=625871886]
+position = Vector2(-0.25895393, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta15" type="Line2D" parent="Parkingas/Eilė" unique_id=1970466498]
+position = Vector2(-0.323844, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta16" type="Line2D" parent="Parkingas/Eilė" unique_id=219364771]
+position = Vector2(-0.3887341, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta17" type="Line2D" parent="Parkingas/Eilė" unique_id=616383543]
+position = Vector2(-0.4536242, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta18" type="Line2D" parent="Parkingas/Eilė" unique_id=291746426]
+position = Vector2(-0.5185143, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta19" type="Line2D" parent="Parkingas/Eilė" unique_id=779162228]
+position = Vector2(-0.5834043, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta21" type="Line2D" parent="Parkingas/Eilė" unique_id=1762768493]
+position = Vector2(-0.7113652, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Eilė2" type="Node2D" parent="Parkingas" unique_id=1091572888]
+position = Vector2(-0.027040064, 0.3397327)
+rotation = -3.1415925
+scale = Vector2(0.7962015, 0.41903213)
+
+[node name="Vieta" type="Line2D" parent="Parkingas/Eilė2" unique_id=1267338442]
+position = Vector2(0.00060641766, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta2" type="Line2D" parent="Parkingas/Eilė2" unique_id=1016891304]
+position = Vector2(-0.06428367, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta3" type="Line2D" parent="Parkingas/Eilė2" unique_id=61971587]
+position = Vector2(-0.12917376, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta4" type="Line2D" parent="Parkingas/Eilė2" unique_id=206425089]
+position = Vector2(-0.19406384, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta5" type="Line2D" parent="Parkingas/Eilė2" unique_id=1318817399]
+position = Vector2(-0.25895393, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta15" type="Line2D" parent="Parkingas/Eilė2" unique_id=101853882]
+position = Vector2(-0.323844, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta16" type="Line2D" parent="Parkingas/Eilė2" unique_id=1949411778]
+position = Vector2(-0.3887341, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta17" type="Line2D" parent="Parkingas/Eilė2" unique_id=475070002]
+position = Vector2(-0.4536242, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta18" type="Line2D" parent="Parkingas/Eilė2" unique_id=1509651204]
+position = Vector2(-0.5185143, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta19" type="Line2D" parent="Parkingas/Eilė2" unique_id=367981119]
+position = Vector2(-0.5834043, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta21" type="Line2D" parent="Parkingas/Eilė2" unique_id=1985855277]
+position = Vector2(-0.7113652, 0.013582182)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Eilė3" type="Node2D" parent="Parkingas" unique_id=1057793428]
+position = Vector2(0.046836972, -0.07705277)
+scale = Vector2(0.7962015, 0.41903213)
+
+[node name="Vieta" type="Line2D" parent="Parkingas/Eilė3" unique_id=1376389192]
+position = Vector2(0.00060641766, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta2" type="Line2D" parent="Parkingas/Eilė3" unique_id=1096144204]
+position = Vector2(-0.06428367, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta3" type="Line2D" parent="Parkingas/Eilė3" unique_id=1638873605]
+position = Vector2(-0.12917376, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta4" type="Line2D" parent="Parkingas/Eilė3" unique_id=1021843247]
+position = Vector2(-0.19406384, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta5" type="Line2D" parent="Parkingas/Eilė3" unique_id=1523994207]
+position = Vector2(-0.25895393, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta15" type="Line2D" parent="Parkingas/Eilė3" unique_id=1773895763]
+position = Vector2(-0.323844, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta16" type="Line2D" parent="Parkingas/Eilė3" unique_id=2133433185]
+position = Vector2(-0.3887341, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta17" type="Line2D" parent="Parkingas/Eilė3" unique_id=1297125349]
+position = Vector2(-0.4536242, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta18" type="Line2D" parent="Parkingas/Eilė3" unique_id=1169789457]
+position = Vector2(-0.5185143, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta19" type="Line2D" parent="Parkingas/Eilė3" unique_id=246181207]
+position = Vector2(-0.5834043, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta21" type="Line2D" parent="Parkingas/Eilė3" unique_id=172803918]
+position = Vector2(-0.7113652, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Eilė4" type="Node2D" parent="Parkingas" unique_id=1976331050]
+position = Vector2(-0.02607429, 0.08143073)
+rotation = -3.1415925
+scale = Vector2(0.7962015, 0.41903213)
+
+[node name="Vieta" type="Line2D" parent="Parkingas/Eilė4" unique_id=1482603777]
+position = Vector2(0.00060641766, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta2" type="Line2D" parent="Parkingas/Eilė4" unique_id=1210896031]
+position = Vector2(-0.06428367, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta3" type="Line2D" parent="Parkingas/Eilė4" unique_id=1786942323]
+position = Vector2(-0.12917376, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta4" type="Line2D" parent="Parkingas/Eilė4" unique_id=1085539440]
+position = Vector2(-0.19406384, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta5" type="Line2D" parent="Parkingas/Eilė4" unique_id=623483174]
+position = Vector2(-0.25895393, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta15" type="Line2D" parent="Parkingas/Eilė4" unique_id=786371209]
+position = Vector2(-0.323844, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta16" type="Line2D" parent="Parkingas/Eilė4" unique_id=582741774]
+position = Vector2(-0.3887341, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta17" type="Line2D" parent="Parkingas/Eilė4" unique_id=411471776]
+position = Vector2(-0.4536242, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta18" type="Line2D" parent="Parkingas/Eilė4" unique_id=1725309603]
+position = Vector2(-0.5185143, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta19" type="Line2D" parent="Parkingas/Eilė4" unique_id=930408021]
+position = Vector2(-0.5834043, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta21" type="Line2D" parent="Parkingas/Eilė4" unique_id=1798490515]
+position = Vector2(-0.7113652, 0.013582182)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Eilė5" type="Node2D" parent="Parkingas" unique_id=79905555]
+position = Vector2(0.04200852, -0.34323496)
+scale = Vector2(0.7962015, 0.41903213)
+
+[node name="Vieta" type="Line2D" parent="Parkingas/Eilė5" unique_id=852131555]
+position = Vector2(0.00060641766, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta2" type="Line2D" parent="Parkingas/Eilė5" unique_id=1144248919]
+position = Vector2(-0.06428367, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta3" type="Line2D" parent="Parkingas/Eilė5" unique_id=515896217]
+position = Vector2(-0.12917376, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta4" type="Line2D" parent="Parkingas/Eilė5" unique_id=1422583499]
+position = Vector2(-0.19406384, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta5" type="Line2D" parent="Parkingas/Eilė5" unique_id=1704168351]
+position = Vector2(-0.25895393, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta15" type="Line2D" parent="Parkingas/Eilė5" unique_id=970803654]
+position = Vector2(-0.323844, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta16" type="Line2D" parent="Parkingas/Eilė5" unique_id=1992159648]
+position = Vector2(-0.3887341, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta17" type="Line2D" parent="Parkingas/Eilė5" unique_id=1233227864]
+position = Vector2(-0.4536242, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta18" type="Line2D" parent="Parkingas/Eilė5" unique_id=1144700074]
+position = Vector2(-0.5185143, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta19" type="Line2D" parent="Parkingas/Eilė5" unique_id=1609552784]
+position = Vector2(-0.5834043, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta21" type="Line2D" parent="Parkingas/Eilė5" unique_id=1051899896]
+position = Vector2(-0.7113652, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Eilė6" type="Node2D" parent="Parkingas" unique_id=697941901]
+position = Vector2(-0.030902803, -0.18475151)
+rotation = -3.1415925
+scale = Vector2(0.7962015, 0.41903213)
+
+[node name="Vieta" type="Line2D" parent="Parkingas/Eilė6" unique_id=1517378097]
+position = Vector2(0.00060641766, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta2" type="Line2D" parent="Parkingas/Eilė6" unique_id=1357602166]
+position = Vector2(-0.06428367, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta3" type="Line2D" parent="Parkingas/Eilė6" unique_id=439952549]
+position = Vector2(-0.12917376, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta4" type="Line2D" parent="Parkingas/Eilė6" unique_id=674800829]
+position = Vector2(-0.19406384, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta5" type="Line2D" parent="Parkingas/Eilė6" unique_id=1272302376]
+position = Vector2(-0.25895393, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta15" type="Line2D" parent="Parkingas/Eilė6" unique_id=1521965250]
+position = Vector2(-0.323844, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta16" type="Line2D" parent="Parkingas/Eilė6" unique_id=1711355217]
+position = Vector2(-0.3887341, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta17" type="Line2D" parent="Parkingas/Eilė6" unique_id=1348335365]
+position = Vector2(-0.4536242, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta18" type="Line2D" parent="Parkingas/Eilė6" unique_id=1124770016]
+position = Vector2(-0.5185143, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta19" type="Line2D" parent="Parkingas/Eilė6" unique_id=413790315]
+position = Vector2(-0.5834043, 0.013581991)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta21" type="Line2D" parent="Parkingas/Eilė6" unique_id=1933543796]
+position = Vector2(-0.7113652, 0.013582182)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.34203744, 0.17552447, 0.34203744, 0.32388437)
+width = 0.005
+
+[node name="Vieta" type="Line2D" parent="Parkingas" unique_id=1791097018]
+position = Vector2(0.00060641766, 0.01358211)
+scale = Vector2(0.99999994, 0.9999999)
+points = PackedVector2Array(0.475, 0.45, 0.475, -0.5, -0.475, -0.5, -0.475, 0.45)
+closed = true
+width = 0.005
+
+[node name="Mašinos" type="Node2D" parent="Parkingas" unique_id=612383623]
+position = Vector2(-0.6050187, 0.6352475)
+rotation = -3.1415925
+scale = Vector2(0.000482856, -0.00043779984)
+
+[node name="DominykoMašina" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=1226911672]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1864.9999, -774.99994)
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=293103592]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina/Kėbulas" unique_id=320451995]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina/Kėbulas" unique_id=947465234]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=1942353052]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina/Ratai" unique_id=1096547832]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina/Ratai" unique_id=841500749]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina/Ratai" unique_id=1535060345]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina/Ratai" unique_id=1133155220]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=49156077]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=1269605497]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=1517827921]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=1800608575]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=106295455]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=353152802]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=662798201]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=1134107630]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina" unique_id=607425053]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina2" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=509416296]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1548, -779)
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=1361870259]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2/Kėbulas" unique_id=2054133645]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2/Kėbulas" unique_id=958393948]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=2142253151]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina2/Ratai" unique_id=1009629512]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina2/Ratai" unique_id=763871415]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina2/Ratai" unique_id=2097703228]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina2/Ratai" unique_id=816802432]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=1413573636]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=1145606477]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=284600960]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=1541437698]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=1886642010]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=1522088562]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=420841485]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=1948404949]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina2" unique_id=1375179322]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina3" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=1221591394]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-785.00006, -781)
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=1045923406]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3/Kėbulas" unique_id=575007927]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3/Kėbulas" unique_id=1184182429]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=1852783804]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina3/Ratai" unique_id=621396316]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina3/Ratai" unique_id=1953366439]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina3/Ratai" unique_id=1224756837]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina3/Ratai" unique_id=1015357439]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=1346321104]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=2146582035]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=814794013]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=294080814]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=253806003]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=1312606104]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=1506021307]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=1186285571]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina3" unique_id=1455803655]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina4" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=1586988436]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1111, -1366)
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=1484816935]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4/Kėbulas" unique_id=2039651783]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4/Kėbulas" unique_id=1167367112]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=1125664665]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina4/Ratai" unique_id=502327258]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina4/Ratai" unique_id=1356731851]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina4/Ratai" unique_id=371853040]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina4/Ratai" unique_id=1534929343]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=2103282994]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=1723902940]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=80756521]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=242175541]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=394313156]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=486882677]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=1326981223]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=1410866395]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina4" unique_id=1339936217]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina5" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=394623339]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1530, -1970)
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=1153620817]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5/Kėbulas" unique_id=683515744]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5/Kėbulas" unique_id=1298149658]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=1052024260]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina5/Ratai" unique_id=759096297]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina5/Ratai" unique_id=2145689489]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina5/Ratai" unique_id=1634006843]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina5/Ratai" unique_id=1248051980]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=1313022033]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=276592107]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=1392999076]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=740895109]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=1159779526]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=601521577]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=1720905809]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=703221061]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina5" unique_id=1856292867]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina6" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=389204068]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1648, -1366)
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=669998273]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6/Kėbulas" unique_id=1118147801]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6/Kėbulas" unique_id=302438252]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=1602857628]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina6/Ratai" unique_id=337273295]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina6/Ratai" unique_id=691446722]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina6/Ratai" unique_id=1107354701]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina6/Ratai" unique_id=336957744]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=1662027182]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=1257699679]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=692524273]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=2129367325]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=2059180912]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=371146692]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=449512903]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=1469153192]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina6" unique_id=1266666846]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina7" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=756248735]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1754.9999, -1532)
+rotation = -3.1415925
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=197474759]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7/Kėbulas" unique_id=1150328620]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7/Kėbulas" unique_id=224415630]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=1481302724]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina7/Ratai" unique_id=268457474]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina7/Ratai" unique_id=1539019273]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina7/Ratai" unique_id=55544694]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina7/Ratai" unique_id=739538852]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=80479941]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=1764517565]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=1717508439]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=579423443]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=435053268]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=2116280628]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=1667813465]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=784916820]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina7" unique_id=1153302265]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina8" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=825275370]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-904, -1528)
+rotation = -3.1415925
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=1146808091]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8/Kėbulas" unique_id=1003839558]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8/Kėbulas" unique_id=171434943]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=453774463]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina8/Ratai" unique_id=768392610]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina8/Ratai" unique_id=1122446786]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina8/Ratai" unique_id=336279830]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina8/Ratai" unique_id=1452540119]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=1985719505]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=586862212]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=1412004923]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=1469521478]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=1185175340]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=1895903954]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=1310712089]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=956384099]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina8" unique_id=842193754]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina9" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=2062983433]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-688, -1526.9999)
+rotation = -3.1415925
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=821182258]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9/Kėbulas" unique_id=316083565]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9/Kėbulas" unique_id=1207096434]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=467719366]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina9/Ratai" unique_id=1395977806]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina9/Ratai" unique_id=1571023018]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina9/Ratai" unique_id=151070019]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina9/Ratai" unique_id=1654435665]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=1861895800]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=993877379]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=2067410144]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=1981099439]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=55335754]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=299389954]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=1888751354]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=157742002]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina9" unique_id=432100835]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina10" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=956332996]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-782, -2137)
+rotation = -3.1415925
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=1993627856]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10/Kėbulas" unique_id=554253377]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10/Kėbulas" unique_id=431948837]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=1351422168]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina10/Ratai" unique_id=290141168]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina10/Ratai" unique_id=1513663099]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina10/Ratai" unique_id=1100622701]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina10/Ratai" unique_id=2018786159]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=988597529]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=352353490]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=814338098]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=1787247758]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=1427830556]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=592714339]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=1032547319]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=250088318]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina10" unique_id=755683833]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina11" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=469744250]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1850.9999, -2132)
+rotation = -3.1415925
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=1349364009]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11/Kėbulas" unique_id=1823837550]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11/Kėbulas" unique_id=1909524469]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=1494659210]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina11/Ratai" unique_id=169508932]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina11/Ratai" unique_id=1062198241]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina11/Ratai" unique_id=774842951]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina11/Ratai" unique_id=1534687975]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=1572716595]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=1568296926]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=931674094]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=271071555]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=1418645776]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=1771422303]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=2141641452]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=1662530765]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina11" unique_id=92012129]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina12" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=1575381701]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1317, -2140)
+rotation = -3.1415925
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=663362329]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12/Kėbulas" unique_id=1253982248]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12/Kėbulas" unique_id=2066702280]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=1099247151]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina12/Ratai" unique_id=2107487065]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina12/Ratai" unique_id=492804218]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina12/Ratai" unique_id=1723967241]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina12/Ratai" unique_id=865435153]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=1189995127]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=54867101]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=2023908887]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=40583897]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=1864264070]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=823979171]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=1862698042]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=524683627]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina12" unique_id=1728182410]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina13" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=779115890]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1328, -936)
+rotation = -3.1415925
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=1967025756]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13/Kėbulas" unique_id=1914807052]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13/Kėbulas" unique_id=1405793034]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=545198720]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina13/Ratai" unique_id=1361510383]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina13/Ratai" unique_id=44175406]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina13/Ratai" unique_id=1604862228]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina13/Ratai" unique_id=1194828092]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=536111615]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=46792080]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=1860045459]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=240191902]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=404055356]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=326227660]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=913838351]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=1729273033]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina13" unique_id=721251908]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="DominykoMašina14" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=84391710]
+self_modulate = Color(1, 0.73333335, 0, 0)
+position = Vector2(-1002, -936)
+rotation = -3.1415925
+scale = Vector2(57.728, 132.94185)
+texture = ExtResource("1_upp30")
+
+[node name="Kėbulas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=1312286942]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.73333335, 0, 1)
+polygon = PackedVector2Array(-0.48503494, 0.26327276, -0.48503494, -0.4287591, -0.3810997, -0.48893595, 0.3810959, -0.48893595, 0.48503113, -0.4287591, 0.48503113, 0.27079487, 0.39841843, 0.33097124, -0.39842224, 0.33097124)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14/Kėbulas" unique_id=1618015363]
+position = Vector2(0.017320503, -4.5911167e-07)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14/Kėbulas" unique_id=1448352392]
+position = Vector2(-0.017324746, -4.4703484e-07)
+scale = Vector2(-1, 1)
+color = Color(0.99999994, 0.95030814, 0.75012386, 1)
+polygon = PackedVector2Array(-0.31180954, -0.48141384, -0.31180954, -0.45132542, -0.41574478, -0.4287591, -0.45038986, -0.4438033, -0.3810997, -0.48141384)
+
+[node name="Ratai" type="Node2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=383216771]
+
+[node name="Ratas" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina14/Ratai" unique_id=549168805]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.48503447, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina14/Ratai" unique_id=532043867]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, -0.28583965)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas3" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina14/Ratai" unique_id=1259604961]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(0.48503113, 0.1730074)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Ratas4" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina14/Ratai" unique_id=1609516760]
+self_modulate = Color(0, 0, 0, 1)
+z_index = -4
+position = Vector2(-0.50203013, 0.16396612)
+scale = Vector2(0.10459165, 0.11731468)
+texture = ExtResource("1_upp30")
+
+[node name="Stogas" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=1569311722]
+scale = Vector2(0.99999994, 1)
+color = Color(1, 0.85, 0, 1)
+polygon = PackedVector2Array(-0.45038986, 0.24070644, -0.4677124, -0.25575113, -0.3810997, -0.28583956, 0.39841843, -0.28583956, 0.45038605, -0.25575113, 0.45038605, 0.24822855, 0.39841843, 0.28583908, 0.3606486, 0.3008833, -0.35948136, 0.3008833, -0.39842224, 0.28583908)
+
+[node name="Polygon2D" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=1132407879]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.39842224, -0.26327324, 0.41574097, -0.26327324, 0.3464508, -0.11283159, -0.32913208, -0.11283159)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=1313956153]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, -0.24070692, -0.41574478, -0.24070692, -0.34645462, -0.07522106, -0.34645462, 0.0150437355, -0.43306732, 0.0150437355)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=1619095594]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.43306732, 0.030087948, -0.34645462, 0.030087948, -0.34645462, 0.1880517, -0.3810997, 0.22566223, -0.43306732, 0.24070644)
+
+[node name="Polygon2D4" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=165142482]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.41574097, -0.24822903, 0.4330635, -0.24822903, 0.4330635, 0.0150437355, 0.36377335, 0.0150437355, 0.36377335, -0.09778738)
+
+[node name="Polygon2D5" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=1484813087]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(0.36377335, 0.037610054, 0.4330635, 0.037610054, 0.4330635, 0.24070644, 0.39841843, 0.22566223, 0.36377335, 0.1880517)
+
+[node name="Polygon2D6" type="Polygon2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=1503637160]
+color = Color(0, 0.34901962, 1, 1)
+polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.3464508, 0.25575066, 0.31180573, 0.22566223, -0.294487, 0.22566223, -0.32913208, 0.25575066)
+
+[node name="Pixel" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=480220779]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(-0.32913208, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Pixel2" type="Sprite2D" parent="Parkingas/Mašinos/DominykoMašina14" unique_id=421432257]
+self_modulate = Color(1, 0, 0, 1)
+position = Vector2(0.3464489, 0.31592703)
+scale = Vector2(0.051967844, 0.0112831285)
+texture = ExtResource("1_upp30")
+
+[node name="Morė" parent="." unique_id=123869013 instance=ExtResource("1_vtvpv")]
+
+[node name="Kanapinis" parent="." unique_id=149332413 instance=ExtResource("3_8k6ib")]
+position = Vector2(-1919, -792)
+
+[node name="Kanapinis2" parent="." unique_id=1437584829 instance=ExtResource("3_8k6ib")]
+position = Vector2(-206, 89)
+
+[node name="Eglė" parent="." unique_id=893357924 instance=ExtResource("4_8k6ib")]
+position = Vector2(-140, 94)
+
+[node name="Node2D" parent="." unique_id=407889322 instance=ExtResource("4_8k6ib")]
+position = Vector2(-533.00006, 33.999992)
+rotation = 1.6905246
+scale = Vector2(1.3867637, 1.511171)
+
+[node name="Node2D2" parent="." unique_id=1870284349 instance=ExtResource("4_8k6ib")]
+position = Vector2(-40.99997, 446.99988)
+rotation = -2.9196427
+scale = Vector2(2.1157305, 2.1276417)
+
+[node name="Node2D3" parent="." unique_id=1290749557 instance=ExtResource("4_8k6ib")]
+position = Vector2(-242, 207)
+rotation = -0.47790977
+scale = Vector2(1.6958596, 1.844449)
+
+[node name="Node2D4" parent="." unique_id=1992114577 instance=ExtResource("4_8k6ib")]
+position = Vector2(-815, 180)
+rotation = 0.6416151
+scale = Vector2(2.0682979, 1.9085554)
+
+[node name="Node2D5" parent="." unique_id=115619708 instance=ExtResource("4_8k6ib")]
+position = Vector2(-611, 467)
+rotation = -1.8165641
+scale = Vector2(3.2036552, 2.9087024)
+
+[node name="Node2D6" type="Polygon2D" parent="." unique_id=9943187]
+position = Vector2(-300, 453)
+scale = Vector2(0.32605755, 0.3816465)
+color = Color(0.3779188, 0.37791887, 0.37791884, 1)
+polygon = PackedVector2Array(17, -44, -61, -29, -68, 72, 33, 94, 106, 37)
+
+[node name="Polygon2D" type="Polygon2D" parent="Node2D6" unique_id=1642458100]
+color = Color(0.6255971, 0.6255971, 0.6255971, 1)
+polygon = PackedVector2Array(-40, -16, 14, -27, 39, -7, 55, 15, 32, 11, 13, -6, -26, -7)
+
+[node name="Polygon2D2" type="Polygon2D" parent="Node2D6" unique_id=728109861]
+color = Color(0.6255971, 0.6255971, 0.6255971, 1)
+polygon = PackedVector2Array(-53, 11, -33, 20, -19, 51, 0, 58, 2, 78, -44, 68, -54, 46)
+
+[node name="Polygon2D3" type="Polygon2D" parent="Node2D6" unique_id=1769830911]
+color = Color(0.6255971, 0.6255971, 0.6255971, 1)
+polygon = PackedVector2Array(33, 54, -4, 39, 14, 23, 59, 29, 79, 22, 87, 41, 45, 75, 27, 82)
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1486652109]
+position = Vector2(178, 133)
+color = Color(0.3889075, 0.20740077, 0, 1)
+polygon = PackedVector2Array(-5, -7, 4, -8, 6, -7, 11, -11, 7, -19, 10, -16, 13, -13, 22, -18, 21, -22, 22, -21, 24, -19, 36, -21, 34, -19, 24, -17, 14, -10, 10, -5, 11, 0, 10, 4, 24, 14, 31, 13, 32, 13, 25, 15, 30, 18, 33, 18, 33, 19, 30.463615, 19.62265, 32, 25, 30, 24, 25, 18, 8, 8, 5, 10, 2.9576912, 17.48846, 8, 25, 6, 24, 2, 20, -1, 32, -4, 31, -2.7209454, 26.286022, -5, 27, -5, 26, -2.1190834, 24.067848, -1, 19.943436, -1, 10, -4, 9, -9, 6, -14.214542, 8.979738, -15, 18, -17, 24, -17, 10, -33, 21, -33, 27, -34, 29, -35, 23, -33, 18, -40, 19, -37, 17, -31, 15, -24, 10, -27, 9, -32, 9, -27, 8, -22, 9, -10, 2, -10, 0, -35, -15, -43, -18, -45, -20, -34, -17, -33, -24, -31, -22, -32, -16, -14, -7, -15, -14, -17, -20, -15, -18, -13.015104, -14.732117, -11, -15, -11, -14, -12.585722, -12.871456, -11, -6, -7, -4)
