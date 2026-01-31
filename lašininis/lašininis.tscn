@@ -1,0 +1,442 @@
+[gd_scene format=3 uid="uid://rh0ixh83ltwt"]
+
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="4_dbh7r"]
+
+[sub_resource type="Animation" id="Animation_rvpr0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Maišas:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.546011, 30.819614)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Maišas:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.8789504]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Kūnas/Pilvas/KairėRanka:points")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(0.0415802, -11.120562, 10.66758, 6.74774, 0.9044037, 30.273962)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Kūnas/Pilvas/DešinėRanka:points")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-0.14268875, 8.964745, -3.150383, 19.21386, 2.112774, 30.350395)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Kūnas/Pilvas:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Dešra:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-20.137299, 0.9649124)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Dešra:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Maišas:polygon")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(28.788958, 6.5195465, 25.682306, 0.96027374, 23.229689, 3.2493858, 24.047228, 5.0479736, 22.41215, 6.356037, 22.41215, 8.072868, 24.210737, 8.890411, 24.047228, 10.116718, 27.971418, 7.82761, 28.053171, 10.52549, 29.361235, 17.719837, 35.57454, 24.423664, 50.45376, 27.939083, 61.7358, 24.995941, 70.56523, 15.26722, 71.38277, 4.8844643, 66.314026, -4.353731, 56.994072, -6.3158264, 44.485718, -5.7435493, 33.448936, 0.55150604)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Dešra:visible")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Dešra:polygon")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [PackedVector2Array(-2.2639885, 29.915699, -1.7102127, 29.408072, -1.1102886, 30.607918, -0.095033646, 31.48473, 2.8122902, 32.084656, 8.488491, 32.176952, 17.210459, 31.992357, 18.5026, 30.377178, 18.871786, 31.115545, 19.84089, 29.038887, 18.73334, 29.592663, 17.902678, 28.254372, 16.333647, 27.239117, 2.2809834, 27.076834, 0.37723494, 27.432674, -0.9571676, 28.197731, -1.3663845, 28.767076, -2.3449469, 28.517988)]
+}
+
+[sub_resource type="Animation" id="Animation_dbh7r"]
+resource_name = "dundėjimas"
+loop_mode = 1
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Maišas:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.546011, 30.819614), Vector2(-2.47888, 26.323147), Vector2(0.546011, 30.819614), Vector2(6.1503296, 26.774387), Vector2(0.546011, 30.819614)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Maišas:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [2.8789504, 3.120872, 2.8789504, 2.5817099, 2.8789504]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Kūnas/Pilvas/KairėRanka:points")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0.0415802, -11.120562, 10.66758, 6.74774, 0.9044037, 30.273962), PackedVector2Array(0.0415802, -11.120562, 11.649388, 8.087934, -0.11211467, 26.902178), PackedVector2Array(0.0415802, -11.120562, 10.66758, 6.74774, 0.9044037, 30.273962), PackedVector2Array(0.0415802, -11.120562, 12.344478, 6.3975954, -0.7157569, 28.184832), PackedVector2Array(0.0415802, -11.120562, 10.66758, 6.74774, 0.9044037, 30.273962)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Kūnas/Pilvas/DešinėRanka:points")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-0.14268875, 8.964745, -3.150383, 19.21386, 2.112774, 30.350395), PackedVector2Array(-0.14268875, 8.964745, -5.6908965, 19.257208, -0.16100717, 26.331993), PackedVector2Array(-0.14268875, 8.964745, -3.150383, 19.21386, 2.112774, 30.350395), PackedVector2Array(-0.14268875, 8.964745, -5.454621, 18.83596, -0.56455374, 27.87527), PackedVector2Array(-0.14268875, 8.964745, -3.150383, 19.21386, 2.112774, 30.350395)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Kūnas/Pilvas:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.73333335, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0856869, 0.0, -0.25859505, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_5jhat"]
+resource_name = "kimšimasis"
+step = 0.0333333
+
+[sub_resource type="Animation" id="Animation_5ko1g"]
+resource_name = "paėdimas"
+length = 1.9
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Kūnas/Pilvas/KairėRanka:points")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.6, 0.8666667, 1.1333333, 1.4, 1.6666666, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(0.0415802, -11.120562, 10.66758, 6.74774, 0.9044037, 30.273962), PackedVector2Array(0.0415802, -11.120562, 8.534233, 12.616083, -4.3828964, 29.784414), PackedVector2Array(0.0415802, -11.120562, 19.585438, -11.860419, 14.026165, 0.5661831), PackedVector2Array(0.0415802, -11.120562, 15.035873, -11.051586, 8.860788, 0.19011116), PackedVector2Array(0.0415802, -11.120562, 13.580147, -9.123464, 17.935593, 0.4250145), PackedVector2Array(0.0415802, -11.120562, 10.732357, -7.0015793, 8.219597, 1.3184395), PackedVector2Array(0.0415802, -11.120562, 11.947712, -9.534965, 13.324911, 1.2126331), PackedVector2Array(0.0415802, -11.120562, 14.450825, -10.631949, 3.67338, 0.4653015)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Kūnas/Pilvas/DešinėRanka:points")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [PackedVector2Array(-0.14268875, 8.964745, -3.150383, 19.21386, 2.112774, 30.350395), PackedVector2Array(-0.14268875, 8.964745, -8.879364, 16.131504, -2.0120316, 24.388655)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Dešra:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.6, 0.8666667, 1.1333333, 1.4, 1.6666666, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-20.137299, 0.9649124), Vector2(-6.3511925, 31.229525), Vector2(16.334152, 1.233161), Vector2(9.222685, 0.738224), Vector2(16.334152, 1.233161), Vector2(0.9881067, -0.57287407), Vector2(7.285391, 0.1682365), Vector2(-6.105256, -1.5325043)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Dešra:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.6, 0.8666667, 1.1333333, 1.4, 1.6666666, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.7520247, 0.054623842, 0.12094142, 0.054623842, 0.23436031, 0.16060504, 0.16060504]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Dešra:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Maišas:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.546011, 30.819614), Vector2(-0.84381294, 25.178589)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Maišas:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [2.8789504, 1.9368694]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Maišas:polygon")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [PackedVector2Array(28.788958, 6.5195465, 25.682306, 0.96027374, 23.229689, 3.2493858, 24.047228, 5.0479736, 22.41215, 6.356037, 22.41215, 8.072868, 24.210737, 8.890411, 24.047228, 10.116718, 27.971418, 7.82761, 28.053171, 10.52549, 29.361235, 17.719837, 35.57454, 24.423664, 50.45376, 27.939083, 61.7358, 24.995941, 70.56523, 15.26722, 71.38277, 4.8844643, 66.314026, -4.353731, 56.994072, -6.3158264, 44.485718, -5.7435493, 33.448936, 0.55150604), PackedVector2Array(29.86399, 3.1405911, 25.630793, -1.0966277, 22.714989, 2.0909734, 24.80082, 2.9283566, 22.029747, 5.378157, 23.012241, 6.9457307, 24.551521, 8.482483, 23.694145, 12.173529, 26.620768, 11.147932, 28.118994, 11.459343, 29.361235, 17.719837, 35.57454, 24.423664, 50.45376, 27.939083, 61.7358, 24.995941, 70.56523, 15.26722, 71.38277, 4.8844643, 66.314026, -4.353731, 56.994072, -6.3158264, 44.485718, -5.7435493, 33.448936, 0.55150604)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Dešra:polygon")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.6, 0.8666667, 1.2, 1.4, 1.6666666, 1.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [PackedVector2Array(-2.2639885, 29.915699, -1.7102127, 29.408072, -1.1102886, 30.607918, -0.095033646, 31.48473, 2.8122902, 32.084656, 8.488491, 32.176952, 17.210459, 31.992357, 18.5026, 30.377178, 18.871786, 31.115545, 19.84089, 29.038887, 18.73334, 29.592663, 17.902678, 28.254372, 16.333647, 27.239117, 2.2809834, 27.076834, 0.37723494, 27.432674, -0.9571676, 28.197731, -1.3663845, 28.767076, -2.3449469, 28.517988), PackedVector2Array(2.5897055, 30.144966, 2.7075033, 30.683392, 3.0938263, 31.015694, 3.0752373, 31.753017, 2.8122902, 32.084656, 8.488491, 32.176952, 17.210459, 31.992357, 18.5026, 30.377178, 18.871786, 31.115545, 19.84089, 29.038887, 18.73334, 29.592663, 17.902678, 28.254372, 16.333647, 27.239117, 2.2809834, 27.076834, 2.4650407, 28.134302, 2.9729424, 29.343525, 3.131343, 30.085897, 2.912715, 30.127304), PackedVector2Array(2.544582, 30.142836, 2.6664329, 30.671535, 3.0547414, 31.011902, 3.045764, 31.750523, 2.8122902, 32.084656, 8.488491, 32.176952, 17.210459, 31.992357, 18.5026, 30.377178, 18.871786, 31.115545, 19.84089, 29.038887, 18.73334, 29.592663, 17.902678, 28.254372, 16.333647, 27.239117, 2.2809834, 27.076834, 2.4456308, 28.127779, 2.936405, 29.332872, 3.0895286, 30.073637, 2.8638358, 30.112343), PackedVector2Array(11.197485, 30.367188, 11.657415, 30.961573, 11.532297, 31.388973, 10.913223, 31.650354, 10.930845, 32.0096, 12.795234, 32.06423, 17.210459, 31.992357, 18.5026, 30.377178, 18.871786, 31.115545, 19.84089, 29.038887, 18.73334, 29.592663, 17.902678, 28.254372, 16.333647, 27.239117, 10.555827, 27.203861, 10.26406, 27.93228, 10.908745, 28.539345, 10.751202, 29.496952, 10.990945, 29.882675), PackedVector2Array(11.227484, 30.36618, 11.684541, 30.959427, 11.5586, 31.385462, 10.941698, 31.646929, 10.959748, 32.005596, 12.815743, 32.06131, 17.213686, 31.988844, 18.5026, 30.377178, 18.871786, 31.115545, 19.84089, 29.038887, 18.73334, 29.592663, 17.90561, 28.258602, 16.343088, 27.246822, 10.589268, 27.211927, 10.298649, 27.93766, 10.9403925, 28.542755, 10.784463, 29.497868, 11.022306, 29.882807), PackedVector2Array(18.081877, 30.136055, 17.882568, 30.46909, 17.56866, 30.583256, 17.447939, 30.863987, 17.563787, 31.090565, 17.502045, 31.393398, 17.951237, 31.186085, 18.5026, 30.377178, 18.871786, 31.115545, 19.84089, 29.038887, 18.73334, 29.592663, 18.575365, 29.225103, 18.500574, 29.007704, 18.230148, 29.054937, 18.201874, 29.166893, 18.171627, 29.322166, 18.38437, 29.707163, 18.18821, 29.913057)]
+}
+
+[sub_resource type="Animation" id="Animation_7xedv"]
+resource_name = "pėdinimas"
+step = 0.0333333
+
+[sub_resource type="Animation" id="Animation_ka8f0"]
+resource_name = "užvožimas"
+step = 0.0333333
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7xedv"]
+_data = {
+&"RESET": SubResource("Animation_rvpr0"),
+&"dundėjimas": SubResource("Animation_dbh7r"),
+&"kimšimasis": SubResource("Animation_5jhat"),
+&"paėdimas": SubResource("Animation_5ko1g"),
+&"pėdinimas": SubResource("Animation_7xedv"),
+&"užvožimas": SubResource("Animation_ka8f0")
+}
+
+[node name="Lašininis" type="Node2D" unique_id=1753610124]
+
+[node name="Kūnas" type="Polygon2D" parent="." unique_id=1596819195]
+color = Color(0.65882355, 0.5803922, 0.5372549, 1)
+polygon = PackedVector2Array(-4, -21, 9, -21, 14, -16, 17, -9, 18, 7, 15, 17, 4, 23, -11, 19, -16, 9, -15, -10)
+
+[node name="Diržas" type="Line2D" parent="Kūnas" unique_id=1032890207]
+points = PackedVector2Array(15.080445, -7.684454, 11.785941, -15.334406, 3.3542452, -17.121254, -4.798256, -15.111044, -10.326323, -8.522036, -12.448206, -1.0954418, -12.392367, 8.229679, -7.9252434, 14.092781, -0.21945381, 16.661377, 8.1564045, 15.935471, 14.35454, 10.909954)
+closed = true
+width = 2.0
+default_color = Color(0.4862745, 0.36078432, 0.2627451, 1)
+
+[node name="Pilvas" type="Polygon2D" parent="Kūnas" unique_id=1027671918]
+color = Color(0.7243522, 0.6502669, 0.60963494, 1)
+polygon = PackedVector2Array(-7, 15, -13, 6, -12, -8, -5, -16, 3, -17, 11, -16, 17, -11, 19, -6, 19, 8, 17, 13, 7, 18)
+
+[node name="Dėmės" type="Node2D" parent="Kūnas/Pilvas" unique_id=1713606454]
+
+[node name="Pixel" type="Sprite2D" parent="Kūnas/Pilvas/Dėmės" unique_id=1362427639]
+self_modulate = Color(0.48, 0.40824, 0.36959997, 0.54901963)
+position = Vector2(4.758481, -2.55513)
+rotation = -0.2677581
+scale = Vector2(0.7935788, 1.2817525)
+texture = ExtResource("4_dbh7r")
+
+[node name="Pixel2" type="Sprite2D" parent="Kūnas/Pilvas/Dėmės" unique_id=1656175553]
+self_modulate = Color(0.48, 0.40824, 0.36959997, 0.54901963)
+position = Vector2(4.930708, 2.331808)
+rotation = 0.32940045
+scale = Vector2(1.7689819, 0.6761857)
+texture = ExtResource("4_dbh7r")
+
+[node name="Pixel3" type="Sprite2D" parent="Kūnas/Pilvas/Dėmės" unique_id=1311528155]
+self_modulate = Color(0.48, 0.40824, 0.36959997, 0.54901963)
+position = Vector2(6.8036757, -0.63910675)
+rotation = -0.15237512
+scale = Vector2(1.2008812, 0.88016295)
+texture = ExtResource("4_dbh7r")
+
+[node name="Pixel4" type="Sprite2D" parent="Kūnas/Pilvas/Dėmės" unique_id=1572308308]
+self_modulate = Color(0.48, 0.40824, 0.36959997, 0.54901963)
+position = Vector2(7.7939806, 1.1692753)
+rotation = 0.23071052
+scale = Vector2(1.6217954, 0.7294496)
+texture = ExtResource("4_dbh7r")
+
+[node name="Pixel5" type="Sprite2D" parent="Kūnas/Pilvas/Dėmės" unique_id=881698589]
+self_modulate = Color(0.48, 0.40824, 0.36959997, 0.54901963)
+position = Vector2(9.710006, -2.0599804)
+rotation = -0.15828116
+scale = Vector2(1.2778736, 0.93547195)
+texture = ExtResource("4_dbh7r")
+
+[node name="Pixel6" type="Sprite2D" parent="Kūnas/Pilvas/Dėmės" unique_id=718313226]
+self_modulate = Color(0.48, 0.40824, 0.36959997, 0.54901963)
+position = Vector2(4.0265155, 0.17897034)
+rotation = 0.037717167
+scale = Vector2(1.1964065, 1.6333458)
+texture = ExtResource("4_dbh7r")
+
+[node name="KairėRanka" type="Line2D" parent="Kūnas/Pilvas" unique_id=1429856890]
+points = PackedVector2Array(0.0415802, -11.120562, 10.66758, 6.74774, 0.9044037, 30.273962)
+width = 5.0
+default_color = Color(0.8784314, 0.72156864, 0.7058824, 1)
+joint_mode = 1
+
+[node name="DešinėRanka" type="Line2D" parent="Kūnas/Pilvas" unique_id=868702689]
+points = PackedVector2Array(-0.14268875, 8.964745, -3.150383, 19.21386, 2.112774, 30.350395)
+width = 5.0
+default_color = Color(0.8784314, 0.72156864, 0.7058824, 1)
+joint_mode = 1
+
+[node name="Galva" type="Polygon2D" parent="Kūnas/Pilvas" unique_id=1287343114]
+color = Color(0.8784314, 0.72156864, 0.7058824, 1)
+polygon = PackedVector2Array(-2.8119164, 0.3695488, -2, -3, -0.48544884, -4.664776, 1.3452148, -4.664776, 2.6419334, -2.7578354, 2.7563515, 1.62813, 0.4680214, 3.4587936, -1.4770584, 2.8104324)
+
+[node name="Raištis" type="Line2D" parent="Kūnas/Pilvas/Galva" unique_id=1420376326]
+points = PackedVector2Array(-0.28653288, -4.495812, -1.2088847, -4.1348915, -1.9975624, -2.9318237, -2.3985853, -1.3678355, -2.4654222, 0.08921337, -2.2649112, 1.1185045, -1.716847, 2.6958609, -0.32663488, 3.284027)
+width = 0.25
+default_color = Color(0.39215687, 0.23921569, 0, 1)
+
+[node name="Kaukė" type="Polygon2D" parent="Kūnas/Pilvas/Galva" unique_id=1501034783]
+color = Color(0.49411765, 0.38039216, 0.23921569, 1)
+polygon = PackedVector2Array(-0.45630455, -4.920348, -0.4830389, -4.211875, 0.7066612, -4.3054466, 1.548809, -3.7841172, 2.2973843, -2.500845, 2.4577932, -0.8432846, 2.4444256, 1.2955027, 2.0033007, 2.0307112, 1.0542145, 2.8193884, -0.42956924, 3.0466347, -0.49640656, 3.554597, 0.45267963, 3.5813313, 1.6691151, 2.9664307, 2.511263, 2.1376505, 3.0459595, 0.58702946, 3.6073914, 0.13253689, 4.369335, 0.025597572, 4.5965805, -0.428895, 3.7544327, -0.60267115, 2.9924898, -1.0571632, 2.7652435, -2.0062504, 2.7518768, -3.0221744, 2.390956, -3.7841172, 1.8027897, -4.439121, 0.98737717, -5.0272875)
+
+[node name="KairėAkis" type="Sprite2D" parent="Kūnas/Pilvas/Galva" unique_id=1326537395]
+self_modulate = Color(0.8784314, 0.72156864, 0.7058824, 1)
+position = Vector2(2.578125, -1.984375)
+rotation = -0.076678455
+scale = Vector2(0.16666667, 0.4918033)
+texture = ExtResource("4_dbh7r")
+
+[node name="DešinėAkis" type="Sprite2D" parent="Kūnas/Pilvas/Galva" unique_id=776969131]
+self_modulate = Color(0.8784314, 0.72156864, 0.7058824, 1)
+position = Vector2(2.671875, 0.765625)
+rotation = 0.06581169
+scale = Vector2(0.16666667, 0.4918033)
+texture = ExtResource("4_dbh7r")
+
+[node name="Dešra" type="Polygon2D" parent="." unique_id=685571263]
+visible = false
+position = Vector2(-20.137299, 0.9649124)
+color = Color(0.7254902, 0.3764706, 0.38039216, 1)
+offset = Vector2(-8.878974, -29.924072)
+polygon = PackedVector2Array(-2.2639885, 29.915699, -1.7102127, 29.408072, -1.1102886, 30.607918, -0.095033646, 31.48473, 2.8122902, 32.084656, 8.488491, 32.176952, 17.210459, 31.992357, 18.5026, 30.377178, 18.871786, 31.115545, 19.84089, 29.038887, 18.73334, 29.592663, 17.902678, 28.254372, 16.333647, 27.239117, 2.2809834, 27.076834, 0.37723494, 27.432674, -0.9571676, 28.197731, -1.3663845, 28.767076, -2.3449469, 28.517988)
+
+[node name="Maišas" type="Polygon2D" parent="." unique_id=1212876313]
+position = Vector2(0.546011, 30.819614)
+rotation = 2.8789504
+color = Color(0.7176471, 0.6392157, 0.5411765, 1)
+offset = Vector2(-28.589054, -7.428889)
+polygon = PackedVector2Array(28.788958, 6.5195465, 25.682306, 0.96027374, 23.229689, 3.2493858, 24.047228, 5.0479736, 22.41215, 6.356037, 22.41215, 8.072868, 24.210737, 8.890411, 24.047228, 10.116718, 27.971418, 7.82761, 28.053171, 10.52549, 29.361235, 17.719837, 35.57454, 24.423664, 50.45376, 27.939083, 61.7358, 24.995941, 70.56523, 15.26722, 71.38277, 4.8844643, 66.314026, -4.353731, 56.994072, -6.3158264, 44.485718, -5.7435493, 33.448936, 0.55150604)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1428383989]
+libraries/ = SubResource("AnimationLibrary_7xedv")
