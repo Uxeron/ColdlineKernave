@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cfjrgixhq3m7i" path="res://kiemas/eglė.tscn" id="4_8k6ib"]
 [ext_resource type="PackedScene" uid="uid://b141xwd4qqxai" path="res://player/kanapinis/character_kanapinis.tscn" id="4_ls4eh"]
 [ext_resource type="PackedScene" uid="uid://dp8u5qb1i0j5s" path="res://kiemas/akmuo.tscn" id="4_r832n"]
+[ext_resource type="PackedScene" uid="uid://ctnr3i223c8vk" path="res://kamera/kamera.tscn" id="4_vt41f"]
 [ext_resource type="PackedScene" uid="uid://e1b1qqcicrja" path="res://kiemas/medis.tscn" id="6_r832n"]
 
 [node name="Kiemas" type="Node2D" unique_id=99648339]
@@ -1776,8 +1777,9 @@ z_index = 1
 [node name="Character" parent="." unique_id=1399668264 instance=ExtResource("4_ls4eh")]
 position = Vector2(36, 66)
 
-[node name="Camera2D" type="Camera2D" parent="Character" unique_id=508047536]
-zoom = Vector2(5, 5)
+[node name="Kamera" parent="Character" unique_id=2118238044 instance=ExtResource("4_vt41f")]
+zoom = Vector2(4, 4)
+max_offset = 70.0
 
 [node name="Tamsa" type="CanvasModulate" parent="." unique_id=1782714918]
 color = Color(0.16796875, 0.16796875, 0.16796875, 1)
