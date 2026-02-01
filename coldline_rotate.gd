@@ -1,8 +1,8 @@
-extends Label
+extends Node2D
 
 
-@export var max_rotation: float = deg_to_rad(0)
-@export var rotation_speed: float = deg_to_rad(1)
+@export var max_rotation: float = deg_to_rad(10)
+@export var rotation_speed: float = deg_to_rad(5)
 var goes_positive: bool = false
 
 

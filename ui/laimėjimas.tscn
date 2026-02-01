@@ -1,0 +1,260 @@
+[gd_scene format=3 uid="uid://dmrrbfvuexaq5"]
+
+[ext_resource type="PackedScene" uid="uid://dvwysv67pfj41" path="res://saulė/saulė.tscn" id="1_cwytw"]
+[ext_resource type="Script" uid="uid://bs8hpxiv11tu4" path="res://coldline_rotate.gd" id="2_sjpnx"]
+[ext_resource type="AudioStream" uid="uid://cb785x1h6r1kb" path="res://sounds/music/Basic Implosion.mp3" id="3_cwytw"]
+
+[sub_resource type="GDScript" id="GDScript_knrex"]
+script/source = "extends CanvasLayer
+
+func _ready() -> void:
+	$AnimationPlayer.play(\"end_game\")
+
+
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed(\"ui_cancel\"):
+		to_main_menu()
+
+
+func to_main_menu() -> void:
+	$AnimationPlayer.play(\"go_back\")
+	
+	await get_tree().create_timer($AnimationPlayer.current_animation_length).timeout
+	
+	MapLoader.load_scene(\"res://main_menu.tscn\")
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_knrex"]
+bg_color = Color(0, 0, 0, 0)
+
+[sub_resource type="LabelSettings" id="LabelSettings_n01vw"]
+font_size = 156
+outline_color = Color(0.05000019, 0, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_bf8de"]
+font_size = 42
+outline_color = Color(0.05000019, 0, 1, 1)
+
+[sub_resource type="Animation" id="Animation_n01vw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PanelContainer/Label:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:theme_override_styles/panel:bg_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PanelContainer/Label2:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PanelContainer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_bf8de"]
+resource_name = "end_game"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath("PanelContainer/Label:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 2, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:theme_override_styles/panel:bg_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("PanelContainer/Label2:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PanelContainer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_h7pdl"]
+resource_name = "go_back"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath("PanelContainer/Label:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PanelContainer:theme_override_styles/panel:bg_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = false
+tracks/2/path = NodePath("PanelContainer/Label2:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.9981868), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PanelContainer:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h7pdl"]
+_data = {
+&"RESET": SubResource("Animation_n01vw"),
+&"end_game": SubResource("Animation_bf8de"),
+&"go_back": SubResource("Animation_h7pdl")
+}
+
+[node name="Laimėjimas" type="CanvasLayer" unique_id=1948661526]
+script = SubResource("GDScript_knrex")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=804138320]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_knrex")
+
+[node name="Polygon2D2" type="Polygon2D" parent="PanelContainer" unique_id=1635955583]
+color = Color(0, 0.7166667, 1, 1)
+polygon = PackedVector2Array(-337.1825, -240.0498, -259.81616, 994.447, 2962.6575, 1044.9033, 2791.1062, -364.5086)
+
+[node name="Polygon2D" type="Polygon2D" parent="PanelContainer" unique_id=2137749711]
+color = Color(0.040754467, 0.5301308, 2.8878452e-07, 1)
+polygon = PackedVector2Array(-52.123352, 1192.4419, -54.02211, 668.387, 323.82907, 582.9433, 804.21277, 664.58954, 1434.5977, 677.8808, 1810.5502, 622.817, 2334.605, 769.02075, 2368.7825, 1236.1132)
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=759428864]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 150
+text = "Artėja vasara :)
++30°C
+"
+label_settings = SubResource("LabelSettings_n01vw")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="PanelContainer" unique_id=1536984402]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 150
+text = "
+
+
+
+
+
+
+
+
+
+
+Press [ESC] to go back to menu"
+label_settings = SubResource("LabelSettings_bf8de")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Saulė" parent="PanelContainer" unique_id=1870063602 instance=ExtResource("1_cwytw")]
+position = Vector2(235.82568, 158.66876)
+scale = Vector2(50, 50)
+script = ExtResource("2_sjpnx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1167188783]
+libraries/ = SubResource("AnimationLibrary_h7pdl")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1486910212]
+stream = ExtResource("3_cwytw")
+autoplay = true
