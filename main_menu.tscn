@@ -1,7 +1,31 @@
 [gd_scene format=3 uid="uid://b0wvsti4rho87"]
 
 [ext_resource type="Theme" uid="uid://c1t2pbd424mb1" path="res://main_theme.tres" id="1_7vrkn"]
-[ext_resource type="Texture2D" uid="uid://cy45rmtmnffh0" path="res://icon.svg" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="2_jix8l"]
+[ext_resource type="Script" uid="uid://dnuykom138ki5" path="res://bičiuko_mygtukas.gd" id="3_8qtwp"]
+[ext_resource type="PackedScene" uid="uid://d37eo1mdg7qcm" path="res://kaukės/kanapinis.tscn" id="4_qe12f"]
+[ext_resource type="PackedScene" uid="uid://d3iw4bmywphc6" path="res://kaukės/giltinė.tscn" id="5_8qtwp"]
+[ext_resource type="Script" uid="uid://irakfucq3xnd" path="res://kaukės/snukio_sukiojimas.gd" id="5_dy7ct"]
+[ext_resource type="PackedScene" uid="uid://cbfigy328332q" path="res://kaukės/vaikis.tscn" id="6_dy7ct"]
+[ext_resource type="PackedScene" uid="uid://bn3e2bd4j317" path="res://kaukės/vydmanas.tscn" id="7_0o4t1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7vrkn"]
+font_size = 256
+font_color = Color(0.6, 0.87999994, 1, 1)
+stacked_shadow_count = 2
+stacked_shadow_0/offset = Vector2(16, 16)
+stacked_shadow_0/color = Color(0, 0.6081667, 0.89, 1)
+stacked_shadow_1/offset = Vector2(32, 32)
+stacked_shadow_1/color = Color(0, 0.41416678, 0.71, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_fu7sn"]
+font_size = 100
+font_color = Color(1, 0.57, 0.9856667, 1)
+stacked_outline_count = 2
+stacked_outline_0/size = 18
+stacked_outline_0/color = Color(0, 0.2833333, 1, 1)
+stacked_outline_1/size = 24
+stacked_outline_1/color = Color(0, 0.6833334, 1, 1)
 
 [sub_resource type="GDScript" id="GDScript_7vrkn"]
 script/source = "extends Button
@@ -24,18 +48,6 @@ script/source = "extends Button
 
 func _on_pressed() -> void:
 	get_tree().quit()
-"
-
-[sub_resource type="GDScript" id="GDScript_qe12f"]
-script/source = "extends Button
-
-@export var target_scene_path: String
-
-func _on_pressed() -> void:
-	%LoadingIndicator.visible = true
-	await get_tree().create_timer(0.1).timeout # Make sure the \"Loading\" shows up
-	
-	MapLoader.load_scene(target_scene_path)
 "
 
 [sub_resource type="GDScript" id="GDScript_fu7sn"]
@@ -63,8 +75,18 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_7vrkn")
 
-[node name="PrimaryMenu" type="CenterContainer" parent="." unique_id=1972978981]
+[node name="Sky" type="Sprite2D" parent="." unique_id=532763447]
+self_modulate = Color(1.833744e-05, 0, 0.038050998, 1)
+position = Vector2(-272.5968, 149.6701)
+scale = Vector2(10000, 10000)
+texture = ExtResource("2_jix8l")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1874791611]
+polygon = PackedVector2Array(-56.322266, 1221.4026, -52.14502, 830.82965, 192.224, 755.6392, 505.51794, 722.2211, 1192.6754, 795.32306, 1579.0712, 728.487, 2182.6836, 776.52545, 2249.52, 1288.2385)
+
+[node name="PrimaryMenu" type="Control" parent="." unique_id=368097698]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -73,8 +95,31 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_7vrkn")
 
+[node name="COLDLINE" type="Label" parent="PrimaryMenu" unique_id=411792826]
+layout_mode = 0
+offset_left = 370.6311
+offset_top = 20.936249
+offset_right = 1621.6311
+offset_bottom = 369.93625
+pivot_offset = Vector2(666.7468, 190.16309)
+text = "COLDLINE"
+label_settings = SubResource("LabelSettings_7vrkn")
+
+[node name="KERNAVĖ" type="Label" parent="PrimaryMenu" unique_id=563189009]
+layout_mode = 0
+offset_left = 568.8205
+offset_top = 379.54266
+offset_right = 1482.8206
+offset_bottom = 554.54266
+text = "K   E   R   N   A   V   Ė"
+label_settings = SubResource("LabelSettings_fu7sn")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="PrimaryMenu" unique_id=1558664208]
-layout_mode = 2
+layout_mode = 0
+offset_left = 771.6376
+offset_top = 567.48627
+offset_right = 1117.6376
+offset_bottom = 972.48627
 theme = ExtResource("1_7vrkn")
 
 [node name="Button" type="Button" parent="PrimaryMenu/VBoxContainer" unique_id=1027931307]
@@ -114,66 +159,53 @@ theme = ExtResource("1_7vrkn")
 layout_mode = 2
 theme = ExtResource("1_7vrkn")
 
-[node name="Button" type="Button" parent="CharacterSelection/VBoxContainer/HBoxContainer" unique_id=1374920182]
+[node name="Button" type="Button" parent="CharacterSelection/VBoxContainer/HBoxContainer" unique_id=1374920182 node_paths=PackedStringArray("snukis")]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_7vrkn")
 text = "Kanapinis"
-script = SubResource("GDScript_qe12f")
-target_scene_path = "res://main.tscn"
-
-[node name="TextureRect" type="TextureRect" parent="CharacterSelection/VBoxContainer/HBoxContainer" unique_id=1771536331]
-layout_mode = 2
-theme = ExtResource("1_7vrkn")
-texture = ExtResource("2_fu7sn")
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="CharacterSelection/VBoxContainer" unique_id=181034680]
-layout_mode = 2
-theme = ExtResource("1_7vrkn")
-
-[node name="Button" type="Button" parent="CharacterSelection/VBoxContainer/HBoxContainer2" unique_id=681247097]
-layout_mode = 2
-size_flags_horizontal = 3
-theme = ExtResource("1_7vrkn")
-disabled = true
-text = "Neklaužada"
-
-[node name="TextureRect" type="TextureRect" parent="CharacterSelection/VBoxContainer/HBoxContainer2" unique_id=802428976]
-layout_mode = 2
-theme = ExtResource("1_7vrkn")
-texture = ExtResource("2_fu7sn")
+script = ExtResource("3_8qtwp")
+snukis = NodePath("../../../../Kanapinis")
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CharacterSelection/VBoxContainer" unique_id=1861702769]
 layout_mode = 2
 theme = ExtResource("1_7vrkn")
 
-[node name="Button" type="Button" parent="CharacterSelection/VBoxContainer/HBoxContainer3" unique_id=302784806]
+[node name="Button" type="Button" parent="CharacterSelection/VBoxContainer/HBoxContainer3" unique_id=302784806 node_paths=PackedStringArray("snukis")]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_7vrkn")
 disabled = true
 text = "Giltinė"
+script = ExtResource("3_8qtwp")
+snukis = NodePath("../../../../Giltinė")
 
-[node name="TextureRect" type="TextureRect" parent="CharacterSelection/VBoxContainer/HBoxContainer3" unique_id=1183452336]
+[node name="HBoxContainer2" type="HBoxContainer" parent="CharacterSelection/VBoxContainer" unique_id=181034680]
 layout_mode = 2
 theme = ExtResource("1_7vrkn")
-texture = ExtResource("2_fu7sn")
+
+[node name="Button" type="Button" parent="CharacterSelection/VBoxContainer/HBoxContainer2" unique_id=681247097 node_paths=PackedStringArray("snukis")]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_7vrkn")
+disabled = true
+text = "Petardų vaikis"
+script = ExtResource("3_8qtwp")
+snukis = NodePath("../../../../Vaikis")
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CharacterSelection/VBoxContainer" unique_id=1825753342]
 layout_mode = 2
 theme = ExtResource("1_7vrkn")
 
-[node name="Button" type="Button" parent="CharacterSelection/VBoxContainer/HBoxContainer4" unique_id=875956353]
+[node name="Button" type="Button" parent="CharacterSelection/VBoxContainer/HBoxContainer4" unique_id=875956353 node_paths=PackedStringArray("snukis")]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_7vrkn")
 disabled = true
-text = "KANAPinis?"
-
-[node name="TextureRect" type="TextureRect" parent="CharacterSelection/VBoxContainer/HBoxContainer4" unique_id=2023595422]
-layout_mode = 2
-theme = ExtResource("1_7vrkn")
-texture = ExtResource("2_fu7sn")
+text = "Kanapinis (Vydūnas)"
+script = ExtResource("3_8qtwp")
+snukis = NodePath("../../../../Vydmanas")
+"aš_esu_vydūnas" = true
 
 [node name="Button" type="Button" parent="CharacterSelection/VBoxContainer" unique_id=1636057827]
 layout_mode = 2
@@ -184,7 +216,6 @@ script = SubResource("GDScript_fu7sn")
 
 [node name="Credits" type="CenterContainer" parent="." unique_id=505573457]
 unique_name_in_owner = true
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -202,10 +233,10 @@ layout_mode = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Credits/VBoxContainer/PanelContainer" unique_id=938285363]
 clip_contents = false
-custom_minimum_size = Vector2(300, 500)
+custom_minimum_size = Vector2(800, 500)
 layout_mode = 2
 text = "Attrati
-edve98"
+Edvinas Senda"
 fit_content = true
 
 [node name="Button" type="Button" parent="Credits/VBoxContainer" unique_id=1655896762]
@@ -240,9 +271,28 @@ text = "Loading"
 fit_content = true
 horizontal_alignment = 1
 
+[node name="Kanapinis" parent="." unique_id=783252693 instance=ExtResource("4_qe12f")]
+position = Vector2(1642.0039, 856.91974)
+scale = Vector2(25, 25)
+script = ExtResource("5_dy7ct")
+
+[node name="Giltinė" parent="." unique_id=256331029 instance=ExtResource("5_8qtwp")]
+position = Vector2(303.89197, 856.9197)
+scale = Vector2(25, 25)
+script = ExtResource("5_dy7ct")
+
+[node name="Vaikis" parent="." unique_id=848388788 instance=ExtResource("6_dy7ct")]
+position = Vector2(311.0243, 493.14728)
+scale = Vector2(25, 25)
+script = ExtResource("5_dy7ct")
+
+[node name="Vydmanas" parent="." unique_id=1806853910 instance=ExtResource("7_0o4t1")]
+position = Vector2(1706.1991, 518.82513)
+scale = Vector2(25, 25)
+script = ExtResource("5_dy7ct")
+
 [connection signal="pressed" from="PrimaryMenu/VBoxContainer/Button" to="PrimaryMenu/VBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="PrimaryMenu/VBoxContainer/Button2" to="PrimaryMenu/VBoxContainer/Button2" method="_on_pressed"]
 [connection signal="pressed" from="PrimaryMenu/VBoxContainer/Button3" to="PrimaryMenu/VBoxContainer/Button3" method="_on_pressed"]
-[connection signal="pressed" from="CharacterSelection/VBoxContainer/HBoxContainer/Button" to="CharacterSelection/VBoxContainer/HBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="CharacterSelection/VBoxContainer/Button" to="CharacterSelection/VBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="Credits/VBoxContainer/Button" to="Credits/VBoxContainer/Button" method="_on_pressed"]
