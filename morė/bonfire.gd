@@ -10,9 +10,15 @@ extends StaticBody2D
 @onready var light_scale: float = start_light_scale
 var adjusting_light: bool = false
 
+var already_died: bool = false
+
 func take_damage():
+	if already_died:
+		return
+	
 	if health <= 0.0:
 		MapLoader.add_scene("res://ui/game_loss.tscn")
+		already_died = true
 		return
 	
 	var scaling = health / max_health

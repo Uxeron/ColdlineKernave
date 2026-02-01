@@ -2,7 +2,7 @@ class_name SelfDestructingParticles
 extends Node2D
 
 func run():
-	assert(get_children().size() == 1)
+	assert(get_children().size() >= 1)
 	if not is_inside_tree():
 		return
 	

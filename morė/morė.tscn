@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ditwa4v4ivx6s" path="res://morė/bonfire.gd" id="1_3abmc"]
 [ext_resource type="Texture2D" uid="uid://dy8dyy6x7aupd" path="res://effects/2d_lights_and_shadows_neutral_point_light.webp" id="3_jtpd6"]
+[ext_resource type="AudioStream" uid="uid://vylue51w261s" path="res://sounds/fire_burning_loop.mp3" id="4_jaqhu"]
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="5_1ylo4"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_5o5it"]
@@ -407,3 +408,9 @@ color = Color(1, 0.5571933, 0.217345, 1)
 shadow_enabled = true
 texture = ExtResource("3_jtpd6")
 texture_scale = 5.0
+
+[node name="FireBurningLoop" type="AudioStreamPlayer2D" parent="." unique_id=2046483478]
+stream = ExtResource("4_jaqhu")
+volume_db = -18.186
+autoplay = true
+parameters/looping = true

@@ -6,8 +6,10 @@ extends CharacterBody2D
 @onready var dash_turning_speed: float = turning_speed * 0.04
 @export var health: float = 400.0:
 	set(value):
-		if value < health and current_state == STATE.EATING:
-			move(0.0)
+		if value < health:
+			$HitFlesh.play()
+			if current_state == STATE.EATING:
+				move(0.0)
 		health = value
 		if health <= 0.0:
 			die.call_deferred()
@@ -57,6 +59,7 @@ func move(delta: float) -> void:
 	if current_state != STATE.MOVING:
 		current_state = STATE.MOVING
 		animation_player.stop()
+		$"LašininisWalk".play()
 		animation_player.play("dundėjimas")
 	
 	generic_move(delta)
@@ -147,6 +150,7 @@ func attack() -> void:
 	animation_player.stop()
 
 	animation_player.play("užvožimas")
+	$"Maišas".play()
 	await get_tree().create_timer(animation_player.current_animation_length).timeout
 	
 	move(0.0)
@@ -180,6 +184,7 @@ func _on_bag_collider_area_body_entered(body: Node2D) -> void:
 func die() -> void:
 	current_state = STATE.DEAD
 	set_physics_process(false)
+	Global.character_stage += 1
 	
 	$GPUParticles2D.emitting = true
 	await get_tree().create_timer(2.0).timeout

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://vvb1vqye5s8u"]
 
-[ext_resource type="Texture2D" uid="uid://cy45rmtmnffh0" path="res://icon.svg" id="1_bjqvq"]
+[ext_resource type="Texture2D" uid="uid://dpn4mfvk1u733" path="res://Snaige.png" id="1_n01vw"]
 [ext_resource type="AudioStream" uid="uid://ei0n8eggwe2w" path="res://sounds/music/Winter Reflections.mp3" id="2_n01vw"]
 
 [sub_resource type="GDScript" id="GDScript_knrex"]
@@ -265,7 +265,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_knrex")
 position = Vector2(960, 540)
 emitting = false
 amount = 10
-texture = ExtResource("1_bjqvq")
+texture = ExtResource("1_n01vw")
 lifetime = 5.0
 process_material = SubResource("ParticleProcessMaterial_h7pdl")
 

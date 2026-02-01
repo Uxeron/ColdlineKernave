@@ -22,11 +22,19 @@ var hit_objects: Array = []
 
 var knockback: Vector2 = Vector2.ZERO
 
+var previous_motion: Vector2 = Vector2.ZERO
+
 func _physics_process(_delta: float) -> void:
 	var mouse_position = get_global_mouse_position()
 	global_rotation = global_position.angle_to_point(mouse_position)
 	
 	var motion = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	if motion != Vector2.ZERO and previous_motion == Vector2.ZERO:
+		$Walk.play()
+	if motion == Vector2.ZERO and previous_motion != Vector2.ZERO:
+		$Walk.stop()
+	previous_motion = motion
+	
 	if knockback == Vector2.ZERO:
 		velocity = motion * speed
 	else:
@@ -47,10 +55,17 @@ func _physics_process(_delta: float) -> void:
 		
 	if Input.is_action_pressed("attack"):
 		can_swing = false
+		if model.name == "Kanapinis":
+			$"Maišas".play()
+		if model.name == "Giltine":
+			$Dalgis.play()
+		
 		model.hit()
 		model.done.connect(func(): can_swing = true; hit_objects = [], ConnectFlags.CONNECT_ONE_SHOT)
 
 func take_damage():
+	$HitFlesh.play()
+	
 	if health <= 0.0:
 		MapLoader.add_scene("res://ui/game_loss.tscn")
 		process_mode = Node.PROCESS_MODE_DISABLED

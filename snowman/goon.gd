@@ -2,7 +2,12 @@ class_name Goon
 extends CharacterBody2D
 
 @export var speed: float = 50.0
-@export var health: float = 70.0
+@export var health: float = 70.0:
+	set(value):
+		health = value
+		if is_ready:
+			$HitSnowman.play()
+
 @export var damage: float = 100.0
 @export var target: Node2D
 @onready var self_destructing_particles: SelfDestructingParticles = $SelfDestructingParticles
@@ -13,16 +18,21 @@ var did_animation: bool = false
 var animating: bool = false
 
 var knockback: Vector2 = Vector2.ZERO
+var is_ready: bool = false
 
 func _ready() -> void:
 	motion_mode = CharacterBody2D.MOTION_MODE_FLOATING
 	var scaling = randf_range(0.3, 1.4)
+	
+	$Walk.play()
 	
 	model.scale = Vector2(scaling, scaling)
 	$CollisionShape2D.scale = model.scale
 	speed = speed * (1 / scaling)
 	health = health * scaling
 	damage = damage * scaling
+	
+	is_ready = true
 	
 	actor_setup.call_deferred()
 
@@ -66,10 +76,14 @@ func _physics_process(_delta: float) -> void:
 	
 	if not did_animation and global_position.distance_to(target.global_position) < 70:
 		animating = true
+		$Walk.stop()
 		model.jump()
 		model.done.connect(func(): animating = false; did_animation = true; speed = 400, ConnectFlags.CONNECT_ONE_SHOT)
 
 func die() -> void:
+	var sound = $DieSnowman
+	sound.reparent(self_destructing_particles)
+	sound.play()
 	self_destructing_particles.run()
 	Global.active_enemies -= 1
 	print("died")

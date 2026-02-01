@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="1_bws0s"]
 [ext_resource type="Script" uid="uid://ddqo4fro7mqsf" path="res://player/petardu_vaikas/petarda.gd" id="1_rkqud"]
 [ext_resource type="Script" uid="uid://cdv67ec5l0q7u" path="res://effects/self_destructing_particles.gd" id="3_nodo3"]
+[ext_resource type="AudioStream" uid="uid://8ggxnginrwxm" path="res://sounds/weapon_swings/petarda.mp3" id="4_nodo3"]
 
 [sub_resource type="Curve" id="Curve_4ubge"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -1.9142736, 0.0, 0, 0]
@@ -75,3 +76,6 @@ shape = SubResource("CircleShape2D_iruev")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Explosion" unique_id=1378807491]
 shape = SubResource("CircleShape2D_w2tnu")
+
+[node name="Explode" type="AudioStreamPlayer2D" parent="." unique_id=447258711]
+stream = ExtResource("4_nodo3")

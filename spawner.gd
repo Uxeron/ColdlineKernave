@@ -24,7 +24,7 @@ func spawn() -> void:
 	Global.enemy_count -= 1
 	Global.active_enemies += 1
 	
-	$Timer.start(1.5)
+	$Timer.start(2.5)
 	await $Timer.timeout
 	
 	spawn()

@@ -23,9 +23,11 @@ func _physics_process(delta: float) -> void:
 		target = global_position
 
 func explode() -> void:
+	$Explode.play()
+	$Explode.reparent($SelfDestructingParticles)
 	var bodies = $Explosion.get_overlapping_bodies()
 	for body in bodies:
-		if body is Goon:
+		if body is Goon or body is Lašininis:
 			body.health -= damage
 	$SelfDestructingParticles.run()
 	queue_free()

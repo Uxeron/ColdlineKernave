@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://bce3exbji025e" path="res://player/character.gd" id="1_pjt0s"]
 [ext_resource type="Script" uid="uid://cdv67ec5l0q7u" path="res://effects/self_destructing_particles.gd" id="2_xx22o"]
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_74pxd"]
+[ext_resource type="AudioStream" uid="uid://b8xqemrokhxmb" path="res://sounds/walk/player.mp3" id="4_74pxd"]
+[ext_resource type="AudioStream" uid="uid://c8lnpe71lq8u8" path="res://sounds/weapon_swings/maišas.mp3" id="5_edx4p"]
+[ext_resource type="AudioStream" uid="uid://foow50i7gjsb" path="res://sounds/weapon_swings/dalgis.mp3" id="6_jmpku"]
+[ext_resource type="AudioStream" uid="uid://bdnvghbfv7qe4" path="res://sounds/hit_flesh.mp3" id="7_afh3s"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_xx22o"]
 
@@ -53,3 +57,19 @@ lifetime = 0.5
 one_shot = true
 explosiveness = 1.0
 process_material = SubResource("ParticleProcessMaterial_afh3s")
+
+[node name="Walk" type="AudioStreamPlayer" parent="." unique_id=458338439]
+stream = ExtResource("4_74pxd")
+volume_db = -3.978
+parameters/looping = true
+
+[node name="Maišas" type="AudioStreamPlayer" parent="." unique_id=1783769438]
+stream = ExtResource("5_edx4p")
+
+[node name="Dalgis" type="AudioStreamPlayer" parent="." unique_id=699555290]
+stream = ExtResource("6_jmpku")
+
+[node name="HitFlesh" type="AudioStreamPlayer" parent="." unique_id=1812406457]
+stream = ExtResource("7_afh3s")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="." unique_id=107993937]

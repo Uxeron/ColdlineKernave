@@ -4,6 +4,9 @@
 [ext_resource type="Script" uid="uid://cdv67ec5l0q7u" path="res://effects/self_destructing_particles.gd" id="3_2qxbx"]
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_oy1y5"]
 [ext_resource type="PackedScene" uid="uid://ckh7ujvo8rg8a" path="res://snowman/snowman.tscn" id="4_oy1y5"]
+[ext_resource type="AudioStream" uid="uid://cm7jf8uau61v6" path="res://sounds/walk/sniego_seniai.mp3" id="5_15u3a"]
+[ext_resource type="AudioStream" uid="uid://bakvlo1lx3jh5" path="res://sounds/die_snowman.mp3" id="6_b38ek"]
+[ext_resource type="AudioStream" uid="uid://b4h5ft0bwdqh4" path="res://sounds/hit_snowman.mp3" id="7_yfpmp"]
 
 [sub_resource type="Curve" id="Curve_2qxbx"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -3.0351696, 0.0, 0, 0]
@@ -52,3 +55,14 @@ shape = SubResource("CircleShape2D_8h2wj")
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=2046143295]
 path_desired_distance = 4.0
 target_desired_distance = 4.0
+
+[node name="Walk" type="AudioStreamPlayer2D" parent="." unique_id=1594805011]
+stream = ExtResource("5_15u3a")
+volume_db = -10.045
+parameters/looping = true
+
+[node name="DieSnowman" type="AudioStreamPlayer2D" parent="." unique_id=1174602955]
+stream = ExtResource("6_b38ek")
+
+[node name="HitSnowman" type="AudioStreamPlayer2D" parent="." unique_id=286524320]
+stream = ExtResource("7_yfpmp")

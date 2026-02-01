@@ -178,7 +178,9 @@ theme = ExtResource("1_7vrkn")
 disabled = true
 text = "Giltinė"
 script = ExtResource("3_8qtwp")
+target_scene_path = "res://kiemas/kiemas_giltine.tscn"
 snukis = NodePath("../../../../Giltinė")
+character_stage = 1
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="CharacterSelection/VBoxContainer" unique_id=181034680]
 layout_mode = 2
@@ -191,7 +193,9 @@ theme = ExtResource("1_7vrkn")
 disabled = true
 text = "Petardų vaikis"
 script = ExtResource("3_8qtwp")
+target_scene_path = "res://kiemas/kiemas_vaikas.tscn"
 snukis = NodePath("../../../../Vaikis")
+character_stage = 2
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="CharacterSelection/VBoxContainer" unique_id=1825753342]
 layout_mode = 2
@@ -205,6 +209,7 @@ disabled = true
 text = "Kanapinis (Vydūnas)"
 script = ExtResource("3_8qtwp")
 snukis = NodePath("../../../../Vydmanas")
+character_stage = 1000
 "aš_esu_vydūnas" = true
 
 [node name="Button" type="Button" parent="CharacterSelection/VBoxContainer" unique_id=1636057827]
