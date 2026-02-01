@@ -11,7 +11,7 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed(\"ui_cancel\"):
+	if Input.is_action_just_pressed(\"ui_accept\"):
 		to_main_menu()
 
 
@@ -295,7 +295,7 @@ text = "
 
 
 
-Press [ESC] to go back to menu"
+Press [ENTER] to go back to menu"
 label_settings = SubResource("LabelSettings_bf8de")
 horizontal_alignment = 1
 vertical_alignment = 1
