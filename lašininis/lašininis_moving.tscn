@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://brgw7mhilbnrt"]
+
+[ext_resource type="Script" uid="uid://b6060j0xtj50c" path="res://lašininis/lašininis_moving.gd" id="1_pd6vx"]
+[ext_resource type="PackedScene" uid="uid://rh0ixh83ltwt" path="res://lašininis/lašininis.tscn" id="2_y3u1r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3rqmx"]
+radius = 20.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sh2bp"]
+
+[node name="Lašininis" type="CharacterBody2D" unique_id=1269093086]
+motion_mode = 1
+platform_on_leave = 2
+script = ExtResource("1_pd6vx")
+
+[node name="Lašininis" parent="." unique_id=1753610124 instance=ExtResource("2_y3u1r")]
+
+[node name="BagColliderArea" type="Area2D" parent="Lašininis/Maišas" parent_id_path=PackedInt32Array(1753610124, 1212876313) index="0" unique_id=896631979]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Lašininis/Maišas/BagColliderArea" unique_id=51825167]
+position = Vector2(-28.397097, -7.8214316)
+polygon = PackedVector2Array(28.788958, 6.5195465, 25.682306, 0.96027374, 23.229689, 3.2493858, 24.047228, 5.0479736, 22.41215, 6.356037, 22.41215, 8.072868, 24.210737, 8.890411, 24.047228, 10.116718, 27.971418, 7.82761, 28.053171, 10.52549, 29.361235, 17.719837, 35.57454, 24.423664, 50.45376, 27.939083, 61.7358, 24.995941, 70.56523, 15.26722, 71.38277, 4.8844643, 66.314026, -4.353731, 56.994072, -6.3158264, 44.485718, -5.7435493, 33.448936, 0.55150604)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1863732393]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_3rqmx")
+
+[node name="AttackArea" type="Area2D" parent="." unique_id=427796450]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=1732377266]
+position = Vector2(41, 0)
+shape = SubResource("RectangleShape2D_sh2bp")
+
+[connection signal="body_entered" from="Lašininis/Maišas/BagColliderArea" to="." method="_on_bag_collider_area_body_entered"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
+
+[editable path="Lašininis"]

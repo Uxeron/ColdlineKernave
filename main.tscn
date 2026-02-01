@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://brcq3mshmi2n7" path="res://spawner.tscn" id="5_lquwl"]
 [ext_resource type="PackedScene" uid="uid://b141xwd4qqxai" path="res://player/kanapinis/character_kanapinis.tscn" id="6_272bh"]
 [ext_resource type="PackedScene" uid="uid://dkj0xni11dddl" path="res://player/giltine/character_giltine.tscn" id="7_5vw27"]
+[ext_resource type="PackedScene" uid="uid://brgw7mhilbnrt" path="res://lašininis/lašininis_moving.tscn" id="8_5vw27"]
 
 [node name="Main" type="Node2D" unique_id=1893357246]
 
@@ -36,6 +37,7 @@ visible = false
 position = Vector2(467, 222)
 
 [node name="Goon" parent="." unique_id=745021980 node_paths=PackedStringArray("target") instance=ExtResource("2_0xm2m")]
+process_mode = 4
 position = Vector2(149, -20)
 target = NodePath("../Morė")
 
@@ -66,3 +68,7 @@ target = NodePath("../Morė")
 
 [node name="Morė" parent="." unique_id=123869013 instance=ExtResource("5_7mycd")]
 position = Vector2(629, 150)
+
+[node name="LašininisMoving" parent="." unique_id=1269093086 node_paths=PackedStringArray("target") instance=ExtResource("8_5vw27")]
+position = Vector2(140, 330)
+target = NodePath("../CharacterKanapinis")
