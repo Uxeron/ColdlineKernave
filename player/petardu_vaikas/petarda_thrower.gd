@@ -6,4 +6,4 @@ func throw() -> void:
 	var instance = PETARDA.instantiate()
 	instance.target = get_global_mouse_position()
 	instance.global_position = global_position
-	owner.add_child(instance)
+	MapLoader.current_scene.add_child(instance)

@@ -1,7 +1,26 @@
 extends Node
 
-var enemy_count: int = 0
+@warning_ignore("unused_signal")
+signal kanapinis_hp(value: float)
+@warning_ignore("unused_signal")
+signal lasininis_hp(value: float)
+
+var enemy_count: int = 5
+var active_enemies: int = 0
+var fullscreen: bool = false
+
+var character_stage: int = 2
 
 func _unhandled_key_input(event: InputEvent) -> void:
-	if event.keycode == KEY_ESCAPE:
+	if not event.is_pressed():
+		return
+	
+	if event.keycode == KEY_ENTER:
 		get_tree().quit()
+	
+	if event.keycode == KEY_F:
+		if fullscreen:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+		else:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+		fullscreen = !fullscreen

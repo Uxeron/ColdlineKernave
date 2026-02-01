@@ -1,14 +1,14 @@
-[gd_scene format=3 uid="uid://doq5y0hrvkwtl"]
+[gd_scene format=3 uid="uid://2uqktn818a8r"]
 
-[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="1_upp30"]
-[ext_resource type="PackedScene" uid="uid://buwphuovv6why" path="res://morė/morė.tscn" id="1_vtvpv"]
-[ext_resource type="PackedScene" uid="uid://cfjrgixhq3m7i" path="res://kiemas/eglė.tscn" id="4_8k6ib"]
-[ext_resource type="PackedScene" uid="uid://b141xwd4qqxai" path="res://player/kanapinis/character_kanapinis.tscn" id="4_ls4eh"]
-[ext_resource type="PackedScene" uid="uid://dp8u5qb1i0j5s" path="res://kiemas/akmuo.tscn" id="4_r832n"]
-[ext_resource type="PackedScene" uid="uid://e1b1qqcicrja" path="res://kiemas/medis.tscn" id="6_r832n"]
-[ext_resource type="PackedScene" uid="uid://brcq3mshmi2n7" path="res://spawner.tscn" id="7_vt41f"]
-[ext_resource type="PackedScene" uid="uid://dnx8j4kyydclr" path="res://snowman/goon.tscn" id="8_n2vct"]
-[ext_resource type="PackedScene" uid="uid://d4kw41cvxakan" path="res://lašininis/lasininis_spawner.tscn" id="9_am2f4"]
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="1_0ogjc"]
+[ext_resource type="PackedScene" uid="uid://cfjrgixhq3m7i" path="res://kiemas/eglė.tscn" id="2_gvlus"]
+[ext_resource type="PackedScene" uid="uid://dp8u5qb1i0j5s" path="res://kiemas/akmuo.tscn" id="3_cf5rq"]
+[ext_resource type="PackedScene" uid="uid://e1b1qqcicrja" path="res://kiemas/medis.tscn" id="4_4uq0q"]
+[ext_resource type="PackedScene" uid="uid://buwphuovv6why" path="res://morė/morė.tscn" id="5_pyfqt"]
+[ext_resource type="PackedScene" uid="uid://cpbge8w7i3iqm" path="res://player/petardu_vaikas/character_petardu_vaikas.tscn" id="6_0ogjc"]
+[ext_resource type="PackedScene" uid="uid://brcq3mshmi2n7" path="res://spawner.tscn" id="7_jr5xq"]
+[ext_resource type="PackedScene" uid="uid://dnx8j4kyydclr" path="res://snowman/goon.tscn" id="8_hwesa"]
+[ext_resource type="PackedScene" uid="uid://d4kw41cvxakan" path="res://lašininis/lasininis_spawner.tscn" id="9_3b1wn"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_vt41f"]
 vertices = PackedVector2Array(411.03906, 357.20313, 350.9375, 389.75, 20.078125, 368, 11.8828125, 337.46094, -962.3203, -402.8203, -1024.2266, -388.8828, -1016.0469, -397.97656, -926.6719, -427.21094, -1067.9375, -340.3125, -1026.6172, -386.22656, -1031.5781, -302.5625, -1030.0781, -276.34375, 999.1328, -100.36719, 1033.2578, -58.273438, 1026.3281, 43.078125, -221.25781, -52.273438, -226.46094, -78.27344, -498.3203, 880.1797, -539.0703, 889.34375, -497.78906, 784.34375, 296.71094, 462.03906, 202.78125, 482.42188, 117.828125, 434.64063, 306.3125, 220.46875, 309.7422, 206.72656, 985.8906, 163.36719, 1023.09375, 249.0625, 1064.3984, 364.21094, 730.96094, 304.0703, -41, 429.07813, -7.578125, 513.3828, -74.07031, 659.6719, -317.1172, 547.53906, -308.92188, 517, -71.53906, 420.8828, 1050.8516, -261.07813, 1043.7422, -201.03125, -747.1172, -163.46094, -738.9219, -194, 1011.60156, -316.60938, 1002.8906, -540.52344, 1018.27344, -499.5, 1005.8672, -406.02344, 129.07813, -510, 120.88281, -540.53906, -248.92188, -13, -954.2578, 74.72656, -959.46094, 48.726563, -268.8672, -13, -268.57813, 991.4297, -210.67969, 1006.1875, -223.71875, 1026.3828, -332.53906, 991.3828, -958.96094, -284.0625, 15.1171875, -540.53906, 6.921875, -510, -296.2578, -533.27344, -301.46094, -559.27344, -665.2578, 198.72656, -522.0781, 169, -513.8828, 199.53906, -668.6875, 212.46875, -227.5, 138.60938, -232.57813, 224.42969, -399.92188, 169, -408.1172, 138.46094, 870.4375, 428.95313, 882.71875, 503.7578, 878.22656, 544.21094, 861.46875, 563.0469, 803.1094, 481.8828, 813.3828, 391.5625, -900.7578, -337.25, -831.9922, -391.71094, -72.13281, 829.78906, -161.6875, 931.25, -199.3125, 891.1797, 194.74219, -314.27344, 191.3125, -300.53125, -408.1172, 199.53906, -339.46094, 569.8828, -263.5, 905.6094, -600.2578, 685.72656, -605.46094, 659.72656, -370, 578.0781, -603.6875, 699.46875, -610.72656, 713.53906, -595.85156, 725.5078, 329.28906, -658.4375, 318.1328, -718.21094, 339.6328, -721.6406, 405.78125, -640.22656, -529.6719, 1101.2188, -579.47656, 1036.9688, -566.09375, 980.7969, -494.96094, 998.9531, -453.3828, 1092.25, -436.7578, 945.75, -670.46094, 172.72656, -513.8828, 138.46094, -101.77344, 189.75, 228, 196.39063, 228, 211.6875, 918.46875, 359.09375, 294.6797, -632.1328, 292.79688, -653.5703, -886.78906, 406.04688, -888, 405.3828, -837.6875, 297.5703, -842.65625, 422.21094, 189.53906, -340.27344, -1028.9531, -156.27344, 304.53906, 180.72656, 120.88281, -479.46094, -299.6875, -519.53125, 15.1171875, -479.46094, -224.6875, -38.53125, 200.47656, 512.6406, 147.36719, 518.53906, 11.8828125, 398.53906, -10.4609375, 420.8828, -93.88281, 398.53906, -317.1172, 486.46094, -102.078125, 368, -339.46094, 464.1172, -747.1172, -224.53906, 167.07813, -275, -957.6875, 88.46875, -461, 107.921875, 950.8594, -653.3203, 1020.90625, -629.71094, 98.53906, -562.8828, 232.90625, 231.32813, -159.96094, 242.95313, -306.72656, -505.46094, -165.3125, -452.8203, -400.53906, 569.8828, -422.8828, 547.53906, -431.07813, 517, -622.5781, 651.1719, -422.8828, 486.46094, -706.0469, 483.89844, -819.1875, 277.15625, -400.53906, 464.1172, -231.72656, -24.460938, 997.0703, -661.3125, 184.27344, -286.46094, -632.5078, 646.21094, -658.1328, 617.5703, -518.9531, -584.2578, -476.8672, -688.6094, -430.2578, -717.2422, -373.5, -685.6172, -487.35156, -494.09375, -627.9219, 725, -667.6094, 746.6094, -647.8672, 725, -658.6094, 721.4219, -677.09375, 710.3281, -699.52344, 669.78906, -682, 690.6875, -682, 675.3906, -663.6328, 649.65625, -675.72656, 226.53906, -491.53906, 221.88281, -750.3828, -410.96094, -678.1172, -338.70313, -830.53906, -246.88281, 246.36719, 170.65625, -163.3125, 124.17969, -186.21875, -711.03125, -109.46875, -751.3828, -53.953125, -724.3672, 0, -668.0703, -236.00781, -635.7422, -430.46094, 221.88281, -93.88281, 337.46094, -370, 455.92188, 98.53906, -457.1172, -161.96094, -334.0625, -103.75781, -387.2422, 68, -448.92188, 162.49219, -353.78906, 37.460938, -457.1172, -229.5, -438.39063, -323.92188, -494, -234.57813, -352.5625, -343.8672, -494, 1023.1719, 421.09375, 993.46094, 425.34375, -10.4609375, 315.1172, 572.8281, 290.78906, 520.52344, 354.35938, 37.460938, -562.8828, -318.57813, -567.8281, 71.35156, -683.7969, 128.54688, -642.60156, -769.46094, -141.11719, -253.50781, -91.78906, -430.46094, 116.11719, -1004.2422, -11.8984375, -1045.8594, -105.53906, -852.8828, -224.53906, -859.21094, 194.28125, 528.96094, -671.28906, 591.97656, -641.75, 205.20313, -588.2031, -687.5781, 164.17188, -491.53906, 116.11719, 774.6406, -708.6719, 864.34375, -714.3828, 723.1406, -665.9219, -279.60938, -16.578125, -298.09375, -27.671875, -303, -47.3125, -303, -62.609375, -284.6328, -88.34375, -976.5781, 40.171875, -986.5078, 35.210938, -800, -132.92188, -697.5078, 159.21094, -479.96094, -385.82813, -378, -543.6094, -1047.6406, 81.953125, -1048.6563, 61.84375, -1036, 64.390625, -354.60938, -497.57813, 251.39063, 242.42188, -692.9219, 238, -461, 230.07813, 147.13281, -275, 136.39063, -278.57813, 117.90625, -289.67188, 113, -309.3125, 113, -324.60938, -769.46094, -246.88281, 131.36719, -350.34375, 172.42188, -348.82813, -800, -255.07813, -563.8672, -322.54688, 287.42188, 172.17188, -243.57813, -86.828125, 277.4922, 167.21094, -830.53906, -141.11719, -852.8828, -163.46094, -1017.6328, 38.65625, -861.0781, -194, 68, -571.0781, -328.5078, -572.78906, -723.6094, 234.42188, -890.6328, 171.03906, -900.71094, 152.52344, -742.09375, 223.32813, -71.53906, 315.1172, -728.6328, 162.65625, -924.7969, 145.78125, -940.2031, 134.40625, -373.09375, -508.67188, 262.1328, 246, -41, 306.92188, 282.07813, 246, 299.27344, 234.53906, -712.8672, 238, -747, 203.6875, -747, 188.39063, -993.8906, 126.5, -1029.9766, 116.421875, -981.9219, 114, -359.6328, -569.34375, -378, -528.3125, -1036, 79.6875, -1031.0938, 99.328125, -1012.6094, 110.421875, -1001.8672, 114, -964.72656, 102.53906)
@@ -27,9 +27,10 @@ point_count = 41
 
 [node name="Sniegas" type="Sprite2D" parent="." unique_id=1242335255]
 self_modulate = Color(0.9490196, 0.9490196, 0.9490196, 1)
+z_index = -10
 position = Vector2(-278, 147)
 scale = Vector2(20255.158, -14211.426)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1005828934]
 navigation_polygon = SubResource("NavigationPolygon_vt41f")
@@ -42,7 +43,7 @@ self_modulate = Color(0.24115619, 0.24115601, 0.24115604, 1)
 position = Vector2(1490.0001, 20.999878)
 rotation = -3.1415925
 scale = Vector2(2071.0107, -2284.1487)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Eilė" type="Node2D" parent="NavigationRegion2D/Parkingas" unique_id=1655300161]
 position = Vector2(1395.0002, 435)
@@ -483,7 +484,7 @@ scale = Vector2(1, 0.99999994)
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1864.9999, -774.99994)
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina" unique_id=293103592]
 scale = Vector2(0.99999994, 1)
@@ -508,28 +509,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina/Ratai" unique_id=841500749]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina/Ratai" unique_id=1535060345]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina/Ratai" unique_id=1133155220]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina" unique_id=49156077]
 scale = Vector2(0.99999994, 1)
@@ -564,19 +565,19 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina" unique_id=607425053]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=509416296]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1548, -779)
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina2" unique_id=1361870259]
 scale = Vector2(0.99999994, 1)
@@ -601,28 +602,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina2/Ratai" unique_id=763871415]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina2/Ratai" unique_id=2097703228]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina2/Ratai" unique_id=816802432]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina2" unique_id=1413573636]
 scale = Vector2(0.99999994, 1)
@@ -657,19 +658,19 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina2" unique_id=1375179322]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=1221591394]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-785.00006, -781)
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina3" unique_id=1045923406]
 scale = Vector2(0.99999994, 1)
@@ -694,28 +695,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina3/Ratai" unique_id=1953366439]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina3/Ratai" unique_id=1224756837]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina3/Ratai" unique_id=1015357439]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina3" unique_id=1346321104]
 scale = Vector2(0.99999994, 1)
@@ -750,19 +751,19 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina3" unique_id=1455803655]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=1586988436]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1111, -1366)
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina4" unique_id=1484816935]
 scale = Vector2(0.99999994, 1)
@@ -787,28 +788,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina4/Ratai" unique_id=1356731851]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina4/Ratai" unique_id=371853040]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina4/Ratai" unique_id=1534929343]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina4" unique_id=2103282994]
 scale = Vector2(0.99999994, 1)
@@ -843,19 +844,19 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina4" unique_id=1339936217]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina5" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=394623339]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1530, -1970)
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina5" unique_id=1153620817]
 scale = Vector2(0.99999994, 1)
@@ -880,28 +881,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina5/Ratai" unique_id=2145689489]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina5/Ratai" unique_id=1634006843]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina5/Ratai" unique_id=1248051980]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina5" unique_id=1313022033]
 scale = Vector2(0.99999994, 1)
@@ -936,19 +937,19 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina5" unique_id=1856292867]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina6" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=389204068]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1648, -1366)
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina6" unique_id=669998273]
 scale = Vector2(0.99999994, 1)
@@ -973,28 +974,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina6/Ratai" unique_id=691446722]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina6/Ratai" unique_id=1107354701]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina6/Ratai" unique_id=336957744]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina6" unique_id=1662027182]
 scale = Vector2(0.99999994, 1)
@@ -1029,20 +1030,20 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina6" unique_id=1266666846]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina7" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=756248735]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1754.9999, -1532)
 rotation = -3.1415925
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina7" unique_id=197474759]
 scale = Vector2(0.99999994, 1)
@@ -1067,28 +1068,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina7/Ratai" unique_id=1539019273]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina7/Ratai" unique_id=55544694]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina7/Ratai" unique_id=739538852]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina7" unique_id=80479941]
 scale = Vector2(0.99999994, 1)
@@ -1123,20 +1124,20 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina7" unique_id=1153302265]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina8" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=825275370]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-904, -1528)
 rotation = -3.1415925
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina8" unique_id=1146808091]
 scale = Vector2(0.99999994, 1)
@@ -1161,28 +1162,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina8/Ratai" unique_id=1122446786]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina8/Ratai" unique_id=336279830]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina8/Ratai" unique_id=1452540119]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina8" unique_id=1985719505]
 scale = Vector2(0.99999994, 1)
@@ -1217,20 +1218,20 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina8" unique_id=842193754]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina9" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=2062983433]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-688, -1526.9999)
 rotation = -3.1415925
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina9" unique_id=821182258]
 scale = Vector2(0.99999994, 1)
@@ -1255,28 +1256,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina9/Ratai" unique_id=1571023018]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina9/Ratai" unique_id=151070019]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina9/Ratai" unique_id=1654435665]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina9" unique_id=1861895800]
 scale = Vector2(0.99999994, 1)
@@ -1311,20 +1312,20 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina9" unique_id=432100835]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina10" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=956332996]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-782, -2137)
 rotation = -3.1415925
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina10" unique_id=1993627856]
 scale = Vector2(0.99999994, 1)
@@ -1349,28 +1350,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina10/Ratai" unique_id=1513663099]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina10/Ratai" unique_id=1100622701]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina10/Ratai" unique_id=2018786159]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina10" unique_id=988597529]
 scale = Vector2(0.99999994, 1)
@@ -1405,20 +1406,20 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina10" unique_id=755683833]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina11" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=469744250]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1850.9999, -2132)
 rotation = -3.1415925
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina11" unique_id=1349364009]
 scale = Vector2(0.99999994, 1)
@@ -1443,28 +1444,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina11/Ratai" unique_id=1062198241]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina11/Ratai" unique_id=774842951]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina11/Ratai" unique_id=1534687975]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina11" unique_id=1572716595]
 scale = Vector2(0.99999994, 1)
@@ -1499,20 +1500,20 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina11" unique_id=92012129]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina12" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=1575381701]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1317, -2140)
 rotation = -3.1415925
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina12" unique_id=663362329]
 scale = Vector2(0.99999994, 1)
@@ -1537,28 +1538,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina12/Ratai" unique_id=492804218]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina12/Ratai" unique_id=1723967241]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina12/Ratai" unique_id=865435153]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina12" unique_id=1189995127]
 scale = Vector2(0.99999994, 1)
@@ -1593,20 +1594,20 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina12" unique_id=1728182410]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina13" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=779115890]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1328, -936)
 rotation = -3.1415925
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina13" unique_id=1967025756]
 scale = Vector2(0.99999994, 1)
@@ -1631,28 +1632,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina13/Ratai" unique_id=44175406]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina13/Ratai" unique_id=1604862228]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina13/Ratai" unique_id=1194828092]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina13" unique_id=536111615]
 scale = Vector2(0.99999994, 1)
@@ -1687,20 +1688,20 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina13" unique_id=721251908]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="DominykoMašina14" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos" unique_id=84391710]
 self_modulate = Color(1, 0.73333335, 0, 0)
 position = Vector2(-1002, -936)
 rotation = -3.1415925
 scale = Vector2(57.728, 132.94185)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Kėbulas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina14" unique_id=1312286942]
 scale = Vector2(0.99999994, 1)
@@ -1725,28 +1726,28 @@ self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.48503447, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina14/Ratai" unique_id=532043867]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, -0.28583965)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas3" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina14/Ratai" unique_id=1259604961]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(0.48503113, 0.1730074)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Ratas4" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina14/Ratai" unique_id=1609516760]
 self_modulate = Color(0, 0, 0, 1)
 z_index = -4
 position = Vector2(-0.50203013, 0.16396612)
 scale = Vector2(0.10459165, 0.11731468)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Stogas" type="Polygon2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina14" unique_id=1569311722]
 scale = Vector2(0.99999994, 1)
@@ -1781,13 +1782,13 @@ polygon = PackedVector2Array(-0.31180954, 0.28583908, 0.32912827, 0.28583908, 0.
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(-0.32913208, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="Pixel2" type="Sprite2D" parent="NavigationRegion2D/Parkingas/Mašinos/DominykoMašina14" unique_id=421432257]
 self_modulate = Color(1, 0, 0, 1)
 position = Vector2(0.3464489, 0.31592703)
 scale = Vector2(0.051967844, 0.0112831285)
-texture = ExtResource("1_upp30")
+texture = ExtResource("1_0ogjc")
 
 [node name="IcewallParkingas" type="Polygon2D" parent="NavigationRegion2D" unique_id=1010961562]
 color = Color(0.6, 0.81333333, 1, 1)
@@ -1809,198 +1810,198 @@ polygon = PackedVector2Array(244, 538, 127, 551, 102, 480, 16, 534, -44, 666, -4
 
 [node name="Stuff" type="Node2D" parent="NavigationRegion2D" unique_id=1704598547]
 
-[node name="Eglė" parent="NavigationRegion2D/Stuff" unique_id=893357924 instance=ExtResource("4_8k6ib")]
+[node name="Eglė" parent="NavigationRegion2D/Stuff" unique_id=893357924 instance=ExtResource("2_gvlus")]
 position = Vector2(-370, 517)
 
-[node name="Eglė2" parent="NavigationRegion2D/Stuff" unique_id=521544486 instance=ExtResource("4_8k6ib")]
+[node name="Eglė2" parent="NavigationRegion2D/Stuff" unique_id=521544486 instance=ExtResource("2_gvlus")]
 position = Vector2(-461, 169)
 
-[node name="Eglė3" parent="NavigationRegion2D/Stuff" unique_id=1061074044 instance=ExtResource("4_8k6ib")]
+[node name="Eglė3" parent="NavigationRegion2D/Stuff" unique_id=1061074044 instance=ExtResource("2_gvlus")]
 position = Vector2(-41, 368)
 
-[node name="Eglė4" parent="NavigationRegion2D/Stuff" unique_id=498278953 instance=ExtResource("4_8k6ib")]
+[node name="Eglė4" parent="NavigationRegion2D/Stuff" unique_id=498278953 instance=ExtResource("2_gvlus")]
 position = Vector2(68, -510)
 
-[node name="Eglė5" parent="NavigationRegion2D/Stuff" unique_id=2119678174 instance=ExtResource("4_8k6ib")]
+[node name="Eglė5" parent="NavigationRegion2D/Stuff" unique_id=2119678174 instance=ExtResource("2_gvlus")]
 position = Vector2(-800, -194)
 
-[node name="Eglė6" parent="NavigationRegion2D/Stuff" unique_id=93468206 instance=ExtResource("4_8k6ib")]
+[node name="Eglė6" parent="NavigationRegion2D/Stuff" unique_id=93468206 instance=ExtResource("2_gvlus")]
 position = Vector2(-1002, 479)
 
-[node name="Eglė7" parent="NavigationRegion2D/Stuff" unique_id=2045670138 instance=ExtResource("4_8k6ib")]
+[node name="Eglė7" parent="NavigationRegion2D/Stuff" unique_id=2045670138 instance=ExtResource("2_gvlus")]
 position = Vector2(-1896, -9)
 
-[node name="Eglė8" parent="NavigationRegion2D/Stuff" unique_id=178390357 instance=ExtResource("4_8k6ib")]
+[node name="Eglė8" parent="NavigationRegion2D/Stuff" unique_id=178390357 instance=ExtResource("2_gvlus")]
 position = Vector2(-1366, 48)
 
-[node name="Eglė9" parent="NavigationRegion2D/Stuff" unique_id=416197049 instance=ExtResource("4_8k6ib")]
+[node name="Eglė9" parent="NavigationRegion2D/Stuff" unique_id=416197049 instance=ExtResource("2_gvlus")]
 position = Vector2(-1421, 734)
 
-[node name="Eglė10" parent="NavigationRegion2D/Stuff" unique_id=1012623722 instance=ExtResource("4_8k6ib")]
+[node name="Eglė10" parent="NavigationRegion2D/Stuff" unique_id=1012623722 instance=ExtResource("2_gvlus")]
 position = Vector2(-825, 1578)
 
-[node name="Eglė11" parent="NavigationRegion2D/Stuff" unique_id=515577188 instance=ExtResource("4_8k6ib")]
+[node name="Eglė11" parent="NavigationRegion2D/Stuff" unique_id=515577188 instance=ExtResource("2_gvlus")]
 position = Vector2(-1073, 956)
 
-[node name="Eglė12" parent="NavigationRegion2D/Stuff" unique_id=83452171 instance=ExtResource("4_8k6ib")]
+[node name="Eglė12" parent="NavigationRegion2D/Stuff" unique_id=83452171 instance=ExtResource("2_gvlus")]
 position = Vector2(89, 1640)
 
-[node name="Eglė13" parent="NavigationRegion2D/Stuff" unique_id=495715393 instance=ExtResource("4_8k6ib")]
+[node name="Eglė13" parent="NavigationRegion2D/Stuff" unique_id=495715393 instance=ExtResource("2_gvlus")]
 position = Vector2(422, 930)
 
-[node name="Eglė14" parent="NavigationRegion2D/Stuff" unique_id=2082589960 instance=ExtResource("4_8k6ib")]
+[node name="Eglė14" parent="NavigationRegion2D/Stuff" unique_id=2082589960 instance=ExtResource("2_gvlus")]
 position = Vector2(188, 1074)
 
-[node name="Eglė15" parent="NavigationRegion2D/Stuff" unique_id=1141429683 instance=ExtResource("4_8k6ib")]
+[node name="Eglė15" parent="NavigationRegion2D/Stuff" unique_id=1141429683 instance=ExtResource("2_gvlus")]
 position = Vector2(792, 1348)
 
-[node name="Eglė16" parent="NavigationRegion2D/Stuff" unique_id=796568393 instance=ExtResource("4_8k6ib")]
+[node name="Eglė16" parent="NavigationRegion2D/Stuff" unique_id=796568393 instance=ExtResource("2_gvlus")]
 position = Vector2(-1410, -857)
 
-[node name="Eglė17" parent="NavigationRegion2D/Stuff" unique_id=1315342865 instance=ExtResource("4_8k6ib")]
+[node name="Eglė17" parent="NavigationRegion2D/Stuff" unique_id=1315342865 instance=ExtResource("2_gvlus")]
 position = Vector2(-674, -968)
 
-[node name="Eglė18" parent="NavigationRegion2D/Stuff" unique_id=144703084 instance=ExtResource("4_8k6ib")]
+[node name="Eglė18" parent="NavigationRegion2D/Stuff" unique_id=144703084 instance=ExtResource("2_gvlus")]
 position = Vector2(-71, -1190)
 
-[node name="Eglė19" parent="NavigationRegion2D/Stuff" unique_id=1136185693 instance=ExtResource("4_8k6ib")]
+[node name="Eglė19" parent="NavigationRegion2D/Stuff" unique_id=1136185693 instance=ExtResource("2_gvlus")]
 position = Vector2(725, -909)
 
-[node name="Eglė20" parent="NavigationRegion2D/Stuff" unique_id=2003104214 instance=ExtResource("4_8k6ib")]
+[node name="Eglė20" parent="NavigationRegion2D/Stuff" unique_id=2003104214 instance=ExtResource("2_gvlus")]
 position = Vector2(529, -1360)
 
-[node name="Eglė21" parent="NavigationRegion2D/Stuff" unique_id=1179978796 instance=ExtResource("4_8k6ib")]
+[node name="Eglė21" parent="NavigationRegion2D/Stuff" unique_id=1179978796 instance=ExtResource("2_gvlus")]
 position = Vector2(-670, -1438)
 
-[node name="Eglė22" parent="NavigationRegion2D/Stuff" unique_id=662659674 instance=ExtResource("4_8k6ib")]
+[node name="Eglė22" parent="NavigationRegion2D/Stuff" unique_id=662659674 instance=ExtResource("2_gvlus")]
 position = Vector2(-1462, -480)
 
-[node name="Eglė23" parent="NavigationRegion2D/Stuff" unique_id=688335547 instance=ExtResource("4_8k6ib")]
+[node name="Eglė23" parent="NavigationRegion2D/Stuff" unique_id=688335547 instance=ExtResource("2_gvlus")]
 position = Vector2(1443, 967)
 
-[node name="Eglė24" parent="NavigationRegion2D/Stuff" unique_id=1262027066 instance=ExtResource("4_8k6ib")]
+[node name="Eglė24" parent="NavigationRegion2D/Stuff" unique_id=1262027066 instance=ExtResource("2_gvlus")]
 position = Vector2(1184, -990)
 
-[node name="Eglė25" parent="NavigationRegion2D/Stuff" unique_id=781654110 instance=ExtResource("4_8k6ib")]
+[node name="Eglė25" parent="NavigationRegion2D/Stuff" unique_id=781654110 instance=ExtResource("2_gvlus")]
 position = Vector2(2031, 290)
 
-[node name="Eglė26" parent="NavigationRegion2D/Stuff" unique_id=1039754629 instance=ExtResource("4_8k6ib")]
+[node name="Eglė26" parent="NavigationRegion2D/Stuff" unique_id=1039754629 instance=ExtResource("2_gvlus")]
 position = Vector2(1735, -1053)
 
-[node name="Eglė27" parent="NavigationRegion2D/Stuff" unique_id=343096630 instance=ExtResource("4_8k6ib")]
+[node name="Eglė27" parent="NavigationRegion2D/Stuff" unique_id=343096630 instance=ExtResource("2_gvlus")]
 position = Vector2(2157, -598)
 
-[node name="Eglė28" parent="NavigationRegion2D/Stuff" unique_id=1547053425 instance=ExtResource("4_8k6ib")]
+[node name="Eglė28" parent="NavigationRegion2D/Stuff" unique_id=1547053425 instance=ExtResource("2_gvlus")]
 position = Vector2(1983, 1448)
 
-[node name="Akmuo" parent="NavigationRegion2D/Stuff" unique_id=1097888096 instance=ExtResource("4_r832n")]
+[node name="Akmuo" parent="NavigationRegion2D/Stuff" unique_id=1097888096 instance=ExtResource("3_cf5rq")]
 position = Vector2(-1472, 433)
 
-[node name="Akmuo2" parent="NavigationRegion2D/Stuff" unique_id=1783238883 instance=ExtResource("4_r832n")]
+[node name="Akmuo2" parent="NavigationRegion2D/Stuff" unique_id=1783238883 instance=ExtResource("3_cf5rq")]
 position = Vector2(-181, -403)
 
-[node name="Akmuo3" parent="NavigationRegion2D/Stuff" unique_id=1948105700 instance=ExtResource("4_r832n")]
+[node name="Akmuo3" parent="NavigationRegion2D/Stuff" unique_id=1948105700 instance=ExtResource("3_cf5rq")]
 position = Vector2(-215, 941)
 
-[node name="Akmuo4" parent="NavigationRegion2D/Stuff" unique_id=315600126 instance=ExtResource("4_r832n")]
+[node name="Akmuo4" parent="NavigationRegion2D/Stuff" unique_id=315600126 instance=ExtResource("3_cf5rq")]
 position = Vector2(-978, -353)
 
-[node name="Akmuo5" parent="NavigationRegion2D/Stuff" unique_id=2108526361 instance=ExtResource("4_r832n")]
+[node name="Akmuo5" parent="NavigationRegion2D/Stuff" unique_id=2108526361 instance=ExtResource("3_cf5rq")]
 position = Vector2(-61, -1003)
 
-[node name="Akmuo6" parent="NavigationRegion2D/Stuff" unique_id=1770588872 instance=ExtResource("4_r832n")]
+[node name="Akmuo6" parent="NavigationRegion2D/Stuff" unique_id=1770588872 instance=ExtResource("3_cf5rq")]
 position = Vector2(-1107, -971)
 
-[node name="Akmuo7" parent="NavigationRegion2D/Stuff" unique_id=1690112869 instance=ExtResource("4_r832n")]
+[node name="Akmuo7" parent="NavigationRegion2D/Stuff" unique_id=1690112869 instance=ExtResource("3_cf5rq")]
 position = Vector2(-1477, 1373)
 
-[node name="Akmuo8" parent="NavigationRegion2D/Stuff" unique_id=815177066 instance=ExtResource("4_r832n")]
+[node name="Akmuo8" parent="NavigationRegion2D/Stuff" unique_id=815177066 instance=ExtResource("3_cf5rq")]
 position = Vector2(-385, 1700)
 
-[node name="Akmuo9" parent="NavigationRegion2D/Stuff" unique_id=878253363 instance=ExtResource("4_r832n")]
+[node name="Akmuo9" parent="NavigationRegion2D/Stuff" unique_id=878253363 instance=ExtResource("3_cf5rq")]
 position = Vector2(654, 1681)
 
-[node name="Akmuo10" parent="NavigationRegion2D/Stuff" unique_id=6205367 instance=ExtResource("4_r832n")]
+[node name="Akmuo10" parent="NavigationRegion2D/Stuff" unique_id=6205367 instance=ExtResource("3_cf5rq")]
 position = Vector2(1865, 575)
 
-[node name="Akmuo11" parent="NavigationRegion2D/Stuff" unique_id=1636893032 instance=ExtResource("4_r832n")]
+[node name="Akmuo11" parent="NavigationRegion2D/Stuff" unique_id=1636893032 instance=ExtResource("3_cf5rq")]
 position = Vector2(991, -1208)
 
-[node name="Akmuo12" parent="NavigationRegion2D/Stuff" unique_id=207062249 instance=ExtResource("4_r832n")]
+[node name="Akmuo12" parent="NavigationRegion2D/Stuff" unique_id=207062249 instance=ExtResource("3_cf5rq")]
 position = Vector2(-179, 174)
 
-[node name="Akmuo13" parent="NavigationRegion2D/Stuff" unique_id=579160729 instance=ExtResource("4_r832n")]
+[node name="Akmuo13" parent="NavigationRegion2D/Stuff" unique_id=579160729 instance=ExtResource("3_cf5rq")]
 position = Vector2(-514, 930)
 
-[node name="Medis" parent="NavigationRegion2D/Stuff" unique_id=1232487258 instance=ExtResource("6_r832n")]
+[node name="Medis" parent="NavigationRegion2D/Stuff" unique_id=1232487258 instance=ExtResource("4_4uq0q")]
 position = Vector2(-707, 198)
 
-[node name="Medis2" parent="NavigationRegion2D/Stuff" unique_id=861007902 instance=ExtResource("6_r832n")]
+[node name="Medis2" parent="NavigationRegion2D/Stuff" unique_id=861007902 instance=ExtResource("4_4uq0q")]
 position = Vector2(153, -315)
 
-[node name="Medis3" parent="NavigationRegion2D/Stuff" unique_id=1227308423 instance=ExtResource("6_r832n")]
+[node name="Medis3" parent="NavigationRegion2D/Stuff" unique_id=1227308423 instance=ExtResource("4_4uq0q")]
 position = Vector2(-338, -534)
 
-[node name="Medis4" parent="NavigationRegion2D/Stuff" unique_id=1093433022 instance=ExtResource("6_r832n")]
+[node name="Medis4" parent="NavigationRegion2D/Stuff" unique_id=1093433022 instance=ExtResource("4_4uq0q")]
 position = Vector2(-263, -53)
 
-[node name="Medis5" parent="NavigationRegion2D/Stuff" unique_id=820596484 instance=ExtResource("6_r832n")]
+[node name="Medis5" parent="NavigationRegion2D/Stuff" unique_id=820596484 instance=ExtResource("4_4uq0q")]
 position = Vector2(268, 206)
 
-[node name="Medis6" parent="NavigationRegion2D/Stuff" unique_id=1218246216 instance=ExtResource("6_r832n")]
+[node name="Medis6" parent="NavigationRegion2D/Stuff" unique_id=1218246216 instance=ExtResource("4_4uq0q")]
 position = Vector2(-1366, 289)
 
-[node name="Medis7" parent="NavigationRegion2D/Stuff" unique_id=1893057998 instance=ExtResource("6_r832n")]
+[node name="Medis7" parent="NavigationRegion2D/Stuff" unique_id=1893057998 instance=ExtResource("4_4uq0q")]
 position = Vector2(-1538, -189)
 
-[node name="Medis8" parent="NavigationRegion2D/Stuff" unique_id=1758152329 instance=ExtResource("6_r832n")]
+[node name="Medis8" parent="NavigationRegion2D/Stuff" unique_id=1758152329 instance=ExtResource("4_4uq0q")]
 position = Vector2(-883, -710)
 
-[node name="Medis9" parent="NavigationRegion2D/Stuff" unique_id=295662609 instance=ExtResource("6_r832n")]
+[node name="Medis9" parent="NavigationRegion2D/Stuff" unique_id=295662609 instance=ExtResource("4_4uq0q")]
 position = Vector2(438, -997)
 
-[node name="Medis10" parent="NavigationRegion2D/Stuff" unique_id=2035970362 instance=ExtResource("6_r832n")]
+[node name="Medis10" parent="NavigationRegion2D/Stuff" unique_id=2035970362 instance=ExtResource("4_4uq0q")]
 position = Vector2(-308, -1416)
 
-[node name="Medis11" parent="NavigationRegion2D/Stuff" unique_id=1342739221 instance=ExtResource("6_r832n")]
+[node name="Medis11" parent="NavigationRegion2D/Stuff" unique_id=1342739221 instance=ExtResource("4_4uq0q")]
 position = Vector2(322, 1324)
 
-[node name="Medis12" parent="NavigationRegion2D/Stuff" unique_id=1922153032 instance=ExtResource("6_r832n")]
+[node name="Medis12" parent="NavigationRegion2D/Stuff" unique_id=1922153032 instance=ExtResource("4_4uq0q")]
 position = Vector2(-898, 1756)
 
-[node name="Medis13" parent="NavigationRegion2D/Stuff" unique_id=329891732 instance=ExtResource("6_r832n")]
+[node name="Medis13" parent="NavigationRegion2D/Stuff" unique_id=329891732 instance=ExtResource("4_4uq0q")]
 position = Vector2(-158, 1486)
 
-[node name="Medis14" parent="NavigationRegion2D/Stuff" unique_id=196179037 instance=ExtResource("6_r832n")]
+[node name="Medis14" parent="NavigationRegion2D/Stuff" unique_id=196179037 instance=ExtResource("4_4uq0q")]
 position = Vector2(820, 1505)
 
-[node name="Medis15" parent="NavigationRegion2D/Stuff" unique_id=994008444 instance=ExtResource("6_r832n")]
+[node name="Medis15" parent="NavigationRegion2D/Stuff" unique_id=994008444 instance=ExtResource("4_4uq0q")]
 position = Vector2(624, 1178)
 
-[node name="Medis16" parent="NavigationRegion2D/Stuff" unique_id=1170003555 instance=ExtResource("6_r832n")]
+[node name="Medis16" parent="NavigationRegion2D/Stuff" unique_id=1170003555 instance=ExtResource("4_4uq0q")]
 position = Vector2(-1770, 499)
 
-[node name="Medis17" parent="NavigationRegion2D/Stuff" unique_id=1817242278 instance=ExtResource("6_r832n")]
+[node name="Medis17" parent="NavigationRegion2D/Stuff" unique_id=1817242278 instance=ExtResource("4_4uq0q")]
 position = Vector2(-996, 74)
 
-[node name="Medis18" parent="NavigationRegion2D/Stuff" unique_id=2084734780 instance=ExtResource("6_r832n")]
+[node name="Medis18" parent="NavigationRegion2D/Stuff" unique_id=2084734780 instance=ExtResource("4_4uq0q")]
 position = Vector2(-642, 685)
 
-[node name="Medis19" parent="NavigationRegion2D/Stuff" unique_id=1741926693 instance=ExtResource("6_r832n")]
+[node name="Medis19" parent="NavigationRegion2D/Stuff" unique_id=1741926693 instance=ExtResource("4_4uq0q")]
 position = Vector2(-957, 1126)
 
-[node name="Medis20" parent="NavigationRegion2D/Stuff" unique_id=2070254761 instance=ExtResource("6_r832n")]
+[node name="Medis20" parent="NavigationRegion2D/Stuff" unique_id=2070254761 instance=ExtResource("4_4uq0q")]
 position = Vector2(2071, -327)
 
-[node name="Medis21" parent="NavigationRegion2D/Stuff" unique_id=1308722670 instance=ExtResource("6_r832n")]
+[node name="Medis21" parent="NavigationRegion2D/Stuff" unique_id=1308722670 instance=ExtResource("4_4uq0q")]
 position = Vector2(-1397, -1364)
 
-[node name="Morė" parent="." unique_id=123869013 instance=ExtResource("1_vtvpv")]
+[node name="Morė" parent="." unique_id=123869013 instance=ExtResource("5_pyfqt")]
 z_index = 1
 metadata/_edit_lock_ = true
 
-[node name="Character" parent="." unique_id=1399668264 instance=ExtResource("4_ls4eh")]
-position = Vector2(36, 66)
+[node name="Character" parent="." unique_id=1399668264 instance=ExtResource("6_0ogjc")]
+position = Vector2(16, 66)
 
 [node name="Camera2D" type="Camera2D" parent="Character" unique_id=508047536]
 process_mode = 3
@@ -2009,9 +2010,9 @@ zoom = Vector2(3, 3)
 [node name="Tamsa" type="CanvasModulate" parent="." unique_id=1782714918]
 color = Color(0.16796875, 0.16796875, 0.16796875, 1)
 
-[node name="Spawner" parent="." unique_id=322599394 node_paths=PackedStringArray("target") instance=ExtResource("7_vt41f")]
+[node name="Spawner" parent="." unique_id=322599394 node_paths=PackedStringArray("target") instance=ExtResource("7_jr5xq")]
 position = Vector2(-781, 364)
-spawned_object = ExtResource("8_n2vct")
+spawned_object = ExtResource("8_hwesa")
 target = NodePath("../Morė")
 
 [node name="Path2D" type="Path2D" parent="Spawner" unique_id=654953200]
@@ -2021,7 +2022,7 @@ curve = SubResource("Curve2D_n2vct")
 position = Vector2(121, -684)
 rotation = -2.4756234
 
-[node name="LasininisSpawner" parent="." unique_id=543463861 node_paths=PackedStringArray("camera", "character") instance=ExtResource("9_am2f4")]
+[node name="LasininisSpawner" parent="." unique_id=543463861 node_paths=PackedStringArray("camera", "character") instance=ExtResource("9_3b1wn")]
 position = Vector2(578, -202)
 camera = NodePath("../Character/Camera2D")
 character = NodePath("../Character")

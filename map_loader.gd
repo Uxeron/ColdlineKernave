@@ -4,7 +4,7 @@ var current_scene: Node
 
 func load_scene(path: String) -> void:
 	var new_scene = (load(path) as PackedScene).instantiate()
-	
+
 	if current_scene != null:
 		remove_child(current_scene)
 		current_scene.queue_free()

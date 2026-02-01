@@ -48,3 +48,7 @@ process_material = SubResource("ParticleProcessMaterial_u60g2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2104647168]
 shape = SubResource("CircleShape2D_8h2wj")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=2046143295]
+path_desired_distance = 4.0
+target_desired_distance = 4.0

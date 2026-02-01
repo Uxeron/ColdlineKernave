@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-@export var health: float = 10.0:
+@export var health: float = 1000.0:
 	set(value):
 		health = value
 		take_damage()
