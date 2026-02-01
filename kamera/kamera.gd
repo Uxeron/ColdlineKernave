@@ -13,6 +13,4 @@ func _process(_delta: float) -> void:
 	
 	var offset_ratio = Vector2(offset_ratio_x, offset_ratio_y)
 	
-	print(offset_ratio)
-	
 	offset = max_offset * offset_ratio
