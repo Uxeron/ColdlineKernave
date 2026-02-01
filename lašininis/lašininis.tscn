@@ -2,6 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="4_dbh7r"]
 
+[sub_resource type="GDScript" id="GDScript_5ko1g"]
+script/source = "extends Node2D
+
+@export var can_deal_damage: bool = false
+"
+
 [sub_resource type="Animation" id="Animation_rvpr0"]
 length = 0.001
 tracks/0/type = "value"
@@ -135,6 +141,18 @@ tracks/10/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath(".:can_deal_damage")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_dbh7r"]
@@ -403,6 +421,18 @@ tracks/5/keys = {
 "update": 0,
 "values": [2.8789504, 3.433912, 1.5079007, -0.049739838, -1.4794728, 1.8177307, 2.8789504]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath(".:can_deal_damage")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7xedv"]
 _data = {
@@ -413,6 +443,7 @@ _data = {
 }
 
 [node name="Lašininis" type="Node2D" unique_id=1753610124]
+script = SubResource("GDScript_5ko1g")
 
 [node name="Kūnas" type="Polygon2D" parent="." unique_id=1596819195]
 color = Color(0.65882355, 0.5803922, 0.5372549, 1)

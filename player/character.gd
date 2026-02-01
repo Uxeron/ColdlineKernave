@@ -2,7 +2,11 @@ class_name Character
 extends CharacterBody2D
 
 @export var speed: float = 200.0
-@export var health: float = 100.0
+@export var health: float = 100.0:
+	set(value):
+		health = value
+		take_damage()
+
 @export var damage: float = 50.0
 @export var knockback: float = 2000.0
 @onready var model: Model = get_child(0)
@@ -31,16 +35,24 @@ func _physics_process(_delta: float) -> void:
 		model.hit()
 		model.done.connect(func(): can_swing = true; hit_objects = [], ConnectFlags.CONNECT_ONE_SHOT)
 
+func take_damage():
+	if health <= 0.0:
+		MapLoader.add_scene("res://ui/game_loss.tscn")
+		process_mode = Node.PROCESS_MODE_DISABLED
+		return
+
 func attack() -> void:
 	var bodies = weapon_collider.get_overlapping_bodies()
 	for body in bodies:
-		if body is Goon and not hit_objects.has(body):
+		if (body is Goon or body is Lašininis) and not hit_objects.has(body):
+			print("player hit ", body)
 			body.health -= damage
-			var direction = Vector2.RIGHT.rotated(global_rotation)
-			body.knockback = direction * knockback
-			var particles = hit_particles.duplicate()
-			add_child(particles)
-			particles.global_position = body.global_position
-			particles.global_rotation = body.global_rotation
-			particles.run()
 			hit_objects.append(body)
+			if body.get("knockback") != null:
+				var direction = Vector2.RIGHT.rotated(global_rotation)
+				body.knockback = direction * knockback
+				var particles = hit_particles.duplicate()
+				add_child(particles)
+				particles.global_position = body.global_position
+				particles.global_rotation = body.global_rotation
+				particles.run()

@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-@export var health: float = 1000.0:
+@export var health: float = 10.0:
 	set(value):
 		health = value
 		take_damage()
@@ -12,7 +12,7 @@ var adjusting_light: bool = false
 
 func take_damage():
 	if health <= 0.0:
-		MapLoader.load_scene("res://main_menu.tscn")
+		MapLoader.add_scene("res://ui/game_loss.tscn")
 		return
 	
 	var scaling = health / max_health
@@ -21,9 +21,6 @@ func take_damage():
 	$Dūmai.scale = Vector2(scaling, scaling)
 	$Dūmai.amount_ratio = scaling
 	light_scale = start_light_scale * scaling
-	
-	
-
 
 func _process(_delta: float) -> void:
 	if not adjusting_light:
