@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dp8u5qb1i0j5s"]
+
+[ext_resource type="Script" uid="uid://daxrbsj2qcxg3" path="res://kiemas/rand_rotate.gd" id="1_0l7xk"]
+
+[node name="Akmuo" type="Polygon2D" unique_id=1097888096]
+scale = Vector2(0.32605755, 0.3816465)
+color = Color(0.3779188, 0.37791887, 0.37791884, 1)
+polygon = PackedVector2Array(17, -44, -61, -29, -68, 72, 33, 94, 106, 37)
+script = ExtResource("1_0l7xk")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1344174531]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=507109311]
+polygon = PackedVector2Array(17, -44, -61, -29, -68, 72, 33, 94, 106, 37)
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=2010199049]
+color = Color(0.6255971, 0.6255971, 0.6255971, 1)
+polygon = PackedVector2Array(-40, -16, 14, -27, 39, -7, 55, 15, 32, 11, 13, -6, -26, -7)
+
+[node name="Polygon2D2" type="Polygon2D" parent="." unique_id=1665453250]
+color = Color(0.6255971, 0.6255971, 0.6255971, 1)
+polygon = PackedVector2Array(-53, 11, -33, 20, -19, 51, 0, 58, 2, 78, -44, 68, -54, 46)
+
+[node name="Polygon2D3" type="Polygon2D" parent="." unique_id=210985690]
+color = Color(0.6255971, 0.6255971, 0.6255971, 1)
+polygon = PackedVector2Array(33, 54, -4, 39, 14, 23, 59, 29, 79, 22, 87, 41, 45, 75, 27, 82)

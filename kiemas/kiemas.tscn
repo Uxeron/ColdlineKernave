@@ -2,27 +2,33 @@
 
 [ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="1_upp30"]
 [ext_resource type="PackedScene" uid="uid://buwphuovv6why" path="res://morė/morė.tscn" id="1_vtvpv"]
-[ext_resource type="PackedScene" uid="uid://kwfl4q7srnp4" path="res://player/kanapinis/kanapinis.tscn" id="3_8k6ib"]
 [ext_resource type="PackedScene" uid="uid://cfjrgixhq3m7i" path="res://kiemas/eglė.tscn" id="4_8k6ib"]
+[ext_resource type="PackedScene" uid="uid://b141xwd4qqxai" path="res://player/kanapinis/character_kanapinis.tscn" id="4_ls4eh"]
+[ext_resource type="PackedScene" uid="uid://dp8u5qb1i0j5s" path="res://kiemas/akmuo.tscn" id="4_r832n"]
+[ext_resource type="PackedScene" uid="uid://e1b1qqcicrja" path="res://kiemas/medis.tscn" id="6_r832n"]
 
 [node name="Kiemas" type="Node2D" unique_id=99648339]
 
-[node name="Pixel" type="Sprite2D" parent="." unique_id=1242335255]
+[node name="Sniegas" type="Sprite2D" parent="." unique_id=1242335255]
 self_modulate = Color(0.9490196, 0.9490196, 0.9490196, 1)
 position = Vector2(-278, 147)
 scale = Vector2(20255.158, -14211.426)
 texture = ExtResource("1_upp30")
 
-[node name="Parkingas" type="Sprite2D" parent="." unique_id=991382783]
+[node name="Parkingas" type="Node2D" parent="." unique_id=51546486]
+scale = Vector2(0.7, 0.7)
+
+[node name="Asfaltas" type="Sprite2D" parent="Parkingas" unique_id=991382783]
 self_modulate = Color(0.24115619, 0.24115601, 0.24115604, 1)
-position = Vector2(-1185.9999, -1252)
-rotation = 3.1415927
+position = Vector2(1490.0001, 20.999878)
+rotation = -3.1415925
 scale = Vector2(2071.0107, -2284.1487)
 texture = ExtResource("1_upp30")
 
 [node name="Eilė" type="Node2D" parent="Parkingas" unique_id=1655300161]
-position = Vector2(0.045871258, 0.1812492)
-scale = Vector2(0.7962015, 0.41903213)
+position = Vector2(1395.0002, 435)
+rotation = -3.1415925
+scale = Vector2(1648.9419, -957.13165)
 
 [node name="Vieta" type="Line2D" parent="Parkingas/Eilė" unique_id=642844616]
 position = Vector2(0.00060641766, 0.01358211)
@@ -91,9 +97,8 @@ points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.3420
 width = 0.005
 
 [node name="Eilė2" type="Node2D" parent="Parkingas" unique_id=1091572888]
-position = Vector2(-0.027040064, 0.3397327)
-rotation = -3.1415925
-scale = Vector2(0.7962015, 0.41903213)
+position = Vector2(1546.0004, 796.9999)
+scale = Vector2(1648.9419, -957.13165)
 
 [node name="Vieta" type="Line2D" parent="Parkingas/Eilė2" unique_id=1267338442]
 position = Vector2(0.00060641766, 0.01358211)
@@ -162,8 +167,9 @@ points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.3420
 width = 0.005
 
 [node name="Eilė3" type="Node2D" parent="Parkingas" unique_id=1057793428]
-position = Vector2(0.046836972, -0.07705277)
-scale = Vector2(0.7962015, 0.41903213)
+position = Vector2(1393.0002, -155.00012)
+rotation = -3.1415925
+scale = Vector2(1648.9419, -957.13165)
 
 [node name="Vieta" type="Line2D" parent="Parkingas/Eilė3" unique_id=1376389192]
 position = Vector2(0.00060641766, 0.01358211)
@@ -232,9 +238,8 @@ points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.3420
 width = 0.005
 
 [node name="Eilė4" type="Node2D" parent="Parkingas" unique_id=1976331050]
-position = Vector2(-0.02607429, 0.08143073)
-rotation = -3.1415925
-scale = Vector2(0.7962015, 0.41903213)
+position = Vector2(1544.0002, 206.99979)
+scale = Vector2(1648.9419, -957.13165)
 
 [node name="Vieta" type="Line2D" parent="Parkingas/Eilė4" unique_id=1482603777]
 position = Vector2(0.00060641766, 0.01358211)
@@ -303,8 +308,9 @@ points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.3420
 width = 0.005
 
 [node name="Eilė5" type="Node2D" parent="Parkingas" unique_id=79905555]
-position = Vector2(0.04200852, -0.34323496)
-scale = Vector2(0.7962015, 0.41903213)
+position = Vector2(1403.0001, -762.9998)
+rotation = -3.1415925
+scale = Vector2(1648.9419, -957.13165)
 
 [node name="Vieta" type="Line2D" parent="Parkingas/Eilė5" unique_id=852131555]
 position = Vector2(0.00060641766, 0.01358211)
@@ -373,9 +379,8 @@ points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.3420
 width = 0.005
 
 [node name="Eilė6" type="Node2D" parent="Parkingas" unique_id=697941901]
-position = Vector2(-0.030902803, -0.18475151)
-rotation = -3.1415925
-scale = Vector2(0.7962015, 0.41903213)
+position = Vector2(1554.0002, -401.00003)
+scale = Vector2(1648.9419, -957.13165)
 
 [node name="Vieta" type="Line2D" parent="Parkingas/Eilė6" unique_id=1517378097]
 position = Vector2(0.00060641766, 0.01358211)
@@ -444,16 +449,16 @@ points = PackedVector2Array(0.2771473, 0.32806355, 0.2771473, 0.17552447, 0.3420
 width = 0.005
 
 [node name="Vieta" type="Line2D" parent="Parkingas" unique_id=1791097018]
-position = Vector2(0.00060641766, 0.01358211)
-scale = Vector2(0.99999994, 0.9999999)
+position = Vector2(1488.7443, 52.023438)
+rotation = -3.1415925
+scale = Vector2(2071.0105, -2284.1484)
 points = PackedVector2Array(0.475, 0.45, 0.475, -0.5, -0.475, -0.5, -0.475, 0.45)
 closed = true
 width = 0.005
 
 [node name="Mašinos" type="Node2D" parent="Parkingas" unique_id=612383623]
-position = Vector2(-0.6050187, 0.6352475)
-rotation = -3.1415925
-scale = Vector2(0.000482856, -0.00043779984)
+position = Vector2(2743, 1471.9998)
+scale = Vector2(1, 0.99999994)
 
 [node name="DominykoMašina" type="Sprite2D" parent="Parkingas/Mašinos" unique_id=1226911672]
 self_modulate = Color(1, 0.73333335, 0, 0)
@@ -1766,60 +1771,219 @@ scale = Vector2(0.051967844, 0.0112831285)
 texture = ExtResource("1_upp30")
 
 [node name="Morė" parent="." unique_id=123869013 instance=ExtResource("1_vtvpv")]
+z_index = 1
 
-[node name="Kanapinis" parent="." unique_id=149332413 instance=ExtResource("3_8k6ib")]
-position = Vector2(-1919, -792)
+[node name="Character" parent="." unique_id=1399668264 instance=ExtResource("4_ls4eh")]
+position = Vector2(36, 66)
 
-[node name="Kanapinis2" parent="." unique_id=1437584829 instance=ExtResource("3_8k6ib")]
-position = Vector2(-206, 89)
+[node name="Camera2D" type="Camera2D" parent="Character" unique_id=508047536]
+zoom = Vector2(5, 5)
 
-[node name="Eglė" parent="." unique_id=893357924 instance=ExtResource("4_8k6ib")]
-position = Vector2(-140, 94)
+[node name="Tamsa" type="CanvasModulate" parent="." unique_id=1782714918]
+color = Color(0.16796875, 0.16796875, 0.16796875, 1)
 
-[node name="Node2D" parent="." unique_id=407889322 instance=ExtResource("4_8k6ib")]
-position = Vector2(-533.00006, 33.999992)
-rotation = 1.6905246
-scale = Vector2(1.3867637, 1.511171)
+[node name="IcewallParkingas" type="Polygon2D" parent="." unique_id=1010961562]
+color = Color(0.6, 0.81333333, 1, 1)
+polygon = PackedVector2Array(1053, -637, 1034, -543, 1049, -503, 1036, -405, 1041, -327, 1082, -269, 1073, -193, 1034, -105, 1064, -68, 1056, 49, 1018, 162, 1051, 238, 1098, 369, 1040, 449, 984, 457, 924, 404, 902, 436, 913, 503, 907, 557, 859, 611, 772, 490, 782, 402, 717, 333, 586, 322, 535, 384, 419, 387, 371, 413, 314, 489, 231, 507, 225, 586, 278, 614, 339, 569, 385, 510, 484, 514, 563, 437, 643, 396, 693, 453, 705, 541, 713, 620, 786, 657, 886, 743, 969, 713, 981, 598, 1056, 531, 1180, 506, 1174, 426, 1178, 293, 1130, 239, 1150, 176, 1098, 118, 1093, 2, 1150, -58, 1113, -132, 1147, -237, 1124, -313, 1088, -420, 1120, -497, 1097, -597, 1128, -665, 1085, -748, 978, -812, 796, -813, 687, -750, 541, -728, 478, -754, 371, -805, 292, -816, 231, -770, 234, -676, 294, -684, 283, -743, 352, -754, 417, -674, 532, -703, 596, -673, 710, -694, 763, -738, 873, -745, 958, -685, 1010, -694)
 
-[node name="Node2D2" parent="." unique_id=1870284349 instance=ExtResource("4_8k6ib")]
-position = Vector2(-40.99997, 446.99988)
-rotation = -2.9196427
-scale = Vector2(2.1157305, 2.1276417)
+[node name="StaticBody2D" type="StaticBody2D" parent="IcewallParkingas" unique_id=747923684]
 
-[node name="Node2D3" parent="." unique_id=1290749557 instance=ExtResource("4_8k6ib")]
-position = Vector2(-242, 207)
-rotation = -0.47790977
-scale = Vector2(1.6958596, 1.844449)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="IcewallParkingas/StaticBody2D" unique_id=1089226397]
+polygon = PackedVector2Array(1053, -637, 1034, -543, 1049, -503, 1036, -405, 1041, -327, 1082, -269, 1073, -193, 1034, -105, 1064, -68, 1056, 49, 1018, 162, 1051, 238, 1098, 369, 1040, 449, 984, 457, 924, 404, 902, 436, 913, 503, 907, 557, 859, 611, 772, 490, 782, 402, 717, 333, 586, 322, 535, 384, 419, 387, 371, 413, 314, 489, 231, 507, 225, 586, 278, 614, 339, 569, 385, 510, 484, 514, 563, 437, 643, 396, 693, 453, 705, 541, 713, 620, 786, 657, 886, 743, 969, 713, 981, 598, 1056, 531, 1180, 506, 1174, 426, 1178, 293, 1130, 239, 1150, 176, 1098, 118, 1093, 2, 1150, -58, 1113, -132, 1147, -237, 1124, -313, 1088, -420, 1120, -497, 1097, -597, 1128, -665, 1085, -748, 978, -812, 796, -813, 687, -750, 541, -728, 478, -754, 371, -805, 292, -816, 231, -770, 234, -676, 294, -684, 283, -743, 352, -754, 417, -674, 532, -703, 596, -673, 710, -694, 763, -738, 873, -745, 958, -685, 1010, -694)
 
-[node name="Node2D4" parent="." unique_id=1992114577 instance=ExtResource("4_8k6ib")]
-position = Vector2(-815, 180)
-rotation = 0.6416151
-scale = Vector2(2.0682979, 1.9085554)
+[node name="IcewallParkas" type="Polygon2D" parent="." unique_id=468730811]
+color = Color(0.6, 0.8117647, 1, 1)
+polygon = PackedVector2Array(244, 538, 127, 551, 102, 480, 16, 534, -44, 666, -42, 841, -140, 952, -211, 1062, -326, 1025, -441, 1121, -543, 1133, -612, 1044, -581, 914, -535, 797, -600, 758, -685, 783, -734, 665, -692, 612, -730, 506, -854, 450, -936, 420, -923, 347, -855, 272, -883, 214, -952, 163, -1047, 149, -1088, 69, -1038, -14, -1078, -104, -1059, -161, -1060, -268, -1105, -344, -1033, -424, -926, -459, -830, -423, -741, -444, -664, -367, -572, -354, -511, -400, -517, -488, -551, -585, -501, -709, -431, -752, -361, -713, -248, -672, -207, -734, -110, -785, -36, -749, 10, -701, 78, -716, 146, -667, 208, -623, 263, -650, 258, -707, 194, -737, 106, -738, 65, -768, 14, -750, -16, -789, -71, -815, -131, -828, -195, -793, -246, -750, -300, -730, -326, -794, -388, -789, -462, -766, -526, -763, -568, -712, -541, -687, -595, -657, -578, -605, -598, -562, -719, -579, -769, -520, -856, -481, -925, -508, -1008, -523, -1063, -490, -1086, -436, -1166, -396, -1214, -302, -1258, -207, -1190, -186, -1130, -242, -1105, -193, -1140, -142, -1210, -131, -1221, -70, -1154, -37, -1095, -11, -1124, 66, -1131, 163, -1062, 188, -1019, 189, -966, 182, -938, 200, -949, 237, -946, 257, -917, 264, -892, 247, -886, 275, -925, 299, -958, 345, -955, 388, -929, 477, -877, 488, -780, 508, -768, 554, -727, 614, -761, 655, -779, 738, -721, 828, -753, 875, -830, 948, -825, 1027, -777, 1128, -801, 1199, -883, 1241, -948, 1338, -900, 1392, -827, 1421, -773, 1361, -635, 1374, -585, 1429, -491, 1403, -371, 1496, -263, 1487, -170, 1423, -65, 1457, 44, 1433, 49, 1339, 90, 1238, 43, 1145, -44, 1095, -79, 1045, -37, 970, 55, 940, 164, 866, 132, 794, 57, 801, 10, 780, 16, 692, 60, 644, 46, 584, 138, 596, 214, 651, 278, 579)
 
-[node name="Node2D5" parent="." unique_id=115619708 instance=ExtResource("4_8k6ib")]
-position = Vector2(-611, 467)
-rotation = -1.8165641
-scale = Vector2(3.2036552, 2.9087024)
+[node name="StaticBody2D" type="StaticBody2D" parent="IcewallParkas" unique_id=80531533]
 
-[node name="Node2D6" type="Polygon2D" parent="." unique_id=9943187]
-position = Vector2(-300, 453)
-scale = Vector2(0.32605755, 0.3816465)
-color = Color(0.3779188, 0.37791887, 0.37791884, 1)
-polygon = PackedVector2Array(17, -44, -61, -29, -68, 72, 33, 94, 106, 37)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="IcewallParkas/StaticBody2D" unique_id=2050830243]
+polygon = PackedVector2Array(244, 538, 127, 551, 102, 480, 16, 534, -44, 666, -42, 841, -140, 952, -211, 1062, -326, 1025, -441, 1121, -543, 1133, -612, 1044, -581, 914, -535, 797, -600, 758, -685, 783, -734, 665, -692, 612, -730, 506, -854, 450, -936, 420, -923, 347, -855, 272, -883, 214, -952, 163, -1047, 149, -1088, 69, -1038, -14, -1078, -104, -1059, -161, -1060, -268, -1105, -344, -1033, -424, -926, -459, -830, -423, -741, -444, -664, -367, -572, -354, -511, -400, -517, -488, -551, -585, -501, -709, -431, -752, -361, -713, -248, -672, -207, -734, -110, -785, -36, -749, 10, -701, 78, -716, 146, -667, 208, -623, 263, -650, 258, -707, 194, -737, 106, -738, 65, -768, 14, -750, -16, -789, -71, -815, -131, -828, -195, -793, -246, -750, -300, -730, -326, -794, -388, -789, -462, -766, -526, -763, -568, -712, -541, -687, -595, -657, -578, -605, -598, -562, -719, -579, -769, -520, -856, -481, -925, -508, -1008, -523, -1063, -490, -1086, -436, -1166, -396, -1214, -302, -1258, -207, -1190, -186, -1130, -242, -1105, -193, -1140, -142, -1210, -131, -1221, -70, -1154, -37, -1095, -11, -1124, 66, -1131, 163, -1062, 188, -1019, 189, -966, 182, -938, 200, -949, 237, -946, 257, -917, 264, -892, 247, -886, 275, -925, 299, -958, 345, -955, 388, -929, 477, -877, 488, -780, 508, -768, 554, -727, 614, -761, 655, -779, 738, -721, 828, -753, 875, -830, 948, -825, 1027, -777, 1128, -801, 1199, -883, 1241, -948, 1338, -900, 1392, -827, 1421, -773, 1361, -635, 1374, -585, 1429, -491, 1403, -371, 1496, -263, 1487, -170, 1423, -65, 1457, 44, 1433, 49, 1339, 90, 1238, 43, 1145, -44, 1095, -79, 1045, -37, 970, 55, 940, 164, 866, 132, 794, 57, 801, 10, 780, 16, 692, 60, 644, 46, 584, 138, 596, 214, 651, 278, 579)
 
-[node name="Polygon2D" type="Polygon2D" parent="Node2D6" unique_id=1642458100]
-color = Color(0.6255971, 0.6255971, 0.6255971, 1)
-polygon = PackedVector2Array(-40, -16, 14, -27, 39, -7, 55, 15, 32, 11, 13, -6, -26, -7)
+[node name="Stuff" type="Node2D" parent="." unique_id=1704598547]
 
-[node name="Polygon2D2" type="Polygon2D" parent="Node2D6" unique_id=728109861]
-color = Color(0.6255971, 0.6255971, 0.6255971, 1)
-polygon = PackedVector2Array(-53, 11, -33, 20, -19, 51, 0, 58, 2, 78, -44, 68, -54, 46)
+[node name="Eglė" parent="Stuff" unique_id=893357924 instance=ExtResource("4_8k6ib")]
+position = Vector2(-370, 517)
 
-[node name="Polygon2D3" type="Polygon2D" parent="Node2D6" unique_id=1769830911]
-color = Color(0.6255971, 0.6255971, 0.6255971, 1)
-polygon = PackedVector2Array(33, 54, -4, 39, 14, 23, 59, 29, 79, 22, 87, 41, 45, 75, 27, 82)
+[node name="Eglė2" parent="Stuff" unique_id=521544486 instance=ExtResource("4_8k6ib")]
+position = Vector2(-461, 169)
 
-[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1486652109]
-position = Vector2(178, 133)
-color = Color(0.3889075, 0.20740077, 0, 1)
-polygon = PackedVector2Array(-5, -7, 4, -8, 6, -7, 11, -11, 7, -19, 10, -16, 13, -13, 22, -18, 21, -22, 22, -21, 24, -19, 36, -21, 34, -19, 24, -17, 14, -10, 10, -5, 11, 0, 10, 4, 24, 14, 31, 13, 32, 13, 25, 15, 30, 18, 33, 18, 33, 19, 30.463615, 19.62265, 32, 25, 30, 24, 25, 18, 8, 8, 5, 10, 2.9576912, 17.48846, 8, 25, 6, 24, 2, 20, -1, 32, -4, 31, -2.7209454, 26.286022, -5, 27, -5, 26, -2.1190834, 24.067848, -1, 19.943436, -1, 10, -4, 9, -9, 6, -14.214542, 8.979738, -15, 18, -17, 24, -17, 10, -33, 21, -33, 27, -34, 29, -35, 23, -33, 18, -40, 19, -37, 17, -31, 15, -24, 10, -27, 9, -32, 9, -27, 8, -22, 9, -10, 2, -10, 0, -35, -15, -43, -18, -45, -20, -34, -17, -33, -24, -31, -22, -32, -16, -14, -7, -15, -14, -17, -20, -15, -18, -13.015104, -14.732117, -11, -15, -11, -14, -12.585722, -12.871456, -11, -6, -7, -4)
+[node name="Eglė3" parent="Stuff" unique_id=1061074044 instance=ExtResource("4_8k6ib")]
+position = Vector2(-26, 410)
+
+[node name="Eglė4" parent="Stuff" unique_id=498278953 instance=ExtResource("4_8k6ib")]
+position = Vector2(65, -556)
+
+[node name="Eglė5" parent="Stuff" unique_id=2119678174 instance=ExtResource("4_8k6ib")]
+position = Vector2(-776, -241)
+
+[node name="Eglė6" parent="Stuff" unique_id=93468206 instance=ExtResource("4_8k6ib")]
+position = Vector2(-1002, 479)
+
+[node name="Eglė7" parent="Stuff" unique_id=2045670138 instance=ExtResource("4_8k6ib")]
+position = Vector2(-1896, -9)
+
+[node name="Eglė8" parent="Stuff" unique_id=178390357 instance=ExtResource("4_8k6ib")]
+position = Vector2(-1366, 48)
+
+[node name="Eglė9" parent="Stuff" unique_id=416197049 instance=ExtResource("4_8k6ib")]
+position = Vector2(-1421, 734)
+
+[node name="Eglė10" parent="Stuff" unique_id=1012623722 instance=ExtResource("4_8k6ib")]
+position = Vector2(-825, 1578)
+
+[node name="Eglė11" parent="Stuff" unique_id=515577188 instance=ExtResource("4_8k6ib")]
+position = Vector2(-1073, 956)
+
+[node name="Eglė12" parent="Stuff" unique_id=83452171 instance=ExtResource("4_8k6ib")]
+position = Vector2(89, 1640)
+
+[node name="Eglė13" parent="Stuff" unique_id=495715393 instance=ExtResource("4_8k6ib")]
+position = Vector2(422, 930)
+
+[node name="Eglė14" parent="Stuff" unique_id=2082589960 instance=ExtResource("4_8k6ib")]
+position = Vector2(188, 1074)
+
+[node name="Eglė15" parent="Stuff" unique_id=1141429683 instance=ExtResource("4_8k6ib")]
+position = Vector2(792, 1348)
+
+[node name="Eglė16" parent="Stuff" unique_id=796568393 instance=ExtResource("4_8k6ib")]
+position = Vector2(-1410, -857)
+
+[node name="Eglė17" parent="Stuff" unique_id=1315342865 instance=ExtResource("4_8k6ib")]
+position = Vector2(-674, -968)
+
+[node name="Eglė18" parent="Stuff" unique_id=144703084 instance=ExtResource("4_8k6ib")]
+position = Vector2(-71, -1190)
+
+[node name="Eglė19" parent="Stuff" unique_id=1136185693 instance=ExtResource("4_8k6ib")]
+position = Vector2(725, -909)
+
+[node name="Eglė20" parent="Stuff" unique_id=2003104214 instance=ExtResource("4_8k6ib")]
+position = Vector2(529, -1360)
+
+[node name="Eglė21" parent="Stuff" unique_id=1179978796 instance=ExtResource("4_8k6ib")]
+position = Vector2(-670, -1438)
+
+[node name="Eglė22" parent="Stuff" unique_id=662659674 instance=ExtResource("4_8k6ib")]
+position = Vector2(-1462, -480)
+
+[node name="Eglė23" parent="Stuff" unique_id=688335547 instance=ExtResource("4_8k6ib")]
+position = Vector2(1443, 967)
+
+[node name="Eglė24" parent="Stuff" unique_id=1262027066 instance=ExtResource("4_8k6ib")]
+position = Vector2(1184, -990)
+
+[node name="Eglė25" parent="Stuff" unique_id=781654110 instance=ExtResource("4_8k6ib")]
+position = Vector2(2031, 290)
+
+[node name="Eglė26" parent="Stuff" unique_id=1039754629 instance=ExtResource("4_8k6ib")]
+position = Vector2(1735, -1053)
+
+[node name="Eglė27" parent="Stuff" unique_id=343096630 instance=ExtResource("4_8k6ib")]
+position = Vector2(2157, -598)
+
+[node name="Eglė28" parent="Stuff" unique_id=1547053425 instance=ExtResource("4_8k6ib")]
+position = Vector2(1983, 1448)
+
+[node name="Akmuo" parent="Stuff" unique_id=1097888096 instance=ExtResource("4_r832n")]
+position = Vector2(-1472, 433)
+
+[node name="Akmuo2" parent="Stuff" unique_id=1783238883 instance=ExtResource("4_r832n")]
+position = Vector2(-181, -403)
+
+[node name="Akmuo3" parent="Stuff" unique_id=1948105700 instance=ExtResource("4_r832n")]
+position = Vector2(-215, 941)
+
+[node name="Akmuo4" parent="Stuff" unique_id=315600126 instance=ExtResource("4_r832n")]
+position = Vector2(-978, -353)
+
+[node name="Akmuo5" parent="Stuff" unique_id=2108526361 instance=ExtResource("4_r832n")]
+position = Vector2(-61, -1003)
+
+[node name="Akmuo6" parent="Stuff" unique_id=1770588872 instance=ExtResource("4_r832n")]
+position = Vector2(-1107, -971)
+
+[node name="Akmuo7" parent="Stuff" unique_id=1690112869 instance=ExtResource("4_r832n")]
+position = Vector2(-1477, 1373)
+
+[node name="Akmuo8" parent="Stuff" unique_id=815177066 instance=ExtResource("4_r832n")]
+position = Vector2(-385, 1700)
+
+[node name="Akmuo9" parent="Stuff" unique_id=878253363 instance=ExtResource("4_r832n")]
+position = Vector2(654, 1681)
+
+[node name="Akmuo10" parent="Stuff" unique_id=6205367 instance=ExtResource("4_r832n")]
+position = Vector2(1865, 575)
+
+[node name="Akmuo11" parent="Stuff" unique_id=1636893032 instance=ExtResource("4_r832n")]
+position = Vector2(991, -1208)
+
+[node name="Akmuo12" parent="Stuff" unique_id=207062249 instance=ExtResource("4_r832n")]
+position = Vector2(-179, 174)
+
+[node name="Akmuo13" parent="Stuff" unique_id=579160729 instance=ExtResource("4_r832n")]
+position = Vector2(-514, 930)
+
+[node name="Medis" parent="Stuff" unique_id=1232487258 instance=ExtResource("6_r832n")]
+position = Vector2(-707, 198)
+
+[node name="Medis2" parent="Stuff" unique_id=861007902 instance=ExtResource("6_r832n")]
+position = Vector2(153, -315)
+
+[node name="Medis3" parent="Stuff" unique_id=1227308423 instance=ExtResource("6_r832n")]
+position = Vector2(-349, -575)
+
+[node name="Medis4" parent="Stuff" unique_id=1093433022 instance=ExtResource("6_r832n")]
+position = Vector2(-263, -53)
+
+[node name="Medis5" parent="Stuff" unique_id=820596484 instance=ExtResource("6_r832n")]
+position = Vector2(268, 206)
+
+[node name="Medis6" parent="Stuff" unique_id=1218246216 instance=ExtResource("6_r832n")]
+position = Vector2(-1366, 289)
+
+[node name="Medis7" parent="Stuff" unique_id=1893057998 instance=ExtResource("6_r832n")]
+position = Vector2(-1538, -189)
+
+[node name="Medis8" parent="Stuff" unique_id=1758152329 instance=ExtResource("6_r832n")]
+position = Vector2(-883, -710)
+
+[node name="Medis9" parent="Stuff" unique_id=295662609 instance=ExtResource("6_r832n")]
+position = Vector2(438, -997)
+
+[node name="Medis10" parent="Stuff" unique_id=2035970362 instance=ExtResource("6_r832n")]
+position = Vector2(-308, -1416)
+
+[node name="Medis11" parent="Stuff" unique_id=1342739221 instance=ExtResource("6_r832n")]
+position = Vector2(322, 1324)
+
+[node name="Medis12" parent="Stuff" unique_id=1922153032 instance=ExtResource("6_r832n")]
+position = Vector2(-898, 1756)
+
+[node name="Medis13" parent="Stuff" unique_id=329891732 instance=ExtResource("6_r832n")]
+position = Vector2(-158, 1486)
+
+[node name="Medis14" parent="Stuff" unique_id=196179037 instance=ExtResource("6_r832n")]
+position = Vector2(820, 1505)
+
+[node name="Medis15" parent="Stuff" unique_id=994008444 instance=ExtResource("6_r832n")]
+position = Vector2(624, 1178)
+
+[node name="Medis16" parent="Stuff" unique_id=1170003555 instance=ExtResource("6_r832n")]
+position = Vector2(-1770, 499)
+
+[node name="Medis17" parent="Stuff" unique_id=1817242278 instance=ExtResource("6_r832n")]
+position = Vector2(-996, 74)
+
+[node name="Medis18" parent="Stuff" unique_id=2084734780 instance=ExtResource("6_r832n")]
+position = Vector2(-642, 685)
+
+[node name="Medis19" parent="Stuff" unique_id=1741926693 instance=ExtResource("6_r832n")]
+position = Vector2(-957, 1126)
+
+[node name="Medis20" parent="Stuff" unique_id=2070254761 instance=ExtResource("6_r832n")]
+position = Vector2(2071, -327)
+
+[node name="Medis21" parent="Stuff" unique_id=1308722670 instance=ExtResource("6_r832n")]
+position = Vector2(-1397, -1364)
