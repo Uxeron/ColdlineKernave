@@ -9,6 +9,7 @@ radius = 8.0
 
 [node name="Character" unique_id=1399668264 instance=ExtResource("1_1xdi6")]
 script = ExtResource("2_s4qxm")
+character = 2
 
 [node name="PetraduVaikas" parent="." index="0" unique_id=1560510173 instance=ExtResource("2_g5f8k")]
 

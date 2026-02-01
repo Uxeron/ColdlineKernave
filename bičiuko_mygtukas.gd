@@ -1,14 +1,17 @@
 extends Button
 
 
-@export var target_scene_path: String = "res://main.tscn"
+@export var target_scene_path: String = "res://kiemas/kiemas.tscn"
 @export var snukis: Node2D
+@export var character_stage: int = 0
 
 @export var aš_esu_vydūnas: bool = false
 
 
 func _ready() -> void:
 	self.pressed.connect(_pressed)
+	
+	disabled = Global.character_stage < character_stage
 	
 	self.mouse_entered.connect(do_face_effect)
 	self.mouse_exited.connect(undo_face_effect)

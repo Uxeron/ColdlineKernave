@@ -8,7 +8,7 @@ radius = 11.0
 
 [node name="Character" unique_id=1399668264 instance=ExtResource("1_xhpbc")]
 damage = 80.0
-knockback = 200.0
+character = 1
 
 [node name="Giltine" parent="." index="0" unique_id=134817609 instance=ExtResource("2_so8eu")]
 

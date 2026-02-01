@@ -2,11 +2,31 @@
 
 [ext_resource type="Script" uid="uid://b6060j0xtj50c" path="res://lašininis/lašininis_moving.gd" id="1_pd6vx"]
 [ext_resource type="PackedScene" uid="uid://rh0ixh83ltwt" path="res://lašininis/lašininis.tscn" id="2_y3u1r"]
+[ext_resource type="Texture2D" uid="uid://4kkp4yoorhb4" path="res://pixel.png" id="3_y3u1r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3rqmx"]
 radius = 20.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sh2bp"]
+
+[sub_resource type="Curve" id="Curve_3rqmx"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -3.0351696, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_vgjit"]
+curve = SubResource("Curve_3rqmx")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_sh2bp"]
+particle_flag_disable_z = true
+angle_min = -720.0
+angle_max = 720.0
+spread = 180.0
+initial_velocity_min = 20.0
+initial_velocity_max = 40.0
+gravity = Vector3(0, 0, 0)
+scale_min = 4.0
+scale_max = 4.0
+alpha_curve = SubResource("CurveTexture_vgjit")
 
 [node name="Lašininis" type="CharacterBody2D" unique_id=1269093086]
 motion_mode = 1
@@ -30,6 +50,14 @@ shape = SubResource("CircleShape2D_3rqmx")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea" unique_id=1732377266]
 position = Vector2(41, 0)
 shape = SubResource("RectangleShape2D_sh2bp")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1799830562]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=552212388]
+emitting = false
+amount = 200
+texture = ExtResource("3_y3u1r")
+process_material = SubResource("ParticleProcessMaterial_sh2bp")
 
 [connection signal="body_entered" from="Lašininis/Maišas/BagColliderArea" to="." method="_on_bag_collider_area_body_entered"]
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]

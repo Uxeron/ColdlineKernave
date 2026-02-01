@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b141xwd4qqxai" path="res://player/kanapinis/character_kanapinis.tscn" id="6_272bh"]
 [ext_resource type="PackedScene" uid="uid://dkj0xni11dddl" path="res://player/giltine/character_giltine.tscn" id="7_5vw27"]
 [ext_resource type="PackedScene" uid="uid://brgw7mhilbnrt" path="res://lašininis/lašininis_moving.tscn" id="8_5vw27"]
+[ext_resource type="PackedScene" uid="uid://cleev0low7ntr" path="res://ui/fight_ui.tscn" id="9_kek77"]
 
 [node name="Main" type="Node2D" unique_id=1893357246]
 
@@ -72,3 +73,5 @@ position = Vector2(629, 150)
 [node name="LašininisMoving" parent="." unique_id=1269093086 node_paths=PackedStringArray("target") instance=ExtResource("8_5vw27")]
 position = Vector2(140, 330)
 target = NodePath("../CharacterKanapinis")
+
+[node name="CanvasLayer" parent="." unique_id=1035848821 instance=ExtResource("9_kek77")]

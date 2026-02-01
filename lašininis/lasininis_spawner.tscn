@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://d4kw41cvxakan"]
+
+[sub_resource type="GDScript" id="GDScript_4r2vk"]
+script/source = "extends Node2D
+
+var spawned: bool = false
+const LAŠININIS_MOVING = preload(\"uid://brgw7mhilbnrt\")
+@export var camera: Camera2D
+@export var character: Character
+
+func _physics_process(_delta: float) -> void:
+	if Global.enemy_count == 0 and Global.active_enemies == 0 and not spawned:
+		spawn_lasininis.call_deferred()
+		spawned = true
+
+func spawn_lasininis() -> void:
+	await get_tree().create_timer(3).timeout
+	
+	get_tree().paused = true
+	
+	MapLoader.add_scene(\"res://ui/lasininis_chat.tscn\")
+	await get_tree().create_timer(5.0).timeout
+	
+	var lasininis: Lašininis = LAŠININIS_MOVING.instantiate()
+	lasininis.target = character
+	lasininis.global_position = global_position
+	MapLoader.current_scene.add_child(lasininis)
+	lasininis.global_rotation = global_position.angle_to_point(character.global_position)
+	character.global_rotation = character.global_position.angle_to_point(lasininis.global_position)
+	
+	var starting_camera_pos = camera.global_position
+	
+	var camera_tween = get_tree().create_tween()
+	camera_tween.set_pause_mode(Tween.TWEEN_PAUSE_PROCESS)
+	camera_tween.set_ease(Tween.EASE_IN_OUT)
+	camera_tween.set_trans(Tween.TRANS_QUAD)
+	camera_tween.tween_property(
+		camera,
+		\"global_position\",
+		global_position,
+		2.0)
+	
+	camera_tween.tween_interval(1.0)
+	
+	camera_tween.tween_property(
+		camera,
+		\"global_position\",
+		starting_camera_pos,
+		2.0)
+	
+	camera_tween.play()
+	
+	await get_tree().create_timer(5.0).timeout
+	
+	get_tree().paused = false
+	
+	MapLoader.add_scene(\"res://ui/fight_ui.tscn\")
+	
+	queue_free()
+	
+"
+
+[node name="LasininisSpawner" type="Node2D" unique_id=543463861]
+process_mode = 3
+script = SubResource("GDScript_4r2vk")

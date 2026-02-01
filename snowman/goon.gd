@@ -7,6 +7,7 @@ extends CharacterBody2D
 @export var target: Node2D
 @onready var self_destructing_particles: SelfDestructingParticles = $SelfDestructingParticles
 @onready var model = get_child(0)
+@onready var navigation_agent: NavigationAgent2D = $NavigationAgent2D
 
 var did_animation: bool = false
 var animating: bool = false
@@ -22,6 +23,12 @@ func _ready() -> void:
 	speed = speed * (1 / scaling)
 	health = health * scaling
 	damage = damage * scaling
+	
+	actor_setup.call_deferred()
+
+func actor_setup():
+	await get_tree().physics_frame
+	navigation_agent.target_position = target.global_position
 
 func _physics_process(_delta: float) -> void:
 	if health <= 0:
@@ -47,7 +54,9 @@ func _physics_process(_delta: float) -> void:
 
 	global_rotation = global_position.angle_to_point(target.global_position)
 	if knockback == Vector2.ZERO:
-		velocity = (target.global_position - global_position).normalized() * speed
+		#velocity = (target.global_position - global_position).normalized() * speed
+		var next_path_position: Vector2 = navigation_agent.get_next_path_position()
+		velocity = global_position.direction_to(next_path_position) * speed
 	else:
 		velocity = knockback / 2.0
 		if velocity.length() < 5.0:
@@ -62,4 +71,6 @@ func _physics_process(_delta: float) -> void:
 
 func die() -> void:
 	self_destructing_particles.run()
+	Global.active_enemies -= 1
+	print("died")
 	queue_free()

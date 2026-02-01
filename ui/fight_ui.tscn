@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://cleev0low7ntr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_guvnt"]
+font_size = 96
+font_color = Color(0.9737758, 1, 0.7168036, 1)
+stacked_shadow_count = 2
+stacked_shadow_0/offset = Vector2(4, 4)
+stacked_shadow_0/color = Color(0.8901961, 0.78274745, 0.53557676, 1)
+stacked_shadow_1/offset = Vector2(8, 8)
+stacked_shadow_1/color = Color(0.70980394, 0.6238668, 0.39601398, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_irg3q"]
+bg_color = Color(0.375, 0.375, 0.375, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aib3e"]
+bg_color = Color(0.70980394, 0.62352943, 0.39607844, 1)
+
+[sub_resource type="GDScript" id="GDScript_guvnt"]
+script/source = "extends ProgressBar
+
+func _ready() -> void:
+	Global.kanapinis_hp.connect(func(percentage: float): value = percentage * 100.0)
+"
+
+[sub_resource type="LabelSettings" id="LabelSettings_ly8x2"]
+font_size = 150
+font_color = Color(1, 0.29648447, 0.3188699, 1)
+stacked_shadow_count = 2
+stacked_shadow_0/offset = Vector2(0, 10)
+stacked_shadow_0/color = Color(0.8901961, 0.23182653, 0.17864256, 1)
+stacked_shadow_1/offset = Vector2(0, 20)
+stacked_shadow_1/color = Color(0.51953125, 0.11362718, 0.11750322, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_8m5dx"]
+font_size = 96
+font_color = Color(0.6, 0.87999994, 1, 1)
+stacked_shadow_count = 2
+stacked_shadow_0/offset = Vector2(-4, 4)
+stacked_shadow_0/color = Color(0, 0.6081667, 0.89, 1)
+stacked_shadow_1/offset = Vector2(-8, 8)
+stacked_shadow_1/color = Color(0, 0.41416678, 0.71, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_en12b"]
+bg_color = Color(0, 0.41568628, 0.70980394, 1)
+
+[sub_resource type="GDScript" id="GDScript_irg3q"]
+script/source = "extends ProgressBar
+
+func _ready() -> void:
+	Global.lasininis_hp.connect(func(percentage: float): value = percentage * 100.0)
+"
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1035848821]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=819330523]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer" unique_id=719849185]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer" unique_id=1827884009]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/MarginContainer/VBoxContainer" unique_id=577175461]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+
+[node name="KANAPINIS" type="Label" parent="HBoxContainer/MarginContainer/VBoxContainer/MarginContainer" unique_id=744082639]
+layout_mode = 2
+text = "KANAPINIS"
+label_settings = SubResource("LabelSettings_guvnt")
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer/MarginContainer/VBoxContainer" unique_id=1532340750]
+custom_minimum_size = Vector2(600, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 0)
+theme_override_styles/background = SubResource("StyleBoxFlat_irg3q")
+theme_override_styles/fill = SubResource("StyleBoxFlat_aib3e")
+value = 100.0
+script = SubResource("GDScript_guvnt")
+
+[node name="Control2" type="Control" parent="HBoxContainer" unique_id=766248862]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VS" type="Label" parent="HBoxContainer" unique_id=324807176]
+layout_mode = 2
+text = "VS"
+label_settings = SubResource("LabelSettings_ly8x2")
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="HBoxContainer" unique_id=123858368]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer" unique_id=319740599]
+layout_mode = 2
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer2" unique_id=1117101851]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/MarginContainer2/VBoxContainer" unique_id=565273886]
+layout_mode = 2
+theme_override_constants/margin_right = 15
+
+[node name="LASININIS" type="Label" parent="HBoxContainer/MarginContainer2/VBoxContainer/MarginContainer" unique_id=810976142]
+layout_mode = 2
+text = "LAŠININIS"
+label_settings = SubResource("LabelSettings_8m5dx")
+horizontal_alignment = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer/MarginContainer2/VBoxContainer" unique_id=235950046]
+custom_minimum_size = Vector2(600, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 0)
+theme_override_styles/background = SubResource("StyleBoxFlat_irg3q")
+theme_override_styles/fill = SubResource("StyleBoxFlat_en12b")
+value = 100.0
+script = SubResource("GDScript_irg3q")
