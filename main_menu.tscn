@@ -86,7 +86,6 @@ polygon = PackedVector2Array(-56.322266, 1221.4026, -52.14502, 830.82965, 192.22
 
 [node name="PrimaryMenu" type="Control" parent="." unique_id=368097698]
 unique_name_in_owner = true
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -216,6 +215,7 @@ script = SubResource("GDScript_fu7sn")
 
 [node name="Credits" type="CenterContainer" parent="." unique_id=505573457]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
