@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://irakfucq3xnd" path="res://kaukės/snukio_sukiojimas.gd" id="5_dy7ct"]
 [ext_resource type="PackedScene" uid="uid://cbfigy328332q" path="res://kaukės/vaikis.tscn" id="6_dy7ct"]
 [ext_resource type="PackedScene" uid="uid://bn3e2bd4j317" path="res://kaukės/vydmanas.tscn" id="7_0o4t1"]
+[ext_resource type="AudioStream" uid="uid://bat5hdbtmxwe7" path="res://sounds/music/Killing Time.mp3" id="9_dy7ct"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7vrkn"]
 font_size = 256
@@ -290,6 +291,10 @@ script = ExtResource("5_dy7ct")
 position = Vector2(1706.1991, 518.82513)
 scale = Vector2(25, 25)
 script = ExtResource("5_dy7ct")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1400436834]
+stream = ExtResource("9_dy7ct")
+autoplay = true
 
 [connection signal="pressed" from="PrimaryMenu/VBoxContainer/Button" to="PrimaryMenu/VBoxContainer/Button" method="_on_pressed"]
 [connection signal="pressed" from="PrimaryMenu/VBoxContainer/Button2" to="PrimaryMenu/VBoxContainer/Button2" method="_on_pressed"]
